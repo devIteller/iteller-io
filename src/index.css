@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000b42 #1a297a;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 15px;
+  width: 15px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #1a297a;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #000834;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+  background-color: #1A297A;
+  padding: 10px 15px;
+  text-align: center;
+  height: fit-content;
+  border-radius: 999px;
+  font-size: 15px;
+} 
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #536dff66 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+@media only screen and (min-width: 640px) {
+  .swiper-pagination {
+    text-align:start !important;
+  }
+}
+@media only screen and (min-width: 1405px) {
+  .swiper-pagination-horizontal{
+    bottom: 50px !important;
+  }
+  
+}
