@@ -112,13 +112,18 @@ const Footer = () => {
                 <a href="/Download/Letter_of_Advice.pdf" download>
                   Letter of Advice
                 </a>
-                <h5>Privacy Policy</h5>
+                <Link to="/Privacy-Policy">
+              Privacy Policy
+            </Link>
                 <a href="/Download/AMLCTF_FINANCIAL_PROGRAM.pdf" download>
                   AML-CTF Program
                 </a>
                 <a href="/Download/RISK_ASSESSMENT_AND_MANAGEMENT.pdf" download>
                   Risk Assessment And Management
                 </a>
+                <Link to="/Customer-Agreement">
+                Customer Agreement
+            </Link>
               </div>
               <div className="flex flex-col max-sm:w-full">
                 <h2 className="font-bold uppercase border-b md:w-fit border-white text-lg mb-3">

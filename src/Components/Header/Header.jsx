@@ -53,40 +53,42 @@ const Header = () => {
                   alt=""
                 />
               </button>
-              {isMenuOpen && <div
-                className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl`}
-              >
-                <img
-                  src="/icons/Polygon.png"
-                  alt="Polygon"
-                  className="absolute top-[-9px] left-[90px]"
-                  loading="lazy"
-                />
-                <a
-                  href="http://"
-                  target="_blank"
-                  className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                  rel="noopener noreferrer"
+              {isMenuOpen && (
+                <div
+                  className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl`}
                 >
-                  Crypto OTC Trading Platform
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                  rel="noopener noreferrer"
-                >
-                  Crypto ATM Machine
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                  rel="noopener noreferrer"
-                >
-                  Assured APY Returns - Liquidity Investment
-                </a>
-              </div>}
+                  <img
+                    src="/icons/Polygon.png"
+                    alt="Polygon"
+                    className="absolute top-[-9px] left-[90px]"
+                    loading="lazy"
+                  />
+                  <a
+                    href="http://"
+                    target="_blank"
+                    className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
+                    rel="noopener noreferrer"
+                  >
+                    Crypto OTC Trading Platform
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
+                    rel="noopener noreferrer"
+                  >
+                    Crypto ATM Machine
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
+                    rel="noopener noreferrer"
+                  >
+                    Assured APY Returns - Liquidity Investment
+                  </a>
+                </div>
+              )}
               <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
                 <span>Insights</span>
               </button>
@@ -113,14 +115,16 @@ const Header = () => {
                 <img loading="lazy" src="/icons/user-add.svg" alt="user" />
                 <span>Sign Up</span>
               </a>
-              <button className="inline-flex justify-center gap-1 bg-btn duration-300 hover:scale-90 items-center border-btn border  px-5 md:px-7  rounded-xl text-xs md:text-base  mt-4 md:mt-0">
-                <img
-                  loading="lazy"
-                  src="/icons/call-calling.svg"
-                  alt="call-calling"
-                />
-                <span>Contact</span>
-              </button>
+              <Link to="/Contact-Us" className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn  rounded-xl mt-4 md:mt-0">
+                <button className="inline-flex justify-center gap-1  items-center border-btn border px-5 md:px-7 text-xs md:text-base">
+                  <img
+                    loading="lazy"
+                    src="/icons/call-calling.svg"
+                    alt="call-calling"
+                  />
+                  <span>Contact</span>
+                </button>
+              </Link>
             </div>
             <div className="ml-8 w-20 hidden md:flex lg:hidden">
               <img
