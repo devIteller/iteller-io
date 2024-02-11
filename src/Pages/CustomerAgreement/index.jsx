@@ -1,7 +1,13 @@
 ﻿import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import { useEffect } from "react";
 
 const CustomerAgreement = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 300);
+  }, []);
   const CAC = [
     {
       title: (
