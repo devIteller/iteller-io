@@ -1,4 +1,6 @@
-﻿const Hero = () => {
+﻿import { Link } from "react-router-dom";
+
+const Hero = () => {
   return (
     <section className="text-gray-600 body-font xl:pb-16 pb-5  relative overflow-hidden">
       <span className="w-1/3 blur-[150px] z-10 absolute md:left-[-110px]   top-[-20px]">
@@ -45,12 +47,15 @@
             alt=""
           />
           <h4 className="text-white mb-1 max-lg:mt-5">Start Your Journey</h4>
-          <button
-            className="i text-white bg-[#CD7B00] hover:bg-[#CD7B00]/80 dur3 border-0 py-3 px-8  duration-300
+
+          <Link to="https://my.iteller.app/en/auth/sign-up">
+            <button
+              className="i text-white bg-[#CD7B00] hover:bg-[#CD7B00]/80 dur3 border-0 py-3 px-8  duration-300
          rounded-lg md:w-fit text-sm md:text-lg w-full text-center"
-          >
-            Create Your Account
-          </button>
+            >
+              Create Your Account
+            </button>
+          </Link>
         </div>
       </div>
       <span className="w-1/3 blur-[150px]  z-10 absolute right-[-140px] bottom-[-210px]">
