@@ -70,20 +70,20 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <span className="w-1/3  blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
+      <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="800"
           height="501"
           viewBox="0 0 738 511"
           fill="none"
-          className="bg-[#010D50]"
+          className="bg-[#010D50] w-full"
         ></svg>
       </span>
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 z-50">
-            <div className="p-10 bg-[#141F5C] h-[80vh]">
+            <div className="p-10 bg-[#141F5C] h-[100vh]">
               <h1 className="md:text-3xl font-bold mb-7">
                 Let&apos;s Talk With Us
               </h1>
@@ -124,7 +124,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="p-10 bg-[#0C1237] h-[80vh] space-y-6">
+            <div className="p-10 bg-[#0C1237] lg:h-[100vh] space-y-6">
               <div>
                 <label className="font-bold">Full Name</label>
                 <Input
