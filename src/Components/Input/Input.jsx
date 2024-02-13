@@ -1,12 +1,13 @@
-﻿const Input = ({ placeholder, value, onChange, type, className }) => {
-  Input.propTypes = {
-    placeholder,
-    value,
-    onChange,
-    type,
-    className,
-  };
+﻿import PropTypes from 'prop-types';
 
+const Input = ({ placeholder, value, onChange, type, className }) => {
+  Input.propTypes =
+ { placeholder: PropTypes.string,
+  value: PropTypes.any,
+  onChange: PropTypes.func,
+  type: PropTypes.string,
+  className: PropTypes.string,
+}
   return (
     <input
       type={type}

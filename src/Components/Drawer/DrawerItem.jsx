@@ -1,12 +1,13 @@
 ﻿import { useState } from "react";
+import PropTypes from "prop-types";
 
 const DrawerItem = ({ title, active, isDropDown, dropDownItems, children }) => {
   DrawerItem.propTypes = {
-    title,
-    active,
-    isDropDown,
-    dropDownItems,
-    children,
+    title: PropTypes.any,
+    active: PropTypes.bool,
+    isDropDown: PropTypes.bool,
+    dropDownItems: PropTypes.node,
+    children: PropTypes.node,
   };
 
   const [isDDopen, setisDDopen] = useState(false);

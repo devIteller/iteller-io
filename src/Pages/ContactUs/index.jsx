@@ -6,10 +6,9 @@ import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
-
   useEffect(() => {
     setTimeout(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     }, 300);
   }, []);
 
@@ -20,28 +19,30 @@ const ContactUs = () => {
   function sendEmail() {
     var templateParams = {
       from_name: `${fullName}`,
-      message: `اسم : ${fullName}
-      ایمیل : ${emailAddress}
-      متن پیام : 
+      message: `name : ${fullName}
+      email : ${emailAddress}
+      message : 
       ${message}`,
     };
 
     emailjs
       .send(
-        "service_0033x6q",
-        "template_6tzc1sj",
+        "service_w6vzglh",
+        "template_j3434zi",
         templateParams,
-        "1VNWG4NiuyENaVslG"
+        "2VGjtHH_RGI1bz-z7"
       )
       .then(
-        Swal.fire({
-          icon: "success",
-          text: "Your message has been successfully sent!",
-          confirmButtonText: "ok",
-          backdrop: `
+        (e) =>
+          e.status === 200 &&
+          Swal.fire({
+            icon: "success",
+            text: "Your message has been successfully sent!",
+            confirmButtonText: "ok",
+            backdrop: `
       rgb(0 0 0 / 50%)
     `,
-        })
+          })
       )
       .catch((err) => {
         console.error(err);
@@ -70,20 +71,20 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
+      <span className="w-1/3  blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="800"
           height="501"
           viewBox="0 0 738 511"
           fill="none"
-          className="bg-[#010D50] w-full"
+          className="bg-[#010D50]"
         ></svg>
       </span>
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 z-50">
-            <div className="p-10 bg-[#141F5C] h-[100vh]">
+            <div className="p-10 bg-[#141F5C] h-[80vh]">
               <h1 className="md:text-3xl font-bold mb-7">
                 Let&apos;s Talk With Us
               </h1>
@@ -124,7 +125,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="p-10 bg-[#0C1237] lg:h-[100vh] space-y-6">
+            <div className="p-10 bg-[#0C1237] h-[80vh] space-y-6">
               <div>
                 <label className="font-bold">Full Name</label>
                 <Input

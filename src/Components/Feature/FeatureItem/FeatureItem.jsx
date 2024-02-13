@@ -1,13 +1,19 @@
-﻿const FeatureItem = ({ title, desc, icon,aos }) => {
-  FeatureItem.propTypes = {
-    title,
-    desc,
-    icon,
-    aos
-  };
+﻿import PropTypes from 'prop-types';
+
+
+
+const FeatureItem = ({ title, desc, icon,aos }) => {
+ FeatureItem.propTypes = {
+  title: PropTypes.any,
+  desc: PropTypes.string,
+  icon:PropTypes.any,
+  aos: PropTypes.any,
+};
   return (
     <>
-      <div   className="flex flex-col w-full text-start items-start ">
+      <div 
+      data-aos={aos}
+      className="flex flex-col w-full text-start items-start">
         <div className="flex items-center gap-3 mb-3">
           <div className="p-2 inline-flex items-center justify-center rounded-xl bg-[#162B9A]">
             <img src={`/icons/${icon}.png`} loading="lazy" alt={icon} />

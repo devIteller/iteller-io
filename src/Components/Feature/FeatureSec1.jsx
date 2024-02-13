@@ -22,7 +22,7 @@ const FeatureSec1 = () => {
             aos={"fade-right"}
           />
         </div>
-        <div className="lg:w-1/2 w-full ">
+        <div className="lg:w-1/2 w-full max-lg:mt-6">
           <img
             alt="vector_1"
             className="h-64 md:h-[500px] lg:h-[620px] w-full"

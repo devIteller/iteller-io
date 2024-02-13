@@ -23,11 +23,11 @@ const Header = () => {
                   alt="Logo"
                 />
               </Link>
-              <div>
+              <div className="z-[9999]">
                 <img
                   loading="lazy"
                   src="/Hero/menu.png"
-                  className="w-8 h-8 md:hidden"
+                  className="w-8 h-8 md:hidden z-[9999]"
                   alt="menu"
                   onClick={() => setIsDrawerOpen(!isDrawerOpen)}
                 />

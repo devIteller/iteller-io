@@ -1,9 +1,11 @@
-﻿const InsightsItem = ({ title, desc, ctg, src }) => {
+﻿import PropTypes from "prop-types";
+
+const InsightsItem = ({ title, desc, ctg, src }) => {
   InsightsItem.propTypes = {
-    title,
-    desc,
-    ctg,
-    src,
+    title: PropTypes.any,
+    desc: PropTypes.string,
+    ctg: PropTypes.string,
+    src: PropTypes.string,
   };
   return (
     <div
@@ -21,12 +23,18 @@
       </h2>
       <div className="px-4 text-start flex flex-col  h-full justify-between mb-3">
         <div className="flex items-center min-h-[66px]">
-          <h1 className="title-font text-lg font-medium mb-3
+          <h1
+            className="title-font text-lg font-medium mb-3
           line-clamp-2
-          ">{title}</h1>
+          "
+          >
+            {title}
+          </h1>
         </div>
         <div className="w-full">
-          <p className="leading-relaxed text-[14px] mb-8 line-clamp-3">{desc}</p>
+          <p className="leading-relaxed text-[14px] mb-8 line-clamp-3">
+            {desc}
+          </p>
         </div>
       </div>
       <div className="absolute bottom-3 w-full px-6">

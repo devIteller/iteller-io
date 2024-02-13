@@ -1,10 +1,11 @@
 ﻿import DrawerItem from "./DrawerItem";
+import PropTypes from 'prop-types';
 
 const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
   Drawer.propTypes = {
-    isDrawerOpen,
+    isDrawerOpen: PropTypes.bool,
+    setDrawerOpen : PropTypes.func,
   };
-
   return (
     <div>
       <div

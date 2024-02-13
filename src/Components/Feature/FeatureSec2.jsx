@@ -30,7 +30,7 @@ const FeatureSec2 = () => {
             desc="iTeller grants clients direct access to the cryptocurrency market with fiat currency, ensuring quick and efficient trades, underpinned by robust security measures and an intuitive user interface for optimal trading execution."
           />
         </div>
-        <div className="lg:w-1/2 w-full ">
+        <div className="lg:w-1/2 w-full max-lg:mt-6">
           <img
             alt="vector_2"
             className="h-64 md:h-[500px] lg:h-[620px]  w-full"
