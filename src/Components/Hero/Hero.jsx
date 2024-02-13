@@ -3,14 +3,14 @@
 const Hero = () => {
   return (
     <section className="text-gray-600 body-font xl:pb-16 pb-5  relative overflow-hidden">
-      <span className="w-1/3 blur-[150px] z-10 absolute md:left-[-110px]   top-[-20px]">
+      <span className="md:w-1/3 w-full blur-[150px] z-10 absolute md:left-[-110px]   top-[-20px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="800"
           height="501"
           viewBox="0 0 738 511"
           fill="none"
-          className="bg-[#010D50]"
+          className="bg-[#010D50] w-full"
         ></svg>
       </span>
       <video
@@ -58,14 +58,14 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <span className="w-1/3 blur-[150px]  z-10 absolute right-[-140px] bottom-[-210px]">
+      <span className="md:w-1/3 w-full blur-[150px]  z-10 absolute right-[-140px] bottom-[-210px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="538"
           height="301"
           viewBox="0 0 738 511"
           fill="none"
-          className="bg-[#010D50]"
+          className="bg-[#010D50] w-full"
         ></svg>
       </span>
     </section>

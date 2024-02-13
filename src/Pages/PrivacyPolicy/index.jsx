@@ -12,14 +12,14 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Header />
-      <span className="w-1/3 blur-[170px] z-10 absolute md:left-[-110px]  top-[-20px]">
+      <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px]  top-[-20px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="800"
           height="501"
           viewBox="0 0 738 511"
           fill="none"
-          className="bg-[#010D50]"
+          className="bg-[#010D50] w-full"
         ></svg>
       </span>
       <div className="flex flex-col items-center">
