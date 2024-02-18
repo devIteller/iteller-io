@@ -3,19 +3,24 @@ import Drawer from "../Drawer/Drawer";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isMenuOpen, setisMenuOpen] = useState();
+  const [isMenuOpen, setisMenuOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const node = useRef();
+  const DrawerNode = useRef();
 
-  const handleClickOutside = e => {
-    if (node.current.contains(e.target)) {
+  const handleClickOutside = (e) => {
+    if (
+      node.current.contains(e.target) ||
+      DrawerNode.current.contains(e.target)
+    ) {
       return;
     }
-    setisMenuOpen(false);
+    isMenuOpen && setisMenuOpen(false);
+    isDrawerOpen && setIsDrawerOpen(false);
   };
 
   useEffect(() => {
-    if (isMenuOpen) {
+    if (isMenuOpen || isDrawerOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -24,7 +29,7 @@ const Header = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isMenuOpen]);
+  }, [isMenuOpen, isDrawerOpen]);
   return (
     <>
       <header className="text-gray-600 body-font relative ">
@@ -53,63 +58,64 @@ const Header = () => {
                 <span className="sr-only">Close menu</span>
               </div>
             </div>
-            <Drawer
-              isDrawerOpen={isDrawerOpen}
-              setDrawerOpen={() => setIsDrawerOpen(!isDrawerOpen)}
-            />
+            <div ref={DrawerNode}>
+              <Drawer
+                isDrawerOpen={isDrawerOpen}
+                setDrawerOpen={() => setIsDrawerOpen(!isDrawerOpen)}
+              />
+            </div>
             <div className="gap-3 hidden relative lg:flex ">
-              <div  ref={node}>
-              <button
-                onClick={() => setisMenuOpen(!isMenuOpen)}
-                className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 "
-              >
-                <span>Services</span>
-                <img
-                  src="/icons/Vector.png"
-                  className={`${
-                    isMenuOpen ? "rotate-180" : "rotate-0"
-                  } duration-300`}
-                  loading="lazy"
-                  alt=""
-                />
-              </button>
-              {isMenuOpen && (
-                <div
-               
-                  className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl`}
+              <div ref={node}>
+                <button
+                  onClick={() => setisMenuOpen(!isMenuOpen)}
+                  className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 "
                 >
+                  <span>Services</span>
                   <img
-                    src="/icons/Polygon.png"
-                    alt="Polygon"
-                    className="absolute top-[-9px] left-[90px]"
+                    src="/icons/Vector.png"
+                    className={`${
+                      isMenuOpen ? "rotate-180" : "rotate-0"
+                    } duration-300`}
                     loading="lazy"
+                    alt=""
                   />
-                  <a
-                    href="http://"
-                    target="_blank"
-                    className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                    rel="noopener noreferrer"
+                </button>
+                {isMenuOpen && (
+                  <div
+                    className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl`}
                   >
-                    Crypto OTC Trading Platform
-                  </a>
-                  <a
-                    href="http://"
-                    target="_blank"
-                    className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                    rel="noopener noreferrer"
-                  >
-                    Crypto ATM Machine
-                  </a>
-                  <a
-                    href="http://"
-                    target="_blank"
-                    className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                    rel="noopener noreferrer"
-                  >
-                    Assured APY Returns - Liquidity Investment
-                  </a>
-                </div>
-              )}
+                    <img
+                      src="/icons/Polygon.png"
+                      alt="Polygon"
+                      className="absolute top-[-9px] left-[90px]"
+                      loading="lazy"
+                    />
+                    <a
+                      href="http://"
+                      target="_blank"
+                      className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
+                      rel="noopener noreferrer"
+                    >
+                      Crypto OTC Trading Platform
+                    </a>
+                    <a
+                      href="http://"
+                      target="_blank"
+                      className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
+                      rel="noopener noreferrer"
+                    >
+                      Crypto ATM Machine
+                    </a>
+                    <a
+                      href="http://"
+                      target="_blank"
+                      className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
+                      rel="noopener noreferrer"
+                    >
+                      Assured APY Returns - Liquidity Investment
+                    </a>
+                  </div>
+                )}
               </div>
               <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
                 <span>Insights</span>
@@ -137,7 +143,10 @@ const Header = () => {
                 <img loading="lazy" src="/icons/user-add.svg" alt="user" />
                 <span>Sign Up</span>
               </a>
-              <Link to="/Contact-Us" className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn  rounded-xl mt-4 md:mt-0">
+              <Link
+                to="/Contact-Us"
+                className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn  rounded-xl mt-4 md:mt-0"
+              >
                 <button className="inline-flex justify-center gap-1  items-center border-btn border px-5 md:px-7 text-xs md:text-base">
                   <img
                     loading="lazy"

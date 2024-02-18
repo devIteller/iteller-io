@@ -23,7 +23,6 @@ const DrawerItem = ({ title, active, isDropDown, dropDownItems,href, children })
       >
         <div className="flex">
           {children}
-          {console.log(href)}
          <span className="ms-1 text-sm">{title}</span>
         </div>
         {isDropDown && (
@@ -52,7 +51,6 @@ const DrawerItem = ({ title, active, isDropDown, dropDownItems,href, children })
       >
         <div className="flex">
           {children}
-          {console.log(href)}
          <span className="ms-1 text-sm">{title}</span>
         </div>
         {isDropDown && (
