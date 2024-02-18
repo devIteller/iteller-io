@@ -1,11 +1,30 @@
-﻿import { useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import Drawer from "../Drawer/Drawer";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setisMenuOpen] = useState();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const node = useRef();
 
+  const handleClickOutside = e => {
+    if (node.current.contains(e.target)) {
+      return;
+    }
+    setisMenuOpen(false);
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
   return (
     <>
       <header className="text-gray-600 body-font relative ">
@@ -39,6 +58,7 @@ const Header = () => {
               setDrawerOpen={() => setIsDrawerOpen(!isDrawerOpen)}
             />
             <div className="gap-3 hidden relative lg:flex ">
+              <div  ref={node}>
               <button
                 onClick={() => setisMenuOpen(!isMenuOpen)}
                 className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 "
@@ -55,6 +75,7 @@ const Header = () => {
               </button>
               {isMenuOpen && (
                 <div
+               
                   className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl`}
                 >
                   <img
@@ -89,6 +110,7 @@ const Header = () => {
                   </a>
                 </div>
               )}
+              </div>
               <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
                 <span>Insights</span>
               </button>

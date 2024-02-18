@@ -186,7 +186,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <DrawerItem title="Contact Us">
+            <DrawerItem href={"/Contact-Us"} title="Contact Us">
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 49 48"

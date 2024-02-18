@@ -112,21 +112,20 @@ const Footer = () => {
                 <a href="/Download/Letter_of_Advice.pdf" download>
                   Letter of Advice
                 </a>
-                <Link to="/Privacy-Policy">
-              Privacy Policy
-            </Link>
+                <Link to="/Privacy-Policy">Privacy Policy</Link>
                 <a href="/Download/AMLCTF_FINANCIAL_PROGRAM.pdf" download>
                   AML-CTF Program
                 </a>
                 <a href="/Download/RISK_ASSESSMENT_AND_MANAGEMENT.pdf" download>
                   Risk Assessment And Management
                 </a>
-                <Link to="/Customer-Agreement">
-                Customer Agreement
-            </Link>
+                <Link to="/Customer-Agreement">Customer Agreement</Link>
               </div>
               <div className="flex flex-col max-sm:w-full">
-                <h2 className="font-bold uppercase border-b md:w-fit border-white text-lg mb-3">
+                <h2
+                  to="/Contact-Us"
+                  className="font-bold uppercase border-b md:w-fit border-white text-lg mb-3"
+                >
                   Contact us:
                 </h2>
                 <div>
@@ -197,9 +196,11 @@ const Footer = () => {
                   </div>
                   <div className=" max-sm:w-full mt-10">
                     <h4>Ready to sign up?</h4>
-                    <button className="bg-[#0328EE] py-4 w-full duration-300 hover:bg-[#0f03ee97] mt-2  uppercase text-xs  rounded-lg">
-                      Create an Account
-                    </button>
+                    <Link to={"https://my.iteller.app/en/auth/sign-up"}>
+                      <button className="bg-[#0328EE] py-4 w-full duration-300 hover:bg-[#0f03ee97] mt-2  uppercase text-xs  rounded-lg">
+                        Create an Account
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
