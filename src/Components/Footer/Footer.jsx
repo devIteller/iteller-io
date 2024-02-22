@@ -100,7 +100,9 @@ const Footer = () => {
                 <h2 className="font-bold uppercase border-b md:w-fit border-white text-lg mb-3">
                   Services
                 </h2>
-                <h5>Crypto OTC Trading Platform</h5>
+                <Link to="/Crypto-OTC-Trading-Platform">
+                  Crypto OTC Trading Platform
+                </Link>
                 <h5>Crypto ATM Machine</h5>
                 <h5>Assured APY Returns - Liquidity Investment</h5>
               </div>
@@ -108,7 +110,7 @@ const Footer = () => {
                 <h2 className="font-bold uppercase border-b md:w-fit border-white text-lg mb-3">
                   Company
                 </h2>
-                <h5>About</h5>
+                <Link to="/About-Us">About</Link>
                 <a href="/Download/Letter_of_Advice.pdf" download>
                   Letter of Advice
                 </a>
@@ -197,8 +199,18 @@ const Footer = () => {
                   <div className=" max-sm:w-full mt-10">
                     <h4>Ready to sign up?</h4>
                     <Link to={"https://my.iteller.app/en/auth/sign-up"}>
-                      <button className="bg-[#0328EE] py-4 w-full duration-300 hover:bg-[#0f03ee97] mt-2  uppercase text-xs  rounded-lg">
+                      <button className="bg-[#0328EE] py-6 lg:py-[18px] w-full duration-300 hover:scale-90 mt-2 font-bold text-sm  rounded-lg">
                         Create an Account
+                      </button>
+                    </Link>
+                    <h6 className="text-center my-2">Or</h6>
+                    <Link to={"#"}>
+                      <button className="bg-black border py-2 w-full duration-300 hover:scale-90 mt-2 text-xs rounded-lg flex justify-center items-center gap-2">
+                        <img src="/Footer/apple.svg" className="w-9" alt="" />
+                        <div className="flex flex-col justify-start items-start">
+                          <span>Download on the</span>
+                          <span className="font-bold text-lg ">App Store</span>
+                        </div>
                       </button>
                     </Link>
                   </div>

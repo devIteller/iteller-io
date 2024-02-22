@@ -1,10 +1,11 @@
-﻿import DrawerItem from "./DrawerItem";
-import PropTypes from 'prop-types';
+﻿import { Link } from "react-router-dom";
+import DrawerItem from "./DrawerItem";
+import PropTypes from "prop-types";
 
 const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
   Drawer.propTypes = {
     isDrawerOpen: PropTypes.bool,
-    setDrawerOpen : PropTypes.func,
+    setDrawerOpen: PropTypes.func,
   };
   return (
     <div>
@@ -77,14 +78,18 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
               isDropDown
               dropDownItems={
                 <div className="pl-10 flex flex-col gap-y-2 text-[10px] text-gray-400">
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to="/Crypto-OTC-Trading-Platform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Crypto OTC Trading Platform
+                  </Link>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Crypto ATM Machine
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                  Crypto ATM Machine
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                  Assured APY Returns - Liquidity Investment
+                    Assured APY Returns - Liquidity Investment
                   </a>
                 </div>
               }
@@ -155,7 +160,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <DrawerItem title="About">
+            <DrawerItem href="/About-Us" title="About">
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 47 47"

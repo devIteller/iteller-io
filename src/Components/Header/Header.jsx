@@ -90,16 +90,16 @@ const Header = () => {
                       className="absolute top-[-9px] left-[90px]"
                       loading="lazy"
                     />
-                    <a
-                      href="http://"
+                    <Link
+                      to="/Crypto-OTC-Trading-Platform"
                       target="_blank"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
                     >
                       Crypto OTC Trading Platform
-                    </a>
+                    </Link>
                     <a
-                      href="http://"
+                      href=""
                       target="_blank"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
@@ -107,7 +107,7 @@ const Header = () => {
                       Crypto ATM Machine
                     </a>
                     <a
-                      href="http://"
+                      href=""
                       target="_blank"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const Header = () => {
                 <span>Insights</span>
               </button>
               <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
-                <span>About</span>
+                <Link to="/About-Us">About</Link>
               </button>
             </div>
             <div className="flex justify-between max-lg:w-full gap-3 lg:pr-10">
