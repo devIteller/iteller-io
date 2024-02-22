@@ -1,4 +1,5 @@
 ﻿import COTP from "../../Components/COTP/COTP";
+import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 
 const CryptoOTCTradingPlatform = () => {
@@ -54,8 +55,7 @@ const CryptoOTCTradingPlatform = () => {
           />
         </div>
       </div>
-
-      <div className="text-white p-5 flex flex-col gap-5"></div>
+      <Footer />
     </>
   );
 };
