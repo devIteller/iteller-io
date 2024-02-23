@@ -77,7 +77,7 @@ const Header = () => {
                       isMenuOpen ? "rotate-180" : "rotate-0"
                     } duration-300`}
                     loading="lazy"
-                    alt=""
+                    alt="arrow"
                   />
                 </button>
                 {isMenuOpen && (
@@ -92,34 +92,34 @@ const Header = () => {
                     />
                     <Link
                       to="/Crypto-OTC-Trading-Platform"
-                      target="_blank"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
                     >
                       Crypto OTC Trading Platform
                     </Link>
-                    <a
-                      href=""
-                      target="_blank"
+                    <Link
+                      to="/Crypto-ATM-Machine"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
                     >
                       Crypto ATM Machine
-                    </a>
-                    <a
-                      href=""
-                      target="_blank"
+                    </Link>
+                    <Link
+                      // to="/Assured-APY"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
                     >
                       Assured APY Returns - Liquidity Investment
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
-              <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
+              <a
+                href="#insights"
+                className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3"
+              >
                 <span>Insights</span>
-              </button>
+              </a>
               <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
                 <Link to="/About-Us">About</Link>
               </button>

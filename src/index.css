@@ -6,6 +6,7 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #000b42 #1a297a;
+  scroll-behavior: smooth;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -63,3 +64,4 @@
   }
   
 }
+

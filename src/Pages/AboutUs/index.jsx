@@ -176,16 +176,27 @@ const AboutUs = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl mb-1 font-bold">Crypto ATM Machine</h3>
+                <Link to="/Crypto-ATM-Machine">
+                  <h3
+                    to="/Crypto-ATM-Machine"
+                    className="text-xl mb-1 font-bold"
+                  >
+                    Crypto ATM Machine
+                  </h3>
+                </Link>
                 <p className="text-sm">
                   Accessibility meets innovation with our user-friendly Crypto
                   ATMs.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl mb-1 font-bold">
-                  Assured APY Returns - Liquidity Investment:{" "}
-                </h3>
+                <Link
+                // to="/Assured-APY"
+                >
+                  <h3 className="text-xl mb-1 font-bold">
+                    Assured APY Returns - Liquidity Investment:
+                  </h3>
+                </Link>
                 <p className="text-sm">
                   Discover investment opportunities with assured returns,
                   designed to optimize your liquidity.

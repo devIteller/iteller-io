@@ -1,11 +1,12 @@
 ﻿import PropTypes from "prop-types";
 
-const InsightsItem = ({ title, desc, ctg, src }) => {
+const InsightsItem = ({ title, desc, ctg, src ,href}) => {
   InsightsItem.propTypes = {
     title: PropTypes.any,
     desc: PropTypes.string,
     ctg: PropTypes.string,
     src: PropTypes.string,
+    href: PropTypes.string,
   };
   return (
     <div
@@ -39,7 +40,7 @@ const InsightsItem = ({ title, desc, ctg, src }) => {
       </div>
       <div className="absolute bottom-3 w-full px-6">
         <a
-          href="#"
+          href={href}
           className="text-[#4764FF] border-b border-[#4764FF] float-right text-[11px] inline-flex items-center lg:my-2"
         >
           Read More

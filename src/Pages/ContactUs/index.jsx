@@ -159,7 +159,7 @@ const ContactUs = () => {
               </div>
               <button
                 onClick={submit}
-                className="text-white bg-[#CD7B00] hover:bg-[#CD7B00]/80 dur3 border-0 py-3 px-8  duration-300 rounded-lg md:w-fit text-sm md:text-lg w-full text-center float-right"
+                className="text-white bg-[#CD7B00] hover:bg-[#CD7B00]/80 border-0 py-3 px-8  duration-300 rounded-lg md:w-fit text-sm md:text-lg w-full text-center float-right"
               >
                 Send Messages
               </button>

@@ -48,7 +48,10 @@ const Insights = () => {
     );
   };
   return (
-    <section className="text-white flex flex-col pt-10 lg:pb-10 body-font  relative justify-center items-center">
+    <section
+      id="insights"
+      className="text-white flex flex-col pt-10 lg:pb-10 body-font  relative justify-center items-center"
+    >
       <div className="flex flex-col lg:max-w-[1440px] w-[90%]  md:px-10">
         <h1 className="text-2xl font-bold mb-2 w-full lg:text-center ">
           Insights
@@ -72,6 +75,7 @@ const Insights = () => {
             src="one"
             ctg="event"
             title="iTeller's Innovative Leap"
+            href="https://medium.com/@iTeller/itellers-innovative-leap-revolutionizing-crypto-payments-at-the-dmcc-bybit-event-ca0653e01623"
             desc="iTeller's Innovative Leap: Revolutionizing Crypto Payments at the DMCC-Bybit Event "
           />
         </SwiperSlide>
@@ -79,6 +83,7 @@ const Insights = () => {
           <InsightsItem
             src="two"
             ctg="tv"
+            href="https://www.linkedin.com/posts/mohammadtaher-k_cryptocurrency-digital-investment-activity-7039565985015640064-9t3G?utm_source=share&utm_medium=member_desktop "
             title="Crypto Risks: iTeller CEO Speaks on Aldhafra TV"
             desc="MohammadTaher Khayami, the iTeller CEO, discussed the risks of investing in cryptocurrencies on"
           />
@@ -87,6 +92,7 @@ const Insights = () => {
           <InsightsItem
             src="three"
             ctg="event"
+            href="https://www.linkedin.com/posts/mohammadtaher-k_cryptoatm-itelleratm-activity-7115762251176816640-3g-a?utm_source=share&utm_medium=member_desktop"
             title="The Future of Decentralized Finance"
             desc="Introducing iTeller: Transforming digital transactions with our advanced crypto ATM for secure, easy, and"
           />
@@ -97,6 +103,7 @@ const Insights = () => {
             ctg="event"
             title="CNBC Arabia Exclusive: CEO Mohammad Taher Khayami lorem ipsum"
             desc="Recently, CEO Mohammad Taher Khayami had an insightful TV interview with CNBC Arabia, where lorem ipsum TV interview with CNBC Arabia, where  "
+            href="https://www.linkedin.com/feed/update/urn:li:activity:7042727126210392065?utm_source=share&utm_medium=member_desktop"
           />
         </SwiperSlide>
         <div className="flex w-full justify-center  mt-5 items-center ">

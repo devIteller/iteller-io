@@ -39,10 +39,10 @@ const SliderSec = () => {
     );
   };
   return (
-    <div className="relative border-b-4 border-[#162B9A] flex w-full py-20 justify-center items-center text-white">
+    <div className="relative border-b-4 border-[#162B9A] flex w-full py-7 justify-center items-center text-white">
       <div
         data-aos="fade-in"
-        className="lg:max-w-[1440px] w-[90%]   md:px-10 flex lg:flex-col items-start max-lg:flex-wrap gap-5 justify-between"
+        className="lg:max-w-[1440px] w-[90%]  md:px-10 flex lg:flex-col items-start max-lg:flex-wrap gap-5 justify-between"
       >
         <div>
           <h2 className="md:text-3xl lg:text-4xl text-2xl font-bold z-[99999] lg:mb-5 h-fit">
@@ -60,7 +60,6 @@ const SliderSec = () => {
           className="mySwiper w-full text-white"
         >
           <SwiperSlide className="flex gap-x-3 max-lg:pb-24 justify-center !h-fit items-center flex-col lg:flex-row-reverse">
-            
             <img
               src="/SliderSec/slide-one.png"
               className="lg:w-1/2 w-full"

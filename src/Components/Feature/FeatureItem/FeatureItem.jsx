@@ -14,7 +14,7 @@ const FeatureItem = ({ title, desc, icon,aos }) => {
       <div 
       data-aos={aos}
       className="flex flex-col w-full text-start items-start">
-        <div className="flex items-center gap-3 mb-3">
+        <div className="flex items-center gap-3 mb-1">
           <div className="p-2 inline-flex items-center justify-center rounded-xl bg-[#162B9A]">
             <img src={`/icons/${icon}.png`} loading="lazy" alt={icon} />
           </div>

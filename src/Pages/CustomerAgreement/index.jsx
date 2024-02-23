@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const CustomerAgreement = () => {
   useEffect(() => {
     setTimeout(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     }, 300);
   }, []);
   const CAC = [
@@ -69,7 +69,7 @@ const CustomerAgreement = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
           <h1 className="text-2xl text-start w-full z-50 font-bold">
-            Customer Agreement{" "}
+            Customer Agreement
           </h1>
           <img
             src="/CustomerAgreement/CustomerAgreement.png"

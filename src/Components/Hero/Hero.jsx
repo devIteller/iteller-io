@@ -36,37 +36,35 @@ const Hero = () => {
             and preferences of its extensive client base
           </p>
           <button
-            className="inline-flex text-white bg-btn hover:bg-btn/70 dur3 border-0 py-3 pl-6 pr-10 duration-300
-         rounded-tr-3xl w-fit text-sm md:text-lg"
+            className="inline-flex text-white bg-btn hover:bg-btn/70 border-0 py-3 pl-6 pr-10 duration-300
+          w-fit text-sm md:text-lg"
           >
             Digital Trade, Ensuring Seamless Liquidity
           </button>
           <img
             src="/Hero/Line.svg"
             className="my-12 w-[60%] hidden lg:block"
-            alt=""
+            alt="Line"
           />
           <h4 className="text-white mb-1 max-lg:mt-5">Start Your Journey</h4>
 
           <div className="flex max-lg:flex-col justify-center text-center lg:items-center w-fit gap-4 text-white">
             <Link to="https://my.iteller.app/en/auth/sign-up">
-              <button
-                className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 dur3 border-0 py-4 px-8  duration-300
-         rounded-lg md:w-fit font-bold text-sm md:text-lg w-full text-center"
-              >
+              <button className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 hover:scale-90 border-0 py-3 w-[224px]  duration-300 rounded-lg font-medium text-sm md:text-lg text-center">
                 Create Your Account
               </button>
             </Link>
             <h3>OR</h3>
-            <Link to={"#"}>
-              <button className="bg-black border py-2 duration-300 hover:scale-90 text-xs rounded-lg flex justify-center items-center gap-2 px-12">
-                <img src="/Footer/apple.svg" className="w-9" alt="" />
-                <div className="flex flex-col justify-start items-start">
-                  <span>Download on the</span>
-                  <span className="font-bold text-lg ">App Store</span>
-                </div>
+            <a href="https://apps.apple.com/us/app/iteller/id6477462194">
+              <button className="bg-black border py-2 duration-300 hover:scale-90 text-xs rounded-lg flex justify-center items-center gap-2  w-[224px]">
+                <img
+                  src="/Footer/app_store.png"
+                  className="w-[125px]"
+                  alt="app_store"
+                />
+                <p className="sr-only">download from app store</p>
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="text-white bg-[#010D50] py-10 body-font flex justify-center border-t-4 border-[#001272]">
-        <div className="lg:max-w-[1440px] w-[90%]  md:px-10 flex flex-col gap-5 justify-between">
+        <div className="lg:max-w-[1440px] w-[90%] px-5 md:px-10 flex flex-col gap-5 justify-between">
           <div className="flex justify-center lg:justify-between">
             <a
               href="#"
@@ -103,8 +103,12 @@ const Footer = () => {
                 <Link to="/Crypto-OTC-Trading-Platform">
                   Crypto OTC Trading Platform
                 </Link>
-                <h5>Crypto ATM Machine</h5>
-                <h5>Assured APY Returns - Liquidity Investment</h5>
+                <Link to="/Crypto-ATM-Machine">Crypto ATM Machine</Link>
+                <Link 
+                // to="/Assured-APY"
+                >
+                  Assured APY Returns - Liquidity Investment
+                </Link>
               </div>
               <div className="flex flex-col max-sm:w-full">
                 <h2 className="font-bold uppercase border-b md:w-fit border-white text-lg mb-3">
@@ -196,23 +200,24 @@ const Footer = () => {
                       </a>
                     </span>
                   </div>
-                  <div className=" max-sm:w-full mt-10">
+                  <div className="w-full sm:max-w-[250px] mt-10">
                     <h4>Ready to sign up?</h4>
                     <Link to={"https://my.iteller.app/en/auth/sign-up"}>
-                      <button className="bg-[#0328EE] py-6 lg:py-[18px] w-full duration-300 hover:scale-90 mt-2 font-bold text-sm  rounded-lg">
+                      <button className="bg-[#0328EE] py-4 w-full sm:max-w-[250px] duration-300 hover:scale-90 mt-2 font-semibold text-sm  rounded-lg">
                         Create an Account
                       </button>
                     </Link>
                     <h6 className="text-center my-2">Or</h6>
-                    <Link to={"#"}>
-                      <button className="bg-black border py-2 w-full duration-300 hover:scale-90 mt-2 text-xs rounded-lg flex justify-center items-center gap-2">
-                        <img src="/Footer/apple.svg" className="w-9" alt="" />
-                        <div className="flex flex-col justify-start items-start">
-                          <span>Download on the</span>
-                          <span className="font-bold text-lg ">App Store</span>
-                        </div>
+                    <a href="https://apps.apple.com/us/app/iteller/id6477462194">
+                      <button className="bg-black border py-2 duration-300 hover:scale-90 text-xs rounded-lg flex justify-center items-center gap-2 w-full sm:max-w-[250px]">
+                        <img
+                          src="/Footer/app_store.png"
+                          className="w-[125px]"
+                          alt="app_store"
+                        />
+                        <p className="sr-only">download from app store</p>
                       </button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

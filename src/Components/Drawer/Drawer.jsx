@@ -80,17 +80,19 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 <div className="pl-10 flex flex-col gap-y-2 text-[10px] text-gray-400">
                   <Link
                     to="/Crypto-OTC-Trading-Platform"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Crypto OTC Trading Platform
                   </Link>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Link to="/Crypto-ATM-Machine" rel="noopener noreferrer">
                     Crypto ATM Machine
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  </Link>
+                  <Link
+                    // to="/Assured-APY"
+                    rel="noopener noreferrer"
+                  >
                     Assured APY Returns - Liquidity Investment
-                  </a>
+                  </Link>
                 </div>
               }
             >
@@ -118,7 +120,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <DrawerItem title="Insights">
+            <DrawerItem href={"#insights"} title="Insights">
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 48 48"
