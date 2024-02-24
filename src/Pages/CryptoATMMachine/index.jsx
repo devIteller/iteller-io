@@ -89,7 +89,7 @@ const CryptoATMMachine = () => {
               );
             })}
           </div>
-          {/* <div className="relative w-full">
+         <div className="relative w-full">
             <video
               onPlay={handlePlay}
               onPause={handlePause}
@@ -97,7 +97,7 @@ const CryptoATMMachine = () => {
               controls
               className="w-full"
             >
-              <source src="/Hero/background.mp4" type="video/mp4" />
+              <source src="/AtmMachine/video.mp4" type="video/mp4" />
             </video>
             {!isPlaying && (
               <div
@@ -117,7 +117,7 @@ const CryptoATMMachine = () => {
                 </svg>
               </div>
             )}
-          </div> */}
+          </div> 
           <h1 className="pl-7 font-bold text-xl py-3 bg-[#CD7B00] text-start w-full">
             Highlights include:
           </h1>
