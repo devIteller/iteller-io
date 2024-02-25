@@ -5,9 +5,10 @@ import CustomerAgreement from "./Pages/CustomerAgreement";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import CryptoOTCTradingPlatform from "./Pages/CryptoOTCTradingPlatform";
-import AssuredAPY from "./Pages/AssuredAPY";
+import AssuredAPYClick from "./Pages/AssuredAPYClick";
 import RISK_ASSESSMENT_AND_MANAGEMENT from "./Pages/RISK_ASSESSMENT_AND_MANAGEMENT";
 import CryptoATMMachine from "./Pages/CryptoATMMachine";
+import AssuredAPY from "./Pages/AssuredAPY";
 
 const App = () => {
   return (
@@ -19,8 +20,12 @@ const App = () => {
         <Route path="/Contact-Us" element={<ContactUs />} />
         <Route path="/About-Us" element={<AboutUs />} />
         <Route path="/Crypto-ATM-Machine" element={<CryptoATMMachine />} />
+        <Route path="/Assured-APY-Click" element={<AssuredAPYClick />} />
         <Route path="/Assured-APY" element={<AssuredAPY />} />
-        <Route path="/RISK_ASSESSMENT_AND_MANAGEMENT" element={<RISK_ASSESSMENT_AND_MANAGEMENT />} />
+        <Route
+          path="/RISK_ASSESSMENT_AND_MANAGEMENT"
+          element={<RISK_ASSESSMENT_AND_MANAGEMENT />}
+        />
         <Route
           path="/Crypto-OTC-Trading-Platform"
           element={<CryptoOTCTradingPlatform />}
