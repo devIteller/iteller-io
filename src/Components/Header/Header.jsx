@@ -82,7 +82,7 @@ const Header = () => {
                 </button>
                 {isMenuOpen && (
                   <div
-                    className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl`}
+                    className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl whitespace-nowrap`}
                   >
                     <img
                       src="/icons/Polygon.png"
@@ -105,7 +105,7 @@ const Header = () => {
                       Crypto ATM Machine
                     </Link>
                     <Link
-                      // to="/Assured-APY"
+                      to="/Assured-APY"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
                     >

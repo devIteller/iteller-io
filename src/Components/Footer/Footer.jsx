@@ -105,7 +105,7 @@ const Footer = () => {
                 </Link>
                 <Link to="/Crypto-ATM-Machine">Crypto ATM Machine</Link>
                 <Link 
-                // to="/Assured-APY"
+                to="/Assured-APY"
                 >
                   Assured APY Returns - Liquidity Investment
                 </Link>

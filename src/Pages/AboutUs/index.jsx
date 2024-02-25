@@ -190,9 +190,7 @@ const AboutUs = () => {
                 </p>
               </div>
               <div>
-                <Link
-                // to="/Assured-APY"
-                >
+                <Link to="/Assured-APY">
                   <h3 className="text-xl mb-1 font-bold">
                     Assured APY Returns - Liquidity Investment:
                   </h3>

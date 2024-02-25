@@ -87,10 +87,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                   <Link to="/Crypto-ATM-Machine" rel="noopener noreferrer">
                     Crypto ATM Machine
                   </Link>
-                  <Link
-                    // to="/Assured-APY"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to="/Assured-APY" rel="noopener noreferrer">
                     Assured APY Returns - Liquidity Investment
                   </Link>
                 </div>
@@ -120,7 +117,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <DrawerItem href={"#insights"} title="Insights">
+            <DrawerItem href={"/#insights"} title="Insights">
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 48 48"

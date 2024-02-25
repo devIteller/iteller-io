@@ -7,13 +7,19 @@ import Hero from "../../Components/Hero/Hero";
 import Insights from "../../Components/Insights/Insights";
 import ReceiveInsights from "../../Components/ReceiveInsights/ReceiveInsights";
 import SliderSec from "../../Components/SliderSec/SliderSec";
+import { useLocation } from "react-router-dom";
 
 export default function Landing() {
+  const location = useLocation();
+
   useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0)
-    }, 300);
-  }, []);
+    if (location.hash === "#insights") {
+      const insightsElement = document.getElementById("insights");
+      if (insightsElement) {
+        insightsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
   return (
     <>
       <Header />

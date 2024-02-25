@@ -1,7 +1,8 @@
 ﻿import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import AssuredAPYData from "./AssuredAPY";
+
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const AssuredAPY = () => {
   const [accordion, setAccordion] = useState("");
@@ -11,6 +12,135 @@ const AssuredAPY = () => {
       window.scrollTo(0, 0);
     }, 300);
   }, []);
+
+  const AssuredAPYData = [
+    {
+      title: "Investment Tiers and Returns",
+      desc: (
+        <div className="space-y-3">
+          <h1 className=" font-bold text-xl">Tier 1:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+            <h3 className="bg-[#141F5C] px-6 py-3">
+              <span className="font-bold">Investment Range:</span> 5,000 to
+              25,000 USDT
+            </h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 7% to 9%</h3>
+          </div>
+          <h1 className=" font-bold text-xl">Tier 2:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+            <h3 className="bg-[#141F5C] px-6 py-3">
+              <span className="font-bold">Investment Range:</span> 25,000 to
+              50,000 USDT
+            </h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 9% to 11%</h3>
+          </div>
+          <h1 className=" font-bold text-xl">Tier 3:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+            <h3 className="bg-[#141F5C] px-6 py-3">
+              <span className="font-bold">Investment Range:</span> 50,000 to
+              100,000 USDT
+            </h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">
+              APY: 11% to 13%
+            </h3>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "PayoutSchedule:",
+      desc: (
+        <div className="space-y-2 text-xl">
+          <h3 className="bg-[#141F5C] px-6 py-3 ">
+            <span className="font-bold">Frequency: </span>
+            <span> Weekly payouts</span>
+          </h3>
+          <h3 className="bg-[#141F5C] px-6 py-3">
+            <span className="font-bold">Currency: </span>
+            <span>USDT (Tether)</span>
+          </h3>
+          <h3 className="bg-[#141F5C] px-6 py-3">
+            <span className="font-bold">Method: </span>
+            <span>Direct to Your Designated Digital Wallet</span>
+          </h3>
+        </div>
+      ),
+    },
+    {
+      title: "KeyBenefits:",
+      desc: (
+        <div className="space-y-2">
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Stable Returns:</h1>
+            <p className="text-lg">
+              Enjoy peace of mind with our assured APY rates, designed to
+              provide consistent growth to your investment
+            </p>
+          </div>
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Flexibility:</h1>
+            <p className="text-lg">
+              Our tiered investment structure caters to various investment
+              capacities, offering you the flexibility to invest within your
+              comfort zone.
+            </p>
+          </div>
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Security:</h1>
+            <p className="text-lg">
+              Investments are managed with the utmost care, focusing on risk
+              mitigation and capital preservation.
+            </p>
+          </div>
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Transparency:</h1>
+            <p className="text-lg">
+              Receive detailed reports and updates about your investment
+              performance and payout schedule.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+  ];
+
+  const AssuredAPYData_2 = [
+    {
+      title: "KeyBenefits:",
+      desc: (
+        <div className="space-y-2">
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Review Investment Tiers:</h1>
+            <p className="text-lg">
+              Consider your investment goals and select the tier that best suits
+              your financial strategy.
+            </p>
+          </div>
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Complete Application: </h1>
+            <p className="text-lg">
+              Fill out our online application form with your details and
+              investment tier preference.
+            </p>
+          </div>
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Fund Your Investment:</h1>
+            <p className="text-lg">
+              Transfer your USDT to the provided wallet address within our
+              secure platform.
+            </p>
+          </div>
+          <div className="bg-[#141F5C] px-6 py-3">
+            <h1 className="font-medium text-xl ">Receive Weekly Payouts: </h1>
+            <p className="text-lg">
+              Start receiving your APY returns, paid weekly directly to your
+              designated wallet.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -26,12 +156,27 @@ const AssuredAPY = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-4 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
+        <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-5 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
+          <div className="space-y-2">
+            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+              DiscoverAssured APY Returns Through Our Liquidity Investment
+              Program
+            </h1>
+            <p>
+              Welcome to an exclusive opportunity designedto elevate your
+              investment portfolio with stable and lucrative returns.
+              Ourliquidity investment program is meticulously structured to
+              offer competitiveannual percentage yields (APY) on your capital,
+              paid out in USDT for enhancedsecurity and predictability. Below,
+              we outline our tiered investment options,each tailored to meet the
+              diverse needs and objectives of our investors.
+            </p>
+          </div>
           {AssuredAPYData.map((pp, index) => {
             return (
               <div
                 key={index}
-                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#101949] p-12 ${
+                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#0C1237] p-12 ${
                   accordion === pp.title ? "space-y-4" : ""
                 }`}
               >
@@ -68,7 +213,7 @@ const AssuredAPY = () => {
                 </button>
                 <h3
                   className={`"text-[#E8EAF2] duration-700 overflow-hidden ${
-                    accordion === pp.title ? "max-h-[500px]" : "max-h-0"
+                    accordion === pp.title ? "max-h-[1000px]" : "max-h-0"
                   }`}
                 >
                   {pp.desc}
@@ -76,6 +221,86 @@ const AssuredAPY = () => {
               </div>
             );
           })}
+          <div className="space-y-2 w-full">
+            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+              GettingStarted:
+            </h1>
+            <p>
+              Investing with us is straightforward. Followthese simple steps to
+              become a part of our liquidity investment program:
+            </p>
+          </div>
+          {AssuredAPYData_2.map((pp, index) => {
+            return (
+              <div
+                key={index}
+                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#0C1237] p-12 ${
+                  accordion === pp.title ? "space-y-4" : ""
+                }`}
+              >
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
+                  onClick={() =>
+                    accordion === pp.title
+                      ? setAccordion("")
+                      : setAccordion(pp.title)
+                  }
+                >
+                  <span className="self-start text-2xl text-start text-[#CD7B00] ">
+                    {pp.title}
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    className={`w-3 h-3 duration-500 ${
+                      accordion === pp.title ? "" : "rotate-180"
+                    }`}
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+                <h3
+                  className={`"text-[#E8EAF2] duration-700 overflow-hidden ${
+                    accordion === pp.title ? "max-h-[1000px]" : "max-h-0"
+                  }`}
+                >
+                  {pp.desc}
+                </h3>
+              </div>
+            );
+          })}
+          <div className="space-y-2">
+            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+              Legaland Compliance:
+            </h1>
+            <p>
+              We are committed to upholding the higheststandards of legal
+              compliance and ethical investment practices. Our programoperates
+              in strict adherence to applicable laws and regulations, ensuring
+              yourinvestment is managed safely and responsibly. <br /> For more
+              detailed information about our liquidity investmentprogram,
+              including terms and conditions, please
+              <Link to="/Assured-APY-Click">
+                <span className="text-[#CD7B00] underline font-bold mx-1">
+                  Click Here
+                </span>
+              </Link>
+              <br />
+              Invest with confidence and watch your wealth grow. Join
+              ourliquidity investment program today and secure your financial
+              future withassured APY returns.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
