@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setisMenuOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const node = useRef();
   const DrawerNode = useRef();
 
@@ -30,10 +32,30 @@ const Header = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMenuOpen, isDrawerOpen]);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <header className="text-gray-600 body-font relative ">
-        <div className="flex justify-center  z-[70] w-full absolute py-5 text-white md:gap-y-5 border-b border-[#1A297A]  ">
+        <div
+          className={`flex justify-center z-[70] w-full duration-300 fixed ${
+            isScrolled ? "bg-[#050f1f]" : "bg-transparent"
+          }  py-5 text-white md:gap-y-5 border-b border-[#1A297A] `}
+        >
           <div className=" flex justify-between xl:flex-wrap flex-col px-5 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
             <div className="flex w-full  lg:w-fit  justify-between">
               <Link
