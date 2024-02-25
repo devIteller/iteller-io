@@ -1,12 +1,10 @@
 ﻿import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const AssuredAPY = () => {
-  const [accordion, setAccordion] = useState("");
-
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -176,46 +174,17 @@ const AssuredAPY = () => {
             return (
               <div
                 key={index}
-                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#0C1237] p-12 ${
-                  accordion === pp.title ? "space-y-4" : ""
-                }`}
+                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#0C1237] p-12 space-y-4 `}
               >
-                <button
+                <div
                   type="button"
                   className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
-                  onClick={() =>
-                    accordion === pp.title
-                      ? setAccordion("")
-                      : setAccordion(pp.title)
-                  }
                 >
                   <span className="self-start text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
-                  <svg
-                    data-accordion-icon
-                    className={`w-3 h-3 duration-500 ${
-                      accordion === pp.title ? "" : "rotate-180"
-                    }`}
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-                <h3
-                  className={`"text-[#E8EAF2] duration-700 overflow-hidden ${
-                    accordion === pp.title ? "max-h-[1000px]" : "max-h-0"
-                  }`}
-                >
+                </div>
+                <h3 className={`"text-[#E8EAF2] duration-700 overflow-hidden`}>
                   {pp.desc}
                 </h3>
               </div>
@@ -234,46 +203,17 @@ const AssuredAPY = () => {
             return (
               <div
                 key={index}
-                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#0C1237] p-12 ${
-                  accordion === pp.title ? "space-y-4" : ""
-                }`}
+                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#0C1237] p-12 space-y-4`}
               >
-                <button
+                <div
                   type="button"
                   className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
-                  onClick={() =>
-                    accordion === pp.title
-                      ? setAccordion("")
-                      : setAccordion(pp.title)
-                  }
                 >
                   <span className="self-start text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
-                  <svg
-                    data-accordion-icon
-                    className={`w-3 h-3 duration-500 ${
-                      accordion === pp.title ? "" : "rotate-180"
-                    }`}
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-                <h3
-                  className={`"text-[#E8EAF2] duration-700 overflow-hidden ${
-                    accordion === pp.title ? "max-h-[1000px]" : "max-h-0"
-                  }`}
-                >
+                </div>
+                <h3 className={`"text-[#E8EAF2] duration-700 overflow-hidden`}>
                   {pp.desc}
                 </h3>
               </div>
@@ -301,6 +241,13 @@ const AssuredAPY = () => {
               future withassured APY returns.
             </p>
           </div>
+          <Link
+          // to="https://my.iteller.app/en/auth/sign-up"
+          >
+            <button className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 hover:scale-90 border-0 py-3 lg:py-2 w-[191px]  duration-300 rounded-lg font-medium text-sm md:text-base text-center">
+              Submit Form
+            </button>
+          </Link>
         </div>
       </div>
       <Footer />
