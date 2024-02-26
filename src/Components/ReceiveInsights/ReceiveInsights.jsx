@@ -97,7 +97,7 @@ const ReceiveInsights = () => {
           />
           <button
             onClick={submit}
-            className="text-white uppercase bg-[#0328EE] border-0 py-4 px-8 focus:outline-none hover:bg-[#0328EE]/80 duration-300
+            className="text-white uppercase bg-[#0328EE] border-0 py-2 lg:py-4 px-8 focus:outline-none hover:bg-[#0328EE]/80 duration-300
            rounded-md text-"
           >
             Subscribe
