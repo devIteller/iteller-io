@@ -14,7 +14,7 @@ const Input = ({ placeholder, value, onChange, type, className }) => {
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className={` w-full  placeholder:text-gray-400 rounded-lg duration-300 focus:shadow-md focus:shadow-i_blue text-base outline-none text-white   py-2 md:py-4 px-3 ${
+      className={` w-full placeholder:text-gray-400 rounded-lg duration-300 focus:shadow-md focus:shadow-i_blue text-base outline-none  capitalize  py-2 md:py-4 px-3 ${
         className ? className : ""
       }`}
     />

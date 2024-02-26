@@ -33,17 +33,16 @@
   border-radius: 8px;
 }
 
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #fff;
-  background-color: #1A297A;
+  background-color: #1a297a;
   padding: 10px 15px;
   text-align: center;
   height: fit-content;
   border-radius: 999px;
   font-size: 15px;
-} 
+}
 
 .swiper-pagination-bullet {
   opacity: 1;
@@ -55,13 +54,11 @@
 
 @media only screen and (min-width: 640px) {
   .swiper-pagination {
-    text-align:start !important;
+    text-align: start !important;
   }
 }
 @media only screen and (min-width: 1405px) {
-  .swiper-pagination-horizontal{
+  .swiper-pagination-horizontal {
     bottom: 50px !important;
   }
-  
 }
-

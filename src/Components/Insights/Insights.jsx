@@ -52,7 +52,7 @@ const Insights = () => {
       id="insights"
       className="text-white flex flex-col pt-10 lg:pb-10 body-font  relative justify-center items-center"
     >
-      <div className="flex flex-col lg:max-w-[1440px] w-[90%]  md:px-10">
+      <div className="flex flex-col lg:max-w-[1440px] w-[90%] px-3 md:px-10">
         <h1 className="text-2xl font-bold mb-2 w-full lg:text-center ">
           Insights
         </h1>

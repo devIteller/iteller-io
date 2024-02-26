@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="text-white bg-[#010D50] py-10 body-font flex justify-center border-t-4 border-[#001272]">
-        <div className="lg:max-w-[1440px] w-[90%] px-5 md:px-10 flex flex-col gap-5 justify-between">
+        <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between">
           <div className="flex justify-center lg:justify-between">
             <a
               href="#"
@@ -280,7 +280,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="w-full flex justify-center py-6">
-        <div className="lg:max-w-[1440px] w-[90%] md:px-10 flex flex-col gap-5 justify-between items-center">
+        <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between items-center">
           <img
             src="/Footer/logo-footer.png"
             className="w-[500px] hidden lg:block"

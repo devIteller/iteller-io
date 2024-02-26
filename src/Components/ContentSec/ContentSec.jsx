@@ -3,7 +3,7 @@
     <section className="text-white flex flex-col items-center body-font bg-contentSec bg-no-repeat bg-cover bg-i_blue w-full">
       <div
         data-aos="zoom-in"
-        className="lg:max-w-[1440px] w-[90%]  grid grid-cols-1 lg:grid-cols-2 justify-between gap-x-20 md:px-10 py-16 lg:py-24  items-center"
+        className="lg:max-w-[1440px] w-[90%]  grid grid-cols-1 lg:grid-cols-2 justify-between gap-x-20 px-3 md:px-10 py-16 lg:py-24  items-center"
       >
         <h1 className="lg:text-4xl text-2xl font-bold mb-2 ">
           We’re navigating digital Finance into new frontiers

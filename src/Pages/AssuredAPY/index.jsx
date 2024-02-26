@@ -241,9 +241,7 @@ const AssuredAPY = () => {
               future withassured APY returns.
             </p>
           </div>
-          <Link
-          // to="https://my.iteller.app/en/auth/sign-up"
-          >
+          <Link to="/Assured-APY-Form">
             <button className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 hover:scale-90 border-0 py-3 lg:py-2 w-[191px]  duration-300 rounded-lg font-medium text-sm md:text-base text-center">
               Submit Form
             </button>

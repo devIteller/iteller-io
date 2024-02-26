@@ -84,7 +84,7 @@ const ContactUs = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 z-50">
-            <div className="p-10 bg-[#141F5C] h-[80vh]">
+            <div className="p-10 bg-[#141F5C]">
               <h1 className="md:text-3xl font-bold mb-7">
                 Let&apos;s Talk With Us
               </h1>
@@ -125,7 +125,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="p-10 bg-[#0C1237] h-[80vh] space-y-6">
+            <div className="p-10 bg-[#0C1237] space-y-6">
               <div>
                 <label className="font-bold">Full Name</label>
                 <Input

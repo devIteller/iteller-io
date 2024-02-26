@@ -1,5 +1,5 @@
 ﻿// Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const SliderSec = () => {
   const pagination = {
@@ -16,33 +16,12 @@ const SliderSec = () => {
       return '<span class="  ' + className + '"></span>';
     },
   };
-  const SwiperButtonNext = () => {
-    const swiper = useSwiper();
-    return (
-      <div
-        className="bg-[#010D50] absolute opacity-0 lg:opacity-100 right-0 bottom-[40vh] w-fit rounded-full z-50 ml-3 px-[18px] py-[15px] "
-        onClick={() => swiper.slideNext()}
-      >
-        <img src="/icons/right.svg" alt="right" loading="lazy" />
-      </div>
-    );
-  };
-  const SwiperButtonPrev = () => {
-    const swiper = useSwiper();
-    return (
-      <div
-        className="bg-[#010D50] relative opacity-0 lg:opacity-100 bottom-[40vh] rounded-full w-fit mr-3 px-[18px] py-[15px] z-50 "
-        onClick={() => swiper.slidePrev()}
-      >
-        <img src="/icons/left.svg" alt="left" loading="lazy" />
-      </div>
-    );
-  };
+
   return (
     <div className="relative border-b-4 border-[#162B9A] flex w-full py-7 justify-center items-center text-white">
       <div
         data-aos="fade-in"
-        className="lg:max-w-[1440px] w-[90%]  md:px-10 flex lg:flex-col items-start max-lg:flex-wrap gap-5 justify-between"
+        className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex lg:flex-col items-start max-lg:flex-wrap gap-5 justify-between"
       >
         <div>
           <h2 className="md:text-3xl lg:text-4xl text-2xl font-bold z-[99999] lg:mb-5 h-fit">

@@ -52,11 +52,11 @@ const Header = () => {
     <>
       <header className="text-gray-600 body-font relative ">
         <div
-          className={`flex justify-center z-[70] w-full duration-300 fixed ${
-            isScrolled ? "bg-[#050f1f]" : "bg-transparent"
-          }  py-5 text-white md:gap-y-5 border-b border-[#1A297A] `}
+          className={`flex justify-center z-[70] w-full duration-300 absolute lg:fixed py-5 text-white md:gap-y-5 border-b border-[#1A297A] ${
+            isScrolled ? "lg:bg-[#050f1f]/60 lg:backdrop-blur-md" : ""
+          }`}
         >
-          <div className=" flex justify-between xl:flex-wrap flex-col px-5 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
+          <div className=" flex gap-y-2 justify-between xl:flex-wrap flex-col px-8 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
             <div className="flex w-full  lg:w-fit  justify-between">
               <Link
                 to="/"
@@ -146,12 +146,18 @@ const Header = () => {
                 <Link to="/About-Us">About</Link>
               </button>
             </div>
-            <div className="flex justify-between max-lg:w-full gap-3 lg:pr-10">
+            <div
+              className={`flex justify-between max-lg:w-full duration-300 gap-3 lg:pr-10 ${
+                isScrolled
+                  ? " max-lg:bg-[#050f1f]/60 max-lg:backdrop-blur-lg max-lg:fixed  max-lg:top-0 max-lg:left-0 max-lg:py-4 max-lg:px-5"
+                  : "bg-transparent"
+              }`}
+            >
               <a
                 href="https://my.iteller.app/en/auth/sign-in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-5 md:px-7 rounded-xl text-xs md:text-base mt-4 md:mt-0"
+                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-5 md:px-7 rounded-xl text-xs md:text-base md:mt-0"
               >
                 <img loading="lazy" src="/icons/login.svg" alt="in" />
                 <span>Login</span>
@@ -160,14 +166,14 @@ const Header = () => {
                 href="https://my.iteller.app/en/auth/sign-up"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border  px-5 md:px-7 rounded-xl text-xs md:text-base  mt-4 md:mt-0 whitespace-nowrap py-3"
+                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border  px-5 md:px-7 rounded-xl text-xs md:text-base  md:mt-0 whitespace-nowrap py-3"
               >
                 <img loading="lazy" src="/icons/user-add.svg" alt="user" />
                 <span>Sign Up</span>
               </a>
               <Link
                 to="/Contact-Us"
-                className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn  rounded-xl mt-4 md:mt-0"
+                className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn  rounded-xl md:mt-0"
               >
                 <button className="inline-flex justify-center gap-1  items-center border-btn border px-5 md:px-7 text-xs md:text-base">
                   <img

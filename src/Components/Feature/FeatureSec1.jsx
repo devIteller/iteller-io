@@ -3,7 +3,7 @@
 const FeatureSec1 = () => {
   return (
     <section className="text-white pt-10 body-font flex justify-center items-center max-sm:overflow-hidden">
-      <div className="lg:max-w-[1440px] w-[90%] md:px-10 flex max-lg:flex-wrap lg:gap-3 justify-between">
+      <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex max-lg:flex-wrap lg:gap-3 justify-between">
         <div className="flex w-full flex-col gap-6 justify-center text-center lg:w-1/2 md:pr-10">
           <FeatureItem
             icon="crypto"

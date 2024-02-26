@@ -3,7 +3,7 @@
 const FeatureSec2 = () => {
   return (
     <section className="text-white body-font flex justify-center items-center pt-10">
-      <div className="flex max-lg:flex-wrap justify-center items-center md:px-10 lg:max-w-[1440px] w-[90%] flex-wrap flex-row-reverse">
+      <div className="flex max-lg:flex-wrap justify-center items-center px-3 md:px-10 lg:max-w-[1440px] w-[90%] flex-wrap flex-row-reverse">
         <div className="flex flex-col flex-wrap h-full gap-6  lg:w-1/2  lg:text-left text-center lg:pl-20">
           <FeatureItem
             icon="Spot"

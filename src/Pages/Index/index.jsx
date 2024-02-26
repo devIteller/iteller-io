@@ -30,6 +30,7 @@ export default function Landing() {
       <ReceiveInsights />
       <SliderSec />
       <Footer />
+    
     </>
   );
 }

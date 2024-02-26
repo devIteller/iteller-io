@@ -10,6 +10,7 @@ import RISK_ASSESSMENT_AND_MANAGEMENT from "./Pages/RISK_ASSESSMENT_AND_MANAGEME
 import CryptoATMMachine from "./Pages/CryptoATMMachine";
 import AssuredAPY from "./Pages/AssuredAPY";
 import { useState } from "react";
+import AssuredAPYForm from "./Pages/AssuredAPYForm";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,12 +22,15 @@ const App = () => {
       setIsVisible(false);
     }
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
     });
   };
+
   window.addEventListener("scroll", handleScroll);
+
   return (
     <>
       <BrowserRouter>
@@ -39,6 +43,7 @@ const App = () => {
           <Route path="/Crypto-ATM-Machine" element={<CryptoATMMachine />} />
           <Route path="/Assured-APY-Click" element={<AssuredAPYClick />} />
           <Route path="/Assured-APY" element={<AssuredAPY />} />
+          <Route path="/Assured-APY-Form" element={<AssuredAPYForm />} />
           <Route
             path="/RISK_ASSESSMENT_AND_MANAGEMENT"
             element={<RISK_ASSESSMENT_AND_MANAGEMENT />}
@@ -51,8 +56,9 @@ const App = () => {
       </BrowserRouter>
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-4 right-4 z-[999999]
-                   ${isVisible ? "block" : "hidden"}`}
+        className={`fixed bottom-4 right-4 z-[999999] lg:hover:scale-90 duration-300 ${
+          isVisible ? "block" : "hidden"
+        }`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
