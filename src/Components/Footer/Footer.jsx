@@ -6,8 +6,8 @@ const Footer = () => {
       <footer className="text-white bg-[#010D50] py-10 body-font flex justify-center border-t-4 border-[#001272]">
         <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between">
           <div className="flex justify-center lg:justify-between">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="flex max-lg:w-full justify-center lg:justify-start lg:items-center "
             >
               <img
@@ -16,10 +16,10 @@ const Footer = () => {
                 className="w-40 lg:w-auto"
                 alt="Logo"
               />
-            </a>
+            </Link>
             <span className="sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start hidden lg:inline-flex">
               <a
-                href="#"
+                href="https://www.instagram.com/iteller.ex?igsh=ZG9lMzQxZ3BrajZt"
                 className="ml-3 h-fit text-white bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
               >
                 <svg
@@ -36,7 +36,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61556337135041"
                 className="text-white h-fit ml-3 bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
               >
                 <svg
@@ -52,7 +52,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/company/itellerau/"
                 className="ml-3 text-white h-fit bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
               >
                 <svg
@@ -137,7 +137,7 @@ const Footer = () => {
                     <a href="mailto:Hello@iTeller.io">Hello@iTeller.io</a>
                     <span className="flex sm:w-fit md:hidden">
                       <a
-                        href="#"
+                        href="https://www.instagram.com/iteller.ex?igsh=ZG9lMzQxZ3BrajZt"
                         className=" text-white h-fit bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
                       >
                         <svg
@@ -161,7 +161,7 @@ const Footer = () => {
                         </svg>
                       </a>
                       <a
-                        href="#"
+                        href="https://www.facebook.com/profile.php?id=61556337135041"
                         className="text-white ml-3 h-fit bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
                       >
                         <svg
@@ -177,7 +177,7 @@ const Footer = () => {
                       </a>
 
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/company/itellerau/"
                         className="ml-3 h-fit text-white bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
                       >
                         <svg
@@ -223,7 +223,7 @@ const Footer = () => {
           </div>
           <span className="hidden md:flex lg:hidden">
             <a
-              href="#"
+              href="https://www.instagram.com/iteller.ex?igsh=ZG9lMzQxZ3BrajZt"
               className=" text-white h-fit bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
             >
               <svg
@@ -240,7 +240,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61556337135041"
               className="text-white ml-3 h-fit bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
             >
               <svg
@@ -255,7 +255,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/itellerau/"
               className="ml-3 h-fit text-white bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
             >
               <svg

@@ -67,7 +67,7 @@ const CustomerAgreement = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
+        <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-white">
           <h1 className="text-2xl text-start w-full z-50 font-bold">
             Customer Agreement
           </h1>

@@ -17,7 +17,7 @@ const CryptoOTCTradingPlatform = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-6 lg:gap-12 z-50 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
+        <div className="flex flex-col gap-6 lg:gap-12 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-white">
           <COTP
             title="Dashboard Overview"
             desc={`"Welcome to your personalized dashboard. Here, you can view your Total Balance at a glance, reflected in the central circular progress bar. Quick Links for Balances, Deposits, Withdrawals, and the IB Room enhance your trading efficiency. The Last Transactions list offers a quick glance at your recent activity."`}

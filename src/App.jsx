@@ -6,7 +6,6 @@ import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import CryptoOTCTradingPlatform from "./Pages/CryptoOTCTradingPlatform";
 import AssuredAPYClick from "./Pages/AssuredAPYClick";
-import RISK_ASSESSMENT_AND_MANAGEMENT from "./Pages/RISK_ASSESSMENT_AND_MANAGEMENT";
 import CryptoATMMachine from "./Pages/CryptoATMMachine";
 import AssuredAPY from "./Pages/AssuredAPY";
 import { useState } from "react";
@@ -44,10 +43,6 @@ const App = () => {
           <Route path="/Assured-APY-Click" element={<AssuredAPYClick />} />
           <Route path="/Assured-APY" element={<AssuredAPY />} />
           <Route path="/Assured-APY-Form" element={<AssuredAPYForm />} />
-          <Route
-            path="/RISK_ASSESSMENT_AND_MANAGEMENT"
-            element={<RISK_ASSESSMENT_AND_MANAGEMENT />}
-          />
           <Route
             path="/Crypto-OTC-Trading-Platform"
             element={<CryptoOTCTradingPlatform />}

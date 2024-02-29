@@ -61,7 +61,7 @@ const CryptoATMMachine = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-6 z-50 lg:max-w-[1440px] w-[90%] px-5 md:px-10 py-10 items-center relative mt-28 text-white">
+        <div className="flex flex-col gap-y-6 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-white">
           <div className="mb-5">
             <h1 className="text-3xl font-bold text-start w-full mb-3">
               iTeller Crypto ATM:
@@ -89,7 +89,7 @@ const CryptoATMMachine = () => {
               );
             })}
           </div>
-         <div className="relative w-full">
+          <div className="relative w-full">
             <video
               onPlay={handlePlay}
               onPause={handlePause}
@@ -117,7 +117,7 @@ const CryptoATMMachine = () => {
                 </svg>
               </div>
             )}
-          </div> 
+          </div>
           <h1 className="pl-7 font-bold text-xl py-3 bg-[#CD7B00] text-start w-full">
             Highlights include:
           </h1>

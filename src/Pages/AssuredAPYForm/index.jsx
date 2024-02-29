@@ -584,7 +584,7 @@ const AssuredAPYForm = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-5 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
+        <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
           <div className="space-y-2">
             <h1 className="text-3xl mb-2 font-bold float-left w-full">
               Liquidity Investment Program Application Form

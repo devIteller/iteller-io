@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-4 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
+        <div className="flex flex-col gap-y-4 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-white">
           {PPC.map((pp, index) => {
             return (
               <div
@@ -38,7 +38,11 @@ const PrivacyPolicy = () => {
                 <button
                   type="button"
                   className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
-                  onClick={() => accordion === pp.title ? setAccordion("") : setAccordion(pp.title)}
+                  onClick={() =>
+                    accordion === pp.title
+                      ? setAccordion("")
+                      : setAccordion(pp.title)
+                  }
                 >
                   <span className="self-start text-start">{pp.title}</span>
                   <svg

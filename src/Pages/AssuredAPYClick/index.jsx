@@ -31,7 +31,7 @@ const AssuredAPYClick = () => {
             return (
               <div
                 key={index}
-                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#101949] p-12 ${
+                className={`" w-full z-50 odd:bg-[#0C1237] even:bg-[#101949] p-5 ${
                   accordion === pp.title ? "space-y-4" : ""
                 }`}
               >

@@ -17,7 +17,7 @@ const AboutUs = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-6 lg:max-w-[1440px] z-50 w-[90%] px-5 md:px-10 py-10 items-center relative mt-28 lg:mt-24 text-[#EEEEEE]">
+        <div className="flex flex-col gap-y-6 lg:max-w-[1440px] z-50 w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 lg:mt-24 text-[#EEEEEE]">
           <h1 className="text-3xl mb-2 font-bold float-left w-full">
             About iTeller Pty Ltd
           </h1>
