@@ -36,8 +36,8 @@ const Hero = () => {
             and preferences of its extensive client base
           </p>
           <button
-            className=" text-white bg-btn hover:bg-btn/70 border-0 py-5 md:py-3 pl-6 pr-10 duration-300
-            md:w-fit text-sm md:text-lg w-full text-center md:text-start min-h-[55px]"
+            className=" text-white bg-btn hover:bg-btn/70 border-0 py-5 md:py-3 sm:pl-6 sm:pr-10 duration-300
+            md:w-fit text-sm md:text-lg w-full text-center md:text-start min-h-[55px"
           >
             Digital Trade, Ensuring Seamless Liquidity
           </button>
