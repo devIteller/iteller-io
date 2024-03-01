@@ -72,23 +72,6 @@ const AssuredAPYForm = () => {
       });
   }
 
-  const submit = () => {
-    if (
-      FullName != "" &&
-      emailAddress != "" &&
-      ContactNumber != "" &&
-      Country != "" &&
-      AmountInvest != "" &&
-      WalletAddress != ""
-    ) {
-      sendEmail();
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Fields cannot be empty",
-      });
-    }
-  };
 
   const AssuredAPYData = [
     {
@@ -625,7 +608,7 @@ const AssuredAPYForm = () => {
             );
           })}
           <button
-            onClick={submit}
+            onClick={sendEmail}
             className="bg-[#CD7B00] hover:bg-[#CD7B00]/80  border-0 py-4 w-full  duration-300 rounded-md mt-3 font-medium text-sm md:text-base text-center"
           >
             Submit
