@@ -63,7 +63,7 @@ const CryptoATMMachine = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-6 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-white">
           <div className="mb-5">
-            <h1 className="text-3xl font-bold text-start w-full mb-3">
+            <h1 className="text-2xl lg:text-3xl font-bold text-start w-full mb-3">
               iTeller Crypto ATM:
             </h1>
             <p>
@@ -76,7 +76,7 @@ const CryptoATMMachine = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <h1 className="text-3xl font-bold text-start w-full col-span-full">
+            <h1 className="text-2xl lg:text-3xl font-bold text-start w-full col-span-full">
               Features & Benefits:
             </h1>
             {data.map((item, index) => {
@@ -118,7 +118,7 @@ const CryptoATMMachine = () => {
               </div>
             )}
           </div>
-          <h1 className="pl-7 font-bold text-xl py-3 bg-[#CD7B00] text-start w-full">
+          <h1 className="pl-7 font-bold text-lg lg:text-xl py-3 bg-[#CD7B00] text-start w-full">
             Highlights include:
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
