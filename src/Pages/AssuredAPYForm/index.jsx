@@ -108,8 +108,8 @@ const AssuredAPYForm = () => {
               <h1 className="text-sm lg:text-lg">Country of Residence: </h1>
               <Input
                 type="text"
-                value={emailAddress}
-                onChange={(e) => setEmailAddress(e.currentTarget.value)}
+                value={Country}
+                onChange={(e) => setCountry(e.currentTarget.value)}
                 placeholder="Input Your Country In Here"
                 className="mt-4 bg-[#B8BDD6] placeholder:text-gray-500 text-black"
               />
