@@ -69,14 +69,14 @@ const AssuredAPY = () => {
       desc: (
         <div className="space-y-2">
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Stable Returns:</h1>
+            <h1 className="font-medium text-lg lg:text-xl ">Stable Returns:</h1>
             <p className="lg:text-lg">
               Enjoy peace of mind with our assured APY rates, designed to
               provide consistent growth to your investment
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Flexibility:</h1>
+            <h1 className="font-medium text-lg lg:text-xl ">Flexibility:</h1>
             <p className="lg:text-lg">
               Our tiered investment structure caters to various investment
               capacities, offering you the flexibility to invest within your
@@ -84,14 +84,14 @@ const AssuredAPY = () => {
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Security:</h1>
+            <h1 className="font-medium text-lg lg:text-xl ">Security:</h1>
             <p className="lg:text-lg">
               Investments are managed with the utmost care, focusing on risk
               mitigation and capital preservation.
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Transparency:</h1>
+            <h1 className="font-medium text-lg lg:text-xl ">Transparency:</h1>
             <p className="lg:text-lg">
               Receive detailed reports and updates about your investment
               performance and payout schedule.
@@ -108,29 +108,29 @@ const AssuredAPY = () => {
       desc: (
         <div className="space-y-2">
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Review Investment Tiers:</h1>
-            <p className="text-lg">
+            <h1 className="font-medium text-lg lg:text-xl ">Review Investment Tiers:</h1>
+            <p className="lg:text-lg">
               Consider your investment goals and select the tier that best suits
               your financial strategy.
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Complete Application: </h1>
-            <p className="text-lg">
+            <h1 className="font-medium text-lg lg:text-xl ">Complete Application: </h1>
+            <p className="lg:text-lg">
               Fill out our online application form with your details and
               investment tier preference.
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Fund Your Investment:</h1>
-            <p className="text-lg">
+            <h1 className="font-medium text-lg lg:text-xl ">Fund Your Investment:</h1>
+            <p className="lg:text-lg">
               Transfer your USDT to the provided wallet address within our
               secure platform.
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
-            <h1 className="font-medium text-xl ">Receive Weekly Payouts: </h1>
-            <p className="text-lg">
+            <h1 className="font-medium text-lg lg:text-xl ">Receive Weekly Payouts: </h1>
+            <p className="lg:text-lg">
               Start receiving your APY returns, paid weekly directly to your
               designated wallet.
             </p>
@@ -156,7 +156,7 @@ const AssuredAPY = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
           <div className="space-y-2">
-            <h1 className="text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-xl lg:text-3xl mb-2 font-bold float-left w-full">
               DiscoverAssured APY Returns Through Our Liquidity Investment
               Program
             </h1>
@@ -178,9 +178,9 @@ const AssuredAPY = () => {
               >
                 <div
                   type="button"
-                  className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
+                  className="flex items-center justify-between w-full text-lg lg:text-xl font-bold rounded-t-xl  gap-3"
                 >
-                  <span className="self-start text-xl lg:text-2xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-lg lg:text-xl lg:text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
                 </div>
@@ -191,7 +191,7 @@ const AssuredAPY = () => {
             );
           })}
           <div className="space-y-2 w-full">
-            <h1 className="text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-xl lg:text-3xl mb-2 font-bold float-left w-full">
               GettingStarted:
             </h1>
             <p>
@@ -207,9 +207,9 @@ const AssuredAPY = () => {
               >
                 <div
                   type="button"
-                  className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
+                  className="flex items-center justify-between w-full text-lg lg:text-xl font-bold rounded-t-xl  gap-3"
                 >
-                  <span className="self-start text-xl lg:text-2xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-lg lg:text-xl lg:text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
                 </div>
@@ -220,7 +220,7 @@ const AssuredAPY = () => {
             );
           })}
           <div className="space-y-2">
-            <h1 className="text-xl lg:text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-xl lg:text-3xl mb-2 font-bold float-left w-full">
               Legaland Compliance:
             </h1>
             <p>

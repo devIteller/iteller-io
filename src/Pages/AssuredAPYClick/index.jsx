@@ -44,7 +44,7 @@ const AssuredAPYClick = () => {
                       : setAccordion(pp.title)
                   }
                 >
-                  <span className="self-start text-xl lg:text-2xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-lg lg:text-xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
                   <svg
