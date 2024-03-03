@@ -37,14 +37,14 @@ const AssuredAPYClick = () => {
               >
                 <button
                   type="button"
-                  className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
+                  className="flex items-center justify-between w-full font-bold rounded-t-xl  gap-3"
                   onClick={() =>
                     accordion === pp.title
                       ? setAccordion("")
                       : setAccordion(pp.title)
                   }
                 >
-                  <span className="self-start text-2xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-xl lg:text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
                   <svg

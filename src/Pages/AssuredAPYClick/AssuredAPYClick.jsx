@@ -7,10 +7,10 @@
     title: "2. Eligibility",
     desc: (
       <div className="space-y-4">
-        <h1 className="font-medium text-xl">
+        <h1 className="font-medium text-lg lg:text-xl">
           To be eligible for the program, investors must:
         </h1>
-        <p className="text-lg">
+        <p className="lg:text-lg">
           Be at least 18 years old.
           <br /> Complete the application form accurately and truthfully. <br />{" "}
           Agree to comply with all applicable laws and regulations.
@@ -28,24 +28,24 @@
           by market conditions and the amount invested. The tiers are as
           follows:
         </span>
-        <h1 className=" font-bold text-xl">Tier 1:</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-5 text-xl">
+        <h1 className=" font-bold text-lg lg:text-xl">Tier 1:</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-5 lg:text-xl">
           <h3 className="bg-[#141F5C] pl-6 py-3">
             <span className="font-bold">Investment Range:</span> 5,000 to 25,000
             USDT
           </h3>
           <h3 className="bg-[#141F5C] pl-6 py-3 font-bold">APY: 7% to 9%</h3>
         </div>
-        <h1 className=" font-bold text-xl">Tier 2:</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-5 text-xl">
+        <h1 className=" font-bold text-lg lg:text-xl">Tier 2:</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-5 text-lg lg:text-xl">
           <h3 className="bg-[#141F5C] pl-6 py-3">
             <span className="font-bold">Investment Range:</span> 25,000 to
             50,000 USDT
           </h3>
           <h3 className="bg-[#141F5C] pl-6 py-3 font-bold">APY: 9% to 11%</h3>
         </div>
-        <h1 className=" font-bold text-xl">Tier 3:</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-5 text-xl">
+        <h1 className=" font-bold text-lg lg:text-xl">Tier 3:</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 gap-x-5 text-lg lg:text-xl">
           <h3 className="bg-[#141F5C] pl-6 py-3">
             <span className="font-bold">Investment Range:</span> 50,000 to
             100,000 USDT

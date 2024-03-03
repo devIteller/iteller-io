@@ -16,24 +16,24 @@ const AssuredAPY = () => {
       title: "Investment Tiers and Returns",
       desc: (
         <div className="space-y-3">
-          <h1 className=" font-bold text-xl">Tier 1:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+          <h1 className=" font-bold text-lg lg:text-xl">Tier 1:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg lg:text-xl">
             <h3 className="bg-[#141F5C] px-6 py-3">
               <span className="font-bold">Investment Range:</span> 5,000 to
               25,000 USDT
             </h3>
             <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 7% to 9%</h3>
           </div>
-          <h1 className=" font-bold text-xl">Tier 2:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+          <h1 className=" font-bold text-lg lg:text-xl">Tier 2:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg lg:text-xl">
             <h3 className="bg-[#141F5C] px-6 py-3">
               <span className="font-bold">Investment Range:</span> 25,000 to
               50,000 USDT
             </h3>
             <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 9% to 11%</h3>
           </div>
-          <h1 className=" font-bold text-xl">Tier 3:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+          <h1 className=" font-bold text-lg lg:text-xl">Tier 3:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg lg:text-xl">
             <h3 className="bg-[#141F5C] px-6 py-3">
               <span className="font-bold">Investment Range:</span> 50,000 to
               100,000 USDT
@@ -48,8 +48,8 @@ const AssuredAPY = () => {
     {
       title: "PayoutSchedule:",
       desc: (
-        <div className="space-y-2 text-xl">
-          <h3 className="bg-[#141F5C] px-6 py-3 ">
+        <div className="space-y-2 lg:text-xl">
+          <h3 className="bg-[#141F5C] px-6 py-3 text-lg">
             <span className="font-bold">Frequency: </span>
             <span> Weekly payouts</span>
           </h3>
@@ -70,14 +70,14 @@ const AssuredAPY = () => {
         <div className="space-y-2">
           <div className="bg-[#141F5C] px-6 py-3">
             <h1 className="font-medium text-xl ">Stable Returns:</h1>
-            <p className="text-lg">
+            <p className="lg:text-lg">
               Enjoy peace of mind with our assured APY rates, designed to
               provide consistent growth to your investment
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
             <h1 className="font-medium text-xl ">Flexibility:</h1>
-            <p className="text-lg">
+            <p className="lg:text-lg">
               Our tiered investment structure caters to various investment
               capacities, offering you the flexibility to invest within your
               comfort zone.
@@ -85,14 +85,14 @@ const AssuredAPY = () => {
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
             <h1 className="font-medium text-xl ">Security:</h1>
-            <p className="text-lg">
+            <p className="lg:text-lg">
               Investments are managed with the utmost care, focusing on risk
               mitigation and capital preservation.
             </p>
           </div>
           <div className="bg-[#141F5C] px-6 py-3">
             <h1 className="font-medium text-xl ">Transparency:</h1>
-            <p className="text-lg">
+            <p className="lg:text-lg">
               Receive detailed reports and updates about your investment
               performance and payout schedule.
             </p>
@@ -156,7 +156,7 @@ const AssuredAPY = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
           <div className="space-y-2">
-            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
               DiscoverAssured APY Returns Through Our Liquidity Investment
               Program
             </h1>
@@ -180,7 +180,7 @@ const AssuredAPY = () => {
                   type="button"
                   className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
                 >
-                  <span className="self-start text-2xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-xl lg:text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
                 </div>
@@ -191,7 +191,7 @@ const AssuredAPY = () => {
             );
           })}
           <div className="space-y-2 w-full">
-            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
               GettingStarted:
             </h1>
             <p>
@@ -209,7 +209,7 @@ const AssuredAPY = () => {
                   type="button"
                   className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
                 >
-                  <span className="self-start text-2xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-xl lg:text-2xl text-start text-[#CD7B00] ">
                     {pp.title}
                   </span>
                 </div>
@@ -220,7 +220,7 @@ const AssuredAPY = () => {
             );
           })}
           <div className="space-y-2">
-            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-xl lg:text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
               Legaland Compliance:
             </h1>
             <p>

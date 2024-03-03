@@ -12,13 +12,9 @@ const AssuredAPYForm = () => {
   const [Country, setCountry] = useState("USA");
   const [AmountInvest, setAmountInvest] = useState("");
   const [WalletAddress, setWalletAddress] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
   const [BankTransfer, setBankTransfer] = useState(false);
   const [CryptoWalletTransfer, setCryptoWalletTransfer] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -72,16 +68,15 @@ const AssuredAPYForm = () => {
       });
   }
 
-
   const AssuredAPYData = [
     {
       mainTitle: "Personal Information :",
       title: "",
       desc: (
         <>
-          <form className="w-full space-y-2 text-xl">
+          <form className="w-full space-y-2 text-lg lg:text-xl">
             <div className="space-y-2">
-              <h1 className="text-lg">Full Name : </h1>
+              <h1 className="text-sm lg:text-lg">Full Name : </h1>
               <Input
                 type="text"
                 value={FullName}
@@ -91,7 +86,7 @@ const AssuredAPYForm = () => {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-lg">Contact Number : </h1>
+              <h1 className="text-sm lg:text-lg">Contact Number : </h1>
               <Input
                 type="text"
                 value={ContactNumber}
@@ -101,7 +96,7 @@ const AssuredAPYForm = () => {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-lg">Email Address : </h1>
+              <h1 className="text-sm lg:text-lg">Email Address : </h1>
               <Input
                 type="text"
                 value={emailAddress}
@@ -111,160 +106,14 @@ const AssuredAPYForm = () => {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-lg">Country of Residence: </h1>
-              <div className="flex flex-col">
-                <button
-                  onClick={toggleDropdown}
-                  id="states-button"
-                  data-dropdown-toggle="dropdown-states"
-                  className="flex-shrink-0 z-10 inline-flex items-center py-2 md:py-[18px] px-3 text-sm font-medium text-center border rounded-lg bg-[#B8BDD6] border-gray-600 text-gray-600"
-                  type="button"
-                >
-                  <svg
-                    className={`w-2.5 h-2.5 duration-300 me-2.5 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                  <img
-                    className="w-5 mr-2 rounded-full"
-                    src={`/icons/Country/${Country}.svg`}
-                    alt={Country}
-                  />
-                  {Country}
-                </button>
-                {isOpen && (
-                  <div className="z-10 w-full bg-[#B8BDD6] divide-y divide-gray-100 rounded-lg shadow">
-                    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-400"
-                          onClick={() => {
-                            setCountry("USA");
-                            setIsOpen(false);
-                          }}
-                        >
-                          <div className="inline-flex items-center">
-                            <img
-                              className="w-5 mr-2 rounded-full"
-                              src={`/icons/Country/USA.svg`}
-                              alt={"USA"}
-                            />
-                            United States
-                          </div>
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-400"
-                          onClick={() => {
-                            setCountry("Germany");
-                            setIsOpen(false);
-                          }}
-                        >
-                          <img
-                            className="w-5 mr-2 rounded-full"
-                            src={`/icons/Country/Germany.svg`}
-                            alt={"Germany"}
-                          />
-                          <div className="inline-flex items-center">
-                            Germany
-                          </div>
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-400"
-                          onClick={() => {
-                            setCountry("Italy");
-                            setIsOpen(false);
-                          }}
-                        >
-                          <div className="inline-flex items-center">
-                            <img
-                              className="w-5 mr-2 rounded-full"
-                              src={`/icons/Country/Italy.svg`}
-                              alt={"Italy"}
-                            />
-                            Italy
-                          </div>
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-400"
-                          onClick={() => {
-                            setCountry("UAE");
-                            setIsOpen(false);
-                          }}
-                        >
-                          <div className="inline-flex items-center">
-                            <img
-                              className="w-5 object-contain mr-2 rounded-full"
-                              src={`/icons/Country/UAE.svg`}
-                              alt={"UAE"}
-                            />
-                            UAE
-                          </div>
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-400"
-                          onClick={() => {
-                            setCountry("Australia");
-                            setIsOpen(false);
-                          }}
-                        >
-                          <div className="inline-flex items-center">
-                            <img
-                              className="w-5 object-contain mr-2 rounded-full"
-                              src={`/icons/Country/Australia.svg`}
-                              alt={"Australia"}
-                            />
-                            Australia
-                          </div>
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-400"
-                          onClick={() => {
-                            setCountry("UK");
-                            setIsOpen(false);
-                          }}
-                        >
-                          <div className="inline-flex items-center">
-                            <img
-                              className="w-5 object-contain mr-2 rounded-full"
-                              src={`/icons/Country/UK.svg`}
-                              alt={"UK"}
-                            />
-                            UK
-                          </div>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
+              <h1 className="text-sm lg:text-lg">Country of Residence: </h1>
+              <Input
+                type="text"
+                value={emailAddress}
+                onChange={(e) => setEmailAddress(e.currentTarget.value)}
+                placeholder="Input Your Country In Here"
+                className="mt-4 bg-[#B8BDD6] placeholder:text-gray-500 text-black"
+              />
             </div>
           </form>
         </>
@@ -275,8 +124,8 @@ const AssuredAPYForm = () => {
       title: "Desired Investment Tier:",
       desc: (
         <div className="space-y-3">
-          <h1 className=" font-bold text-xl">Tier 1:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+          <h1 className=" font-bold text-lg lg:text-xl">Tier 1:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-xl">
             <h3 className="bg-[#141F5C] px-6 py-3">
               <span className="font-bold">Investment Range:</span> 5,000 to
               25,000 USDT
@@ -285,8 +134,8 @@ const AssuredAPYForm = () => {
               APY: 7% to 9%
             </h3>
           </div>
-          <h1 className=" font-bold text-xl">Tier 2:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+          <h1 className=" font-bold text-lg lg:text-xl">Tier 2:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-xl">
             <h3 className="bg-[#141F5C] px-6 py-3">
               <span className="font-bold">Investment Range:</span> 25,000 to
               50,000 USDT
@@ -295,8 +144,8 @@ const AssuredAPYForm = () => {
               APY: 9% to 11%
             </h3>
           </div>
-          <h1 className=" font-bold text-xl">Tier 3:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-xl">
+          <h1 className=" font-bold text-lg lg:text-xl">Tier 3:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-xl">
             <h3 className="bg-[#141F5C] px-6 py-3">
               <span className="font-bold">Investment Range:</span> 50,000 to
               100,000 USDT
@@ -306,7 +155,7 @@ const AssuredAPYForm = () => {
             </h3>
           </div>
           <div className="space-y-2">
-            <h1 className="text-lg">Amount to Invest (USDT) : </h1>
+            <h1 className="text-sm lg:text-lg">Amount to Invest (USDT) : </h1>
             <Input
               type="text"
               value={AmountInvest}
@@ -517,7 +366,7 @@ const AssuredAPYForm = () => {
             </div>
           </div>
           <div className="space-y-2">
-            <h1 className="text-lg">
+            <h1 className="text-sm lg:text-lg">
               <span className="font-bold">Crypto Wallet Address</span> (If
               Applicable) :
             </h1>
@@ -541,7 +390,7 @@ const AssuredAPYForm = () => {
             • I acknowledge that I have read and agree to the
             <span className="underline font-bold mx-1 text-[#CD7B00]">
               Terms and Conditions
-            </span>{" "}
+            </span>
             of the liquidity investment program.
           </p>
           <p>
@@ -569,7 +418,7 @@ const AssuredAPYForm = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
           <div className="space-y-2">
-            <h1 className="text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-2xl lg:text-3xl mb-2 font-bold float-left w-full">
               Liquidity Investment Program Application Form
             </h1>
             <p>
@@ -582,7 +431,7 @@ const AssuredAPYForm = () => {
           {AssuredAPYData.map((pp, index) => {
             return (
               <div key={index} className="flex flex-col gap-5 mt-3 w-full z-50">
-                <h1 className="text-3xl  font-bold float-left w-full">
+                <h1 className="text-2xl lg:text-3xl  font-bold float-left w-full">
                   {pp.mainTitle}
                 </h1>
                 <div
@@ -591,9 +440,9 @@ const AssuredAPYForm = () => {
                   {pp.title && (
                     <div
                       type="button"
-                      className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
+                      className="flex items-center justify-between w-full text-lg lg:text-xl font-bold rounded-t-xl  gap-3"
                     >
-                      <span className="self-start text-2xl text-start text-[#CD7B00] ">
+                      <span className="self-start text-lg lg:text-2xl text-start text-[#CD7B00] ">
                         {pp.title}
                       </span>
                     </div>
