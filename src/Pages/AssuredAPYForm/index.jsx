@@ -9,7 +9,7 @@ const AssuredAPYForm = () => {
   const [FullName, setFullName] = useState("");
   const [ContactNumber, setContactNumber] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
-  const [Country, setCountry] = useState("USA");
+  const [Country, setCountry] = useState("");
   const [AmountInvest, setAmountInvest] = useState("");
   const [WalletAddress, setWalletAddress] = useState("");
   const [BankTransfer, setBankTransfer] = useState(false);
@@ -62,7 +62,7 @@ const AssuredAPYForm = () => {
         console.error(err);
         Swal.fire({
           icon: "error",
-          title: "Fields cannot be empty",
+          title: "Error; Please Try Later",
         });
       });
   }
@@ -73,9 +73,9 @@ const AssuredAPYForm = () => {
       title: "",
       desc: (
         <>
-          <form className="w-full space-y-2 text-lg lg:text-xl">
+          <form className="w-full space-y-2 text-lg lg:text-lg">
             <div className="space-y-2">
-              <h1 className="text-sm lg:text-lg">Full Name : </h1>
+              <h1 className="text-sm lg:text-base">Full Name : </h1>
               <Input
                 type="text"
                 value={FullName}
@@ -85,7 +85,7 @@ const AssuredAPYForm = () => {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-sm lg:text-lg">Contact Number : </h1>
+              <h1 className="text-sm lg:text-base">Contact Number : </h1>
               <Input
                 type="text"
                 value={ContactNumber}
@@ -95,7 +95,7 @@ const AssuredAPYForm = () => {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-sm lg:text-lg">Email Address : </h1>
+              <h1 className="text-sm lg:text-base">Email Address : </h1>
               <Input
                 type="text"
                 value={emailAddress}
@@ -105,7 +105,7 @@ const AssuredAPYForm = () => {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-sm lg:text-lg">Country of Residence: </h1>
+              <h1 className="text-sm lg:text-base">Country of Residence: </h1>
               <Input
                 type="text"
                 value={Country}
@@ -123,9 +123,9 @@ const AssuredAPYForm = () => {
       title: "Desired Investment Tier:",
       desc: (
         <div className="space-y-3">
-          <h1 className=" font-bold text-lg lg:text-xl">Tier 1:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-xl">
-            <h3 className="bg-[#141F5C] px-6 py-3">
+          <h1 className=" font-bold text-lg lg:text-lg">Tier 1:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-lg">
+            <h3 className="bg-[#141F5C] px-4 py-3">
               <span className="font-bold">Investment Range:</span> 5,000 to
               25,000 USDT
             </h3>
@@ -133,9 +133,9 @@ const AssuredAPYForm = () => {
               APY: 7% to 9%
             </h3>
           </div>
-          <h1 className=" font-bold text-lg lg:text-xl">Tier 2:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-xl">
-            <h3 className="bg-[#141F5C] px-6 py-3">
+          <h1 className=" font-bold text-lg lg:text-lg">Tier 2:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-lg">
+            <h3 className="bg-[#141F5C] px-4 py-3">
               <span className="font-bold">Investment Range:</span> 25,000 to
               50,000 USDT
             </h3>
@@ -143,9 +143,9 @@ const AssuredAPYForm = () => {
               APY: 9% to 11%
             </h3>
           </div>
-          <h1 className=" font-bold text-lg lg:text-xl">Tier 3:</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-xl">
-            <h3 className="bg-[#141F5C] px-6 py-3">
+          <h1 className=" font-bold text-lg lg:text-lg">Tier 3:</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 lg:text-lg">
+            <h3 className="bg-[#141F5C] px-4 py-3">
               <span className="font-bold">Investment Range:</span> 50,000 to
               100,000 USDT
             </h3>
@@ -154,7 +154,7 @@ const AssuredAPYForm = () => {
             </h3>
           </div>
           <div className="space-y-2">
-            <h1 className="text-sm lg:text-lg">Amount to Invest (USDT) : </h1>
+            <h1 className="text-sm lg:text-base">Amount to Invest (USDT) : </h1>
             <Input
               type="text"
               value={AmountInvest}
@@ -172,10 +172,10 @@ const AssuredAPYForm = () => {
       desc: (
         <div className="space-y-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-20">
-            <div className="flex gap-x-3 items-center">
+            <div className="flex gap-x-2 items-center">
               <svg
-                width={32}
-                height={32}
+                width={25}
+                height={25}
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -260,9 +260,9 @@ const AssuredAPYForm = () => {
                 className="inline-flex items-center cursor-pointer"
               >
                 <span
-                  className={`w-6 ${
+                  className={`w-5 ${
                     BankTransfer ? "bg-[#CD7B00]" : "border-2"
-                  } h-6 flex items-center justify-center rounded-[4px] transition-colors`}
+                  } h-5 flex items-center justify-center rounded-[4px] transition-colors`}
                 >
                   {BankTransfer && (
                     <svg className="w-3 h-3 fill-current " viewBox="0 0 20 20">
@@ -272,10 +272,10 @@ const AssuredAPYForm = () => {
                 </span>
               </div>
             </div>
-            <div className="flex gap-x-3 items-center">
+            <div className="flex gap-x-2 items-center">
               <svg
-                width={32}
-                height={32}
+                width={25}
+                height={25}
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -351,9 +351,9 @@ const AssuredAPYForm = () => {
                 className="inline-flex items-center cursor-pointer"
               >
                 <span
-                  className={`w-6 ${
+                  className={`w-5 ${
                     CryptoWalletTransfer ? "bg-[#CD7B00]" : "border-2"
-                  } h-6 flex items-center justify-center rounded-[4px] transition-colors`}
+                  } h-5  flex items-center justify-center rounded-[4px] transition-colors`}
                 >
                   {CryptoWalletTransfer && (
                     <svg className="w-3 h-3 fill-current " viewBox="0 0 20 20">
@@ -365,7 +365,7 @@ const AssuredAPYForm = () => {
             </div>
           </div>
           <div className="space-y-2">
-            <h1 className="text-sm lg:text-lg">
+            <h1 className="text-sm lg:text-base">
               <span className="font-bold">Crypto Wallet Address</span> (If
               Applicable) :
             </h1>
@@ -417,10 +417,10 @@ const AssuredAPYForm = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-y-4 z-50 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 items-center relative mt-28 text-[#E8EAF2]">
           <div className="space-y-2">
-            <h1 className="text-xl lg:text-3xl mb-2 font-bold float-left w-full">
+            <h1 className="text-xl lg:text-[22px] mb-2 font-bold float-left w-full">
               Liquidity Investment Program Application Form
             </h1>
-            <p>
+            <p className="text-[15px]">
               Welcome to the first step in elevating your investment portfolio
               through our assured APY returns. Please complete the form below to
               apply for our liquidity investment program. Your information will
@@ -430,18 +430,18 @@ const AssuredAPYForm = () => {
           {AssuredAPYData.map((pp, index) => {
             return (
               <div key={index} className="flex flex-col gap-5 mt-3 w-full z-50">
-                <h1 className="text-xl lg:text-3xl  font-bold float-left w-full">
+                <h1 className="text-xl lg:text-[22px]  font-bold float-left w-full">
                   {pp.mainTitle}
                 </h1>
                 <div
-                  className={`"  odd:bg-[#0C1237] even:bg-[#0C1237] p-5 lg:p-12 space-y-4 `}
+                  className={`"  odd:bg-[#0C1237] even:bg-[#0C1237] p-5 lg:p-7 space-y-4 `}
                 >
                   {pp.title && (
                     <div
                       type="button"
-                      className="flex items-center justify-between w-full text-lg lg:text-xl font-bold rounded-t-xl  gap-3"
+                      className="flex items-center justify-between w-full text-lg lg:text-lg font-bold rounded-t-xl  gap-3"
                     >
-                      <span className="self-start text-lg lg:text-2xl text-start text-[#CD7B00] ">
+                      <span className="self-start text-lg lg:text-lg text-start text-[#CD7B00] ">
                         {pp.title}
                       </span>
                     </div>
@@ -457,7 +457,7 @@ const AssuredAPYForm = () => {
           })}
           <button
             onClick={sendEmail}
-            className="bg-[#CD7B00] hover:bg-[#CD7B00]/80  border-0 py-4 w-full  duration-300 rounded-md mt-3 font-medium text-sm md:text-base text-center"
+            className="bg-[#CD7B00] hover:bg-[#CD7B00]/80  border-0 py-4 w-full  duration-300 rounded mt-3 font-medium text-sm md:text-base text-center"
           >
             Submit
           </button>
