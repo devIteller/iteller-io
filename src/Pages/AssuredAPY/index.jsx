@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const AssuredAPY = () => {
   useEffect(() => {
     setTimeout(() => {
-      // window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
     }, 300);
   }, []);
 
