@@ -200,7 +200,7 @@ const Footer = () => {
                   </div>
                   <div className="w-full sm:max-w-[250px] mt-10">
                     <h4>Ready to sign up?</h4>
-                    <Link to={"https://my.iteller.app/en/register"}>
+                    <Link to={"https://my.iteller.app/en/auth/sign-up"}>
                       <button className="bg-[#0328EE] py-4 w-full sm:max-w-[250px] duration-300 hover:scale-90 mt-2 font-semibold text-sm  rounded-lg">
                         Create an Account
                       </button>

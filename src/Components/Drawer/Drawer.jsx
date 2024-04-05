@@ -1,12 +1,15 @@
 ﻿import { Link } from "react-router-dom";
 import DrawerItem from "./DrawerItem";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
   Drawer.propTypes = {
     isDrawerOpen: PropTypes.bool,
     setDrawerOpen: PropTypes.func,
   };
+  const [Actived, setActived] = useState("");
+
   return (
     <div>
       <div
@@ -50,7 +53,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
         </button>
         <div className="py-4 overflow-y-auto">
           <ul className="space-y-2 font-medium">
-            <DrawerItem title="Home" active>
+            <DrawerItem title="Home" Actived={Actived} setActived={setActived}>
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 49 49"
@@ -75,6 +78,8 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
             </DrawerItem>
             <DrawerItem
               title="Services"
+              Actived={Actived}
+              setActived={setActived}
               isDropDown
               dropDownItems={
                 <div className="pl-10 flex flex-col gap-y-2 text-[10px] text-gray-400">
@@ -159,7 +164,12 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <DrawerItem href="/About-Us" title="About">
+            <DrawerItem
+              Actived={Actived}
+              setActived={setActived}
+              href="/About-Us"
+              title="About"
+            >
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 47 47"
@@ -190,7 +200,12 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <DrawerItem href={"/Contact-Us"} title="Contact Us">
+            <DrawerItem
+              Actived={Actived}
+              setActived={setActived}
+              href={"/Contact-Us"}
+              title="Contact Us"
+            >
               <svg
                 className="w-5 h-5 text-gray-400"
                 viewBox="0 0 49 48"

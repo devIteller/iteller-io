@@ -1,10 +1,11 @@
 ﻿import { useState } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const DrawerItem = ({
   title,
-  active,
+  Actived,
+  setActived,
   isDropDown,
   dropDownItems,
   href,
@@ -17,16 +18,24 @@ const DrawerItem = ({
     dropDownItems: PropTypes.node,
     children: PropTypes.node,
     href: PropTypes.string,
+    Actived: PropTypes.string,
+    setActived: PropTypes.func,
+  };
+  const [isDDopen, setisDDopen] = useState(false);
+  const location = useLocation();
+  const handleMenuClick = () => {
+    setActived(title);
+    setisDDopen(!isDDopen);
+    console.log(children);
   };
 
-  const [isDDopen, setisDDopen] = useState(false);
   return (
-    <li onClick={() => setisDDopen(!isDDopen)}>
+    <li onClick={handleMenuClick}>
       {href?.includes("#") ? (
         <a
           href={href}
           className={`flex justify-between items-center px-2 p-2.5 text-gray-500 rounded-lg ${
-            active ? "bg-[#EEEEEE]" : ""
+            location.pathname === href ? "bg-[#EEEEEE]" : ""
           }`}
         >
           <div className="flex">
@@ -57,7 +66,7 @@ const DrawerItem = ({
         <Link
           to={href}
           className={`flex justify-between items-center px-2 p-2.5 text-gray-500 rounded-lg ${
-            active ? "bg-[#EEEEEE]" : ""
+            location.pathname === href ? "bg-[#EEEEEE]" : ""
           }`}
         >
           <div className="flex">
@@ -87,7 +96,7 @@ const DrawerItem = ({
       ) : (
         <div
           className={`flex justify-between items-center px-2 p-2.5 text-gray-500 rounded-lg ${
-            active ? "bg-[#EEEEEE]" : ""
+            location.pathname === href ? "bg-[#EEEEEE]" : ""
           }`}
         >
           <div className="flex">

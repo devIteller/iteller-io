@@ -154,7 +154,7 @@ const Header = () => {
               }`}
             >
               <a
-                href="https://my.iteller.app/en/login"
+                href="https://my.iteller.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-5 md:px-7 rounded-xl text-xs md:text-base md:mt-0"
@@ -163,7 +163,7 @@ const Header = () => {
                 <span>Login</span>
               </a>
               <a
-                href="https://my.iteller.app/en/register"
+                href="https://my.iteller.app/en/auth/sign-up"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border  px-5 md:px-7 rounded-xl text-xs md:text-base  md:mt-0 whitespace-nowrap py-3"
