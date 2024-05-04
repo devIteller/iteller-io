@@ -130,7 +130,7 @@ const AssuredAPYForm = () => {
               25,000 USDT
             </h3>
             <h3 className="bg-[#B8BDD6] text-black px-6 py-3 font-bold">
-              APY: 7% to 9%
+              APY: 10% to 13%
             </h3>
           </div>
           <h1 className=" font-bold text-lg lg:text-lg">Tier 2:</h1>
@@ -140,7 +140,7 @@ const AssuredAPYForm = () => {
               50,000 USDT
             </h3>
             <h3 className="bg-[#B8BDD6] text-black px-6 py-3 font-bold">
-              APY: 9% to 11%
+              APY: 13% to 15%
             </h3>
           </div>
           <h1 className=" font-bold text-lg lg:text-lg">Tier 3:</h1>
@@ -150,7 +150,7 @@ const AssuredAPYForm = () => {
               100,000 USDT
             </h3>
             <h3 className="bg-[#B8BDD6] text-black px-6 py-3 font-bold">
-              APY: 11% to 15%
+              APY: 15% to 18%
             </h3>
           </div>
           <div className="space-y-2">
