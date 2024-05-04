@@ -22,7 +22,7 @@ const AssuredAPY = () => {
               <span className="font-bold">Investment Range:</span> 5,000 to
               25,000 USDT
             </h3>
-            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 7% to 9%</h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 10% to 13%</h3>
           </div>
           <h1 className=" font-bold text-lg ">Tier 2:</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg ">
@@ -30,7 +30,7 @@ const AssuredAPY = () => {
               <span className="font-bold">Investment Range:</span> 25,000 to
               50,000 USDT
             </h3>
-            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 9% to 11%</h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 13% to 15%</h3>
           </div>
           <h1 className=" font-bold text-lg ">Tier 3:</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg ">
@@ -39,7 +39,7 @@ const AssuredAPY = () => {
               100,000 USDT
             </h3>
             <h3 className="bg-[#141F5C] px-6 py-3 font-bold">
-              APY: 11% to 15%
+              APY: 15% to 18%
             </h3>
           </div>
         </div>
