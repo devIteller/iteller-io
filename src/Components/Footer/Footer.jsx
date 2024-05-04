@@ -163,7 +163,7 @@ const Footer = () => {
                 <div>
                   <div className="flex w-full justify-between">
                     <a href="mailto:Hello@iTeller.io">Hello@iTeller.io</a>
-                    <span className="flex sm:w-fit md:hidden">
+                    <span className="flex flex-wrap justify-end gap-y-2 sm:w-fit md:hidden">
                       <a
                         href="https://www.instagram.com/iteller.ex?igsh=ZG9lMzQxZ3BrajZt"
                         className=" text-white h-fit bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
