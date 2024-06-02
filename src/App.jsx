@@ -10,6 +10,9 @@ import CryptoATMMachine from "./Pages/CryptoATMMachine";
 import AssuredAPY from "./Pages/AssuredAPY";
 import { useState } from "react";
 import AssuredAPYForm from "./Pages/AssuredAPYForm";
+import FAQ from "./Pages/FAQ";
+import Legal from "./Pages/Legal";
+import SecurityCenter from './Pages/SecurityCenter'
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,6 +50,9 @@ const App = () => {
             path="/Crypto-OTC-Trading-Platform"
             element={<CryptoOTCTradingPlatform />}
           />
+          <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/Legal" element={<Legal />} />
+          <Route path="/Security-Center" element={<SecurityCenter />} />
         </Routes>
       </BrowserRouter>
       <button
