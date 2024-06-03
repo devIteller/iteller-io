@@ -163,7 +163,7 @@ const AboutUs = () => {
             className="w-full sm:h-[320px] lg:hidden"
           />
           <div className="lg:grid grid-cols-3 gap-x-7">
-            <div className="flex flex-col max-lg:gap-y-6 justify-between w-full col-span-1">
+            <div className="flex flex-col gap-y-6 w-full col-span-1">
               <div>
                 <Link to="/Crypto-OTC-Trading-Platform">
                   <div className="text-xl mb-1 font-bold">
@@ -175,7 +175,7 @@ const AboutUs = () => {
                   clients.
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <Link to="/Crypto-ATM-Machine">
                   <h3
                     to="/Crypto-ATM-Machine"
@@ -188,7 +188,7 @@ const AboutUs = () => {
                   Accessibility meets innovation with our user-friendly Crypto
                   ATMs.
                 </p>
-              </div>
+              </div> */}
               <div>
                 <Link to="/Assured-APY">
                   <h3 className="text-xl mb-1 font-bold">
