@@ -131,7 +131,7 @@ const Footer = () => {
                 <Link to="/Crypto-OTC-Trading-Platform">
                   Crypto OTC Trading Platform
                 </Link>
-                <Link to="/Crypto-ATM-Machine">Crypto ATM Machine</Link>
+                {/* <Link to="/Crypto-ATM-Machine">Crypto ATM Machine</Link> */}
                 <Link to="/Assured-APY">
                   Assured APY Returns - Liquidity Investment
                 </Link>
