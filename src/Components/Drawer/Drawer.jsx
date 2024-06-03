@@ -89,9 +89,9 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                   >
                     Crypto OTC Trading Platform
                   </Link>
-                  <Link to="/Crypto-ATM-Machine" rel="noopener noreferrer">
+                  {/* <Link to="/Crypto-ATM-Machine" rel="noopener noreferrer">
                     Crypto ATM Machine
-                  </Link>
+                  </Link> */}
                   <Link to="/Assured-APY" rel="noopener noreferrer">
                     Assured APY Returns - Liquidity Investment
                   </Link>
