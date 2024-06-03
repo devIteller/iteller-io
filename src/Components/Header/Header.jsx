@@ -119,13 +119,13 @@ const Header = () => {
                     >
                       Crypto OTC Trading Platform
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/Crypto-ATM-Machine"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
                       rel="noopener noreferrer"
                     >
                       Crypto ATM Machine
-                    </Link>
+                    </Link> */}
                     <Link
                       to="/Assured-APY"
                       className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
