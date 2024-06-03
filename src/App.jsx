@@ -42,7 +42,7 @@ const App = () => {
           <Route path="/Customer-Agreement" element={<CustomerAgreement />} />
           <Route path="/Contact-Us" element={<ContactUs />} />
           <Route path="/About-Us" element={<AboutUs />} />
-          <Route path="/Crypto-ATM-Machine" element={<CryptoATMMachine />} />
+          {/* <Route path="/Crypto-ATM-Machine" element={<CryptoATMMachine />} /> */}
           <Route path="/Assured-APY-Click" element={<AssuredAPYClick />} />
           <Route path="/Assured-APY" element={<AssuredAPY />} />
           <Route path="/Assured-APY-Form" element={<AssuredAPYForm />} />
