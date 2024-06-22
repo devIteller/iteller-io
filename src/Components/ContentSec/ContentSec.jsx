@@ -1,19 +1,47 @@
-﻿const ContentSec = () => {
+﻿import { WhyBox } from "./WhyBox";
+
+const ContentSec = () => {
   return (
-    <section className="text-white flex flex-col items-center body-font bg-contentSec bg-no-repeat bg-cover bg-i_blue w-full">
-      <div
-        data-aos="zoom-in"
-        className="lg:max-w-[1440px] w-[90%]  grid grid-cols-1 lg:grid-cols-2 justify-between gap-x-20 px-3 md:px-10 py-16 lg:py-24  items-center"
-      >
-        <h1 className="lg:text-4xl text-2xl font-bold mb-2 ">
-          We’re navigating digital Finance into new frontiers
+    <section className="text-white w-full justify-center flex">
+      <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-16 lg:py-24 z-50">
+        <h1 className="lg:text-4xl text-2xl font-bold mb-10  w-full text-center">
+          Why iTeller?
         </h1>
-        <h2 className=" lg:text-[16px] mb-3">
-          The iTeller OTC App is a financial application that connects users to
-          a global network of banks, making it easier to conduct domestic
-          payments and simplifying the process of buying and selling
-          cryptocurrencies internationally
-        </h2>
+        <div className="flex flex-wrap justify-center w-full items-center max-lg:gap-8">
+          <div className="flex">
+            <WhyBox icon="UltraLowFees" text="Ultra-Low Fees" />
+            <img
+              src="/icons/border.svg"
+              className="mb-10 hidden lg:block mx-3"
+              alt=""
+            />
+          </div>
+          <div className="flex">
+            <WhyBox icon="money-exchange" text="Fast Transactions" />
+            <img
+              src="/icons/border.svg"
+              className="mb-10 hidden lg:block mx-3"
+              alt=""
+            />
+          </div>
+          <div className="flex">
+            <WhyBox icon="curriculum" text="Easy Onboarding" />
+            <img
+              src="/icons/border.svg"
+              className="mb-10 hidden lg:block mx-3"
+              alt=""
+            />
+          </div>
+          <div className="flex">
+            <WhyBox icon="true" text="Instant Verification" />
+            <img
+              src="/icons/border.svg"
+              className="mb-10 hidden lg:block mx-3"
+              alt=""
+            />
+          </div>
+          <WhyBox icon="TopTierSecurity" text="Top-Tier Security" />
+        </div>
       </div>
     </section>
   );

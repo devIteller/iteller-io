@@ -1,10 +1,12 @@
 ﻿import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+import PageTitle from "../../Components/PageTitle";
 
 const Legal = () => {
   return (
     <>
+      <PageTitle title="Legal" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg
@@ -40,7 +42,9 @@ const Legal = () => {
                   </p>
                 </ul>
                 <ul className="list-disc">
-                  <li className="font-medium text-base ml-7">Terms of Service</li>
+                  <li className="font-medium text-base ml-7">
+                    Terms of Service
+                  </li>
                   <p className="text-[#E8EAF2]">
                     A comprehensive overview of the terms under which iTeller
                     provides services to its users. This section would include
@@ -58,7 +62,9 @@ const Legal = () => {
                   </p>
                 </ul>
                 <ul className="list-disc">
-                  <li className="font-medium text-base ml-7">Risk Disclosure</li>
+                  <li className="font-medium text-base ml-7">
+                    Risk Disclosure
+                  </li>
                   <p className="text-[#E8EAF2]">
                     An explanation of the inherent risks associated with
                     cryptocurrency trading and investment, urging users to
@@ -87,7 +93,9 @@ const Legal = () => {
                   </p>
                 </ul>
                 <ul className="list-disc">
-                  <li className="font-medium text-base ml-7">Dispute Resolution</li>
+                  <li className="font-medium text-base ml-7">
+                    Dispute Resolution
+                  </li>
                   <p className="text-[#E8EAF2]">
                     Procedures for addressing any disputes that arise between
                     iTeller and its users, detailing the process for complaints
@@ -95,7 +103,9 @@ const Legal = () => {
                   </p>
                 </ul>
                 <ul className="list-disc">
-                  <li className="font-medium text-base ml-7">Contact Information</li>
+                  <li className="font-medium text-base ml-7">
+                    Contact Information
+                  </li>
                   <p className="text-[#E8EAF2]">
                     How to contact iTeller for legal inquiries or issues,
                     including email addresses and ticket submission platform for

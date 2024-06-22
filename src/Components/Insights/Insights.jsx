@@ -50,16 +50,9 @@ const Insights = () => {
   return (
     <section
       id="insights"
-      className="text-white flex flex-col pt-10 lg:pb-10 body-font  relative justify-center items-center"
+      className="text-white flex flex-col pt-10 lg:pb-10 body-font  relative justify-center items-center  bg-[#0C1237]"
     >
-      <div className="flex flex-col lg:max-w-[1440px] w-[90%] px-3 md:px-10">
-        <h1 className="text-2xl font-bold mb-2 w-full lg:text-center ">
-          Insights
-        </h1>
-        <h3 className="text-md lg:hidden font-bold mb-2 w-full">
-          Unique research and views on the market
-        </h3>
-      </div>
+      <h1 className="text-3xl font-bold mb-2 w-full text-center ">Insights</h1>
       <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={10}

@@ -4,13 +4,11 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 
 const ReceiveInsights = () => {
-  const [FullName, setFullName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
 
   function sendEmail() {
     var templateParams = {
-      from_name: `${FullName}`,
-      name: `name : ${FullName}`,
+      from_name: `${emailAddress}`,
       email: emailAddress,
     };
 
@@ -31,7 +29,6 @@ const ReceiveInsights = () => {
       rgb(0 0 0 / 50%)
     `,
           });
-        setFullName("");
         setEmailAddress("");
       })
       .catch((err) => {
@@ -44,7 +41,7 @@ const ReceiveInsights = () => {
   }
 
   const submit = () => {
-    if (FullName != "" && emailAddress != "") {
+    if (emailAddress != "") {
       sendEmail();
     } else {
       Swal.fire({
@@ -59,7 +56,7 @@ const ReceiveInsights = () => {
       <div className="flex max-lg:flex-col items-center justify-between z-50 relative px-3 md:px-10 lg:max-w-[1440px] w-[90%] ">
         <div
           data-aos="fade-right"
-          className=" flex max-lg:flex-col z-50 gap-4 items-center"
+          className=" flex mb-2 self-start z-50 gap-4 items-center"
         >
           <img
             src="/Insights/email.svg"
@@ -67,27 +64,24 @@ const ReceiveInsights = () => {
             alt="email"
             loading="lazy"
           />
-          <div>
-            <h1 className="title-font font-medium w-full text-3xl">
-              Receive Our Insights
+          <div className="text-start">
+            <h1 className="title-font font-bold  text-2xl md:text-3xl">
+              Newsletter
             </h1>
-            <p className="leading-relaxed md:mt-2 lg:w-3/4">
+            <p className="leading-relaxed text-start w-full lg:w-3/4 hidden lg:block">
               Subscribe to the mailing list to receive our industry reports,
               news and commentary.
             </p>
           </div>
         </div>
+        <p className="leading-relaxed text-start w-full lg:hidden">
+          Subscribe to the mailing list to receive our industry reports, news
+          and commentary.
+        </p>
         <div
           data-aos="flip-up"
-          className="md:w-[500px] w-full md:py-8 mt-6 flex flex-col gap-3 "
+          className="lg:w-[500px] w-full mt-2 max-sm:mt-6 flex flex-col gap-3 "
         >
-          <Input
-            value={FullName}
-            onChange={(e) => setFullName(e.currentTarget.value)}
-            className="bg-[rgba(255,255,255,0.25)]"
-            placeholder="First Name *"
-            type="text"
-          />
           <Input
             value={emailAddress}
             onChange={(e) => setEmailAddress(e.currentTarget.value)}
@@ -100,7 +94,7 @@ const ReceiveInsights = () => {
             className="text-white uppercase bg-[#0328EE] border-0 py-2 lg:py-4 px-8 focus:outline-none hover:bg-[#0328EE]/80 duration-300
            rounded-md text-"
           >
-            Subscribe
+            Sign up
           </button>
         </div>
       </div>

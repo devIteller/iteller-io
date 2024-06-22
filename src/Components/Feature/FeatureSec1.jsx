@@ -1,38 +1,61 @@
-﻿import FeatureItem from "./FeatureItem/FeatureItem";
+﻿const FeatureSec1 = () => {
+  const images = [
+    "Bitcoin",
+    "Ethereum",
+    "Tether",
+    "Binance",
+    "Tron",
+    "Litecoin",
+    "Solana",
+    "DogeCoin",
+    "Shiba",
+    "Vector",
+    "Vector_1",
+  ];
 
-const FeatureSec1 = () => {
   return (
-    <section className="text-white pt-10 body-font flex justify-center items-center max-sm:overflow-hidden">
-      <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex max-lg:flex-wrap lg:gap-3 justify-between">
-        <div className="flex w-full flex-col gap-6 justify-center text-center lg:w-1/2 md:pr-10">
-          <FeatureItem
-            icon="crypto"
-            title={<strong>Trading</strong>}
-            desc="Over the counter spot, derivatives and Web3 digital assets trading."
-            aos={"fade-right"}
-          />
-          <FeatureItem
-            icon="buy-sell"
-            title={
-              <>
-                <strong>Buy & Sell:</strong>{" "}
-                <span className="text-gray-200 lg:text-2xl">
-                  Crypto OTC Trading platform
-                </span>
-              </>
-            }
-            desc="Buy-Sell Feature: The iTeller platform stands out as a premier Crypto OTC Trading platform. It is meticulously engineered to streamline the intricate process of buying and selling cryptocurrencies in exchange for fiat currency. Our platform offers a straightforward, user-friendly interface that removes the complexities often associated with crypto transactions. Clients can enjoy a smooth and efficient gateway to transition between traditional monetary assets and digital currencies."
-            aos={"fade-right"}
-          />
+    <section className="text-white w-full justify-center flex">
+      <div
+        data-aos="zoom-in"
+        className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 pt-16 flex flex-col justify-center items-center"
+      >
+        <h1 className="lg:text-4xl text-3xl font-bold mb-2 w-full text-center">
+          Build Your Crypto Portfolio
+        </h1>
+        <h4 className="mb-2 w-full text-center">
+          Over <span className="font-extrabold">562 million people</span>{" "}
+          worldwide own cryptocurrency, reflecting the growing global acceptance
+          and adoption of digital assets.
+          <span className="text-i_orange font-extrabold ml-1">Join them!</span>
+        </h4>
+        <div className="w-full flex items-center  justify-center ">
+          <div className="w-[200%] h-[20vh] overflow-hidden relative">
+            <div className="w-[200%] flex md:gap-x-3 items-center h-32 justify-around max-lg:gap-5 absolute left-0 animate-scroll hover:pause">
+              {images.map((i, index) => {
+                return (
+                  <img
+                    key={index + 1}
+                    className=" bg-[#FFFFFF1F] p-6 rounded-[35px] w-[100px]"
+                    src={`/BuySell/${i}.png`}
+                  />
+                );
+              })}
+              {images.map((i, index) => {
+                return (
+                  <img
+                    key={index + 1}
+                    className=" bg-[#FFFFFF1F] p-6 rounded-[35px] w-[100px]"
+                    src={`/BuySell/${i}.png`}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <div className="lg:w-1/2 w-full max-lg:mt-6">
-          <img
-            alt="vector_1"
-            className="h-64 md:h-[500px] lg:h-[620px] w-full"
-            src="/Feature/vector_1.avif"
-            loading="lazy"
-          />
-        </div>
+
+        <button className="bg-i_orange mt-5 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px]  duration-300 rounded font-medium text-sm md:text-base text-center">
+          Buy Crypto
+        </button>
       </div>
     </section>
   );

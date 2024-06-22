@@ -1,10 +1,20 @@
 ﻿import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+import PageTitle from "../../Components/PageTitle";
+import { useEffect } from "react";
 
 const AboutUs = () => {
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 300);
+  }, []);
+
   return (
     <>
+      <PageTitle title="About" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg
@@ -66,9 +76,9 @@ const AboutUs = () => {
                 />
                 <p>
                   In Australia, we are proudly registered with
-                  <span className="text-[#CD7B00]"> AUSTRAC</span> under
+                  <span className="text-i_orange"> AUSTRAC</span> under
                   registration number
-                  <span className="text-[#CD7B00]"> 100791220</span> and adhere
+                  <span className="text-i_orange"> 100791220</span> and adhere
                   to the regulatory standards set by ASIC.
                 </p>
               </div>
@@ -81,7 +91,7 @@ const AboutUs = () => {
                 />
                 <p>
                   Our UK presence is marked by our financial brokerage license,
-                  number <span className="text-[#CD7B00]"> 13756061</span> ,
+                  number <span className="text-i_orange"> 13756061</span> ,
                   allowing us to serve a diverse clientele with integrity.
                 </p>
               </div>
@@ -94,9 +104,9 @@ const AboutUs = () => {
                 />
                 <p>
                   In the UAE, our license number
-                  <span className="text-[#CD7B00]"> 1130113</span> is a
-                  testament to our commitment to providing regulated financial
-                  services globally.
+                  <span className="text-i_orange"> 1130113</span> is a testament
+                  to our commitment to providing regulated financial services
+                  globally.
                 </p>
               </div>
             </div>

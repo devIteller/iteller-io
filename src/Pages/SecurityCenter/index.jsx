@@ -1,10 +1,12 @@
 ﻿import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+import PageTitle from "../../Components/PageTitle";
 
 const SecurityCenter = () => {
   return (
     <>
+      <PageTitle title="Security" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg

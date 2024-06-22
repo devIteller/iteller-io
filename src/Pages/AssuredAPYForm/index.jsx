@@ -261,7 +261,7 @@ const AssuredAPYForm = () => {
               >
                 <span
                   className={`w-5 ${
-                    BankTransfer ? "bg-[#CD7B00]" : "border-2"
+                    BankTransfer ? "bg-i_orange" : "border-2"
                   } h-5 flex items-center justify-center rounded-[4px] transition-colors`}
                 >
                   {BankTransfer && (
@@ -352,7 +352,7 @@ const AssuredAPYForm = () => {
               >
                 <span
                   className={`w-5 ${
-                    CryptoWalletTransfer ? "bg-[#CD7B00]" : "border-2"
+                    CryptoWalletTransfer ? "bg-i_orange" : "border-2"
                   } h-5  flex items-center justify-center rounded-[4px] transition-colors`}
                 >
                   {CryptoWalletTransfer && (
@@ -387,7 +387,7 @@ const AssuredAPYForm = () => {
         <div className="lg:font-medium">
           <p>
             • I acknowledge that I have read and agree to the
-            <span className="underline font-bold mx-1 text-[#CD7B00]">
+            <span className="underline font-bold mx-1 text-i_orange">
               Terms and Conditions
             </span>
             of the liquidity investment program.
@@ -441,7 +441,7 @@ const AssuredAPYForm = () => {
                       type="button"
                       className="flex items-center justify-between w-full text-lg lg:text-lg font-bold rounded-t-xl  gap-3"
                     >
-                      <span className="self-start text-lg lg:text-lg text-start text-[#CD7B00] ">
+                      <span className="self-start text-lg lg:text-lg text-start text-i_orange ">
                         {pp.title}
                       </span>
                     </div>
@@ -457,7 +457,7 @@ const AssuredAPYForm = () => {
           })}
           <button
             onClick={sendEmail}
-            className="bg-[#CD7B00] hover:bg-[#CD7B00]/80  border-0 py-4 w-full  duration-300 rounded mt-3 font-medium text-sm md:text-base text-center"
+            className="bg-i_orange hover:bg-i_orange/80  border-0 py-4 w-full  duration-300 rounded mt-3 font-medium text-sm md:text-base text-center"
           >
             Submit
           </button>

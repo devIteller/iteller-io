@@ -12,8 +12,8 @@ const Header = () => {
 
   const handleClickOutside = (e) => {
     if (
-      node.current.contains(e.target) ||
-      DrawerNode.current.contains(e.target)
+      node.current?.contains(e.target) ||
+      DrawerNode.current?.contains(e.target)
     ) {
       return;
     }
@@ -52,11 +52,13 @@ const Header = () => {
     <>
       <header className="text-gray-600 body-font relative ">
         <div
-          className={`flex justify-center z-[70] w-full duration-300 absolute lg:fixed py-5 text-white md:gap-y-5 border-b border-[#1A297A] ${
-            isScrolled ? "lg:bg-[#050f1f]/60 lg:backdrop-blur-md" : ""
+          className={`flex justify-center z-[70] w-full duration-300 absolute border-[#1A297A] lg:fixed py-5 text-white md:gap-y-5 ${
+            isScrolled
+              ? "lg:bg-[#050f1f]/60 lg:backdrop-blur-md  border-b "
+              : "bg-black"
           }`}
         >
-          <div className=" flex gap-y-2 justify-between xl:flex-wrap flex-col px-8 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
+          <nav className=" flex gap-4 justify-between xl:flex-wrap flex-col px-8 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
             <div className="flex w-full  lg:w-fit  justify-between">
               <Link
                 to="/"
@@ -69,7 +71,7 @@ const Header = () => {
                   alt="Logo"
                 />
               </Link>
-              <div className="z-[9999]">
+              <div>
                 <img
                   loading="lazy"
                   src="/Hero/menu.png"
@@ -86,68 +88,36 @@ const Header = () => {
                 setDrawerOpen={() => setIsDrawerOpen(!isDrawerOpen)}
               />
             </div>
-            <div className="gap-3 hidden relative lg:flex ">
-              <div ref={node}>
-                <button
-                  onClick={() => setisMenuOpen(!isMenuOpen)}
-                  className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 "
-                >
-                  <span>Services</span>
-                  <img
-                    src="/icons/Vector.png"
-                    className={`${
-                      isMenuOpen ? "rotate-180" : "rotate-0"
-                    } duration-300`}
-                    loading="lazy"
-                    alt="arrow"
-                  />
-                </button>
-                {isMenuOpen && (
-                  <div
-                    className={` duration-300 absolute flex flex-col gap-2 delay-500 items-start left-0 top-12 bg-[#1A297A] p-4 rounded-xl whitespace-nowrap`}
-                  >
-                    <img
-                      src="/icons/Polygon.png"
-                      alt="Polygon"
-                      className="absolute top-[-9px] left-[90px]"
-                      loading="lazy"
-                    />
-                    <Link
-                      to="/Crypto-OTC-Trading-Platform"
-                      className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                      rel="noopener noreferrer"
-                    >
-                      Crypto OTC Trading Platform
-                    </Link>
-                    {/* <Link
-                      to="/Crypto-ATM-Machine"
-                      className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                      rel="noopener noreferrer"
-                    >
-                      Crypto ATM Machine
-                    </Link> */}
-                    <Link
-                      to="/Assured-APY"
-                      className="py-3 px-4 rounded-md text-start bg-[#152162] hover:bg-[#101949] duration-300 w-full"
-                      rel="noopener noreferrer"
-                    >
-                      Assured APY Returns - Liquidity Investment
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <a
-                href="/#insights"
-                className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3"
-              >
-                <span>Insights</span>
-              </a>
-              <button className="inline-flex justify-center gap-1 items-center px-7 rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
-                <Link to="/About-Us">About</Link>
-              </button>
-            </div>
+            <ul className="gap-14 hidden relative lg:flex ">
+              <Link to="/services/buy-sell-crypto">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 font-bold">
+                  <span>Buy & Sell Crypto</span>
+                </li>
+              </Link>
+              <Link to="/services/earn">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 ">
+                  <span>Earn</span>
+                </li>
+              </Link>
+              {/* <Link to="/learn">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 ">
+                  <span>Learn</span>
+                </li>
+              </Link> */}
+              <Link to="/company/about">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 ">
+                  <span>Company</span>
+                </li>
+              </Link>
+
+              <Link to="/support/contact-us">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 ">
+                  <span>Support</span>
+                </li>
+              </Link>
+            </ul>
             <div
-              className={`flex justify-between max-lg:w-full duration-300 gap-3 lg:pr-10 ${
+              className={`lg:flex hidden justify-between max-lg:w-full duration-300 gap-3 lg:pr-10 ${
                 isScrolled
                   ? " max-lg:bg-[#050f1f]/60 max-lg:backdrop-blur-lg max-lg:fixed  max-lg:top-0 max-lg:left-0 max-lg:py-4 max-lg:px-5"
                   : "bg-transparent"
@@ -164,26 +134,13 @@ const Header = () => {
               </a>
               <a
                 href="https://my.iteller.app/en/auth/sign-up"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border  px-5 md:px-7 rounded-xl text-xs md:text-base  md:mt-0 whitespace-nowrap py-3"
-              >
-                <img loading="lazy" src="/icons/user-add.svg" alt="user" />
-                <span>Sign Up</span>
-              </a>
-              <Link
-                to="/Contact-Us"
-                className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn  rounded-xl md:mt-0"
+                className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn py-2.5  rounded-xl md:mt-0"
               >
                 <button className="inline-flex justify-center gap-1  items-center border-btn border px-5 md:px-7 text-xs md:text-base">
-                  <img
-                    loading="lazy"
-                    src="/icons/call-calling.svg"
-                    alt="call-calling"
-                  />
-                  <span>Contact</span>
+                  <img loading="lazy" src="/icons/user-add.svg" alt="user" />
+                  <span>Sign Up</span>
                 </button>
-              </Link>
+              </a>
             </div>
             <div className="ml-8 w-20 hidden md:flex lg:hidden">
               <img
@@ -195,7 +152,7 @@ const Header = () => {
               />
               <span className="sr-only">Close menu</span>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
     </>

@@ -1,10 +1,18 @@
-﻿import COTP from "../../Components/COTP/COTP";
+﻿import { useEffect } from "react";
+import COTP from "../../Components/COTP/COTP";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
+import PageTitle from "../../Components/PageTitle";
 
 const CryptoOTCTradingPlatform = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 300);
+  }, []);
   return (
     <>
+      <PageTitle title="iTeller Guide" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px]  top-[-20px]">
         <svg

@@ -2,6 +2,7 @@
 import Footer from "../../Components/Footer/Footer";
 import PPC from "./PPC/PPC";
 import { useEffect, useState } from "react";
+import PageTitle from "../../Components/PageTitle";
 
 const PrivacyPolicy = () => {
   const [accordion, setAccordion] = useState("");
@@ -14,6 +15,7 @@ const PrivacyPolicy = () => {
 
   return (
     <>
+      <PageTitle title="Privacy Policy" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px]  top-[-20px]">
         <svg

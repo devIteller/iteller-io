@@ -12,7 +12,11 @@ import { useState } from "react";
 import AssuredAPYForm from "./Pages/AssuredAPYForm";
 import FAQ from "./Pages/FAQ";
 import Legal from "./Pages/Legal";
-import SecurityCenter from './Pages/SecurityCenter'
+import SecurityCenter from "./Pages/SecurityCenter";
+import BuySell from "./Pages/BuySell";
+import { Earn } from "./Pages/Earn";
+import { Learn } from "./Pages/Learn";
+import { NotFound } from "./Pages/NotFound";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,21 +42,28 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
-          <Route path="/Customer-Agreement" element={<CustomerAgreement />} />
-          <Route path="/Contact-Us" element={<ContactUs />} />
-          <Route path="/About-Us" element={<AboutUs />} />
+          <Route path="/support/contact-us" element={<ContactUs />} />
+          <Route path="/support/faq" element={<FAQ />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/company/about" element={<AboutUs />} />
           {/* <Route path="/Crypto-ATM-Machine" element={<CryptoATMMachine />} /> */}
           <Route path="/Assured-APY-Click" element={<AssuredAPYClick />} />
           <Route path="/Assured-APY" element={<AssuredAPY />} />
           <Route path="/Assured-APY-Form" element={<AssuredAPYForm />} />
           <Route
-            path="/Crypto-OTC-Trading-Platform"
+            path="/learn/guide"
             element={<CryptoOTCTradingPlatform />}
           />
-          <Route path="/FAQ" element={<FAQ />} />
-          <Route path="/Legal" element={<Legal />} />
-          <Route path="/Security-Center" element={<SecurityCenter />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+          <Route
+            path="/legal/customer-agreement"
+            element={<CustomerAgreement />}
+          />
+          <Route path="/services/buy-sell-crypto" element={<BuySell />} />
+          <Route path="/services/earn" element={<Earn />} />
+          {/* <Route path="/learn" element={<Learn />} /> */}
+          <Route path="/learn/security" element={<SecurityCenter />} />
         </Routes>
       </BrowserRouter>
       <button
@@ -69,8 +80,8 @@ const App = () => {
           fillRule="evenodd"
           clipRule="evenodd"
           viewBox="0 0 512 512"
-          width="50px"
-          height="50px"
+          width="42px"
+          height="42px"
           fill="#162B9A"
         >
           <path

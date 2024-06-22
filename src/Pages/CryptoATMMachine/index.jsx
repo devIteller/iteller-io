@@ -118,7 +118,7 @@ const CryptoATMMachine = () => {
               </div>
             )}
           </div>
-          <h1 className="pl-7 font-bold text-lg lg:text-xl py-3 bg-[#CD7B00] text-start w-full">
+          <h1 className="pl-7 font-bold text-lg lg:text-xl py-3 bg-i_orange text-start w-full">
             Highlights include:
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">

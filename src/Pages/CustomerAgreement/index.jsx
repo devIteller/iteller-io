@@ -13,7 +13,7 @@ const CustomerAgreement = () => {
       title: (
         <span>
           Customer Agreement of
-          <a href="https://iTeller.io" className="text-[#CD7B00] mx-1">
+          <a href="https://iTeller.io" className="text-i_orange mx-1">
             iTeller.io
           </a>
           website
@@ -89,7 +89,7 @@ const CustomerAgreement = () => {
             );
           })}
           <div className=" w-full z-50 bg-[#1A297A] p-5 space-y-4">
-            <h1 className="text-xl font-bold text-[#CD7B00]">
+            <h1 className="text-xl font-bold text-i_orange">
               Warranty and limitation of liability
             </h1>
             <h3 className="text-[#E8EAF2] text-sm">

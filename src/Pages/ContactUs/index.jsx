@@ -4,6 +4,7 @@ import Input from "../../Components/Input/Input";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import PageTitle from "../../Components/PageTitle";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -70,6 +71,7 @@ const ContactUs = () => {
 
   return (
     <>
+      <PageTitle title="Contact us" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg
@@ -159,7 +161,7 @@ const ContactUs = () => {
               </div>
               <button
                 onClick={submit}
-                className="text-white bg-[#CD7B00] hover:bg-[#CD7B00]/80 border-0 py-3 px-8  duration-300 rounded-lg md:w-fit text-sm md:text-lg w-full text-center float-right"
+                className="text-white bg-i_orange hover:bg-i_orange/80 border-0 py-3 px-8  duration-300 rounded-lg md:w-fit text-sm md:text-lg w-full text-center float-right"
               >
                 Send Messages
               </button>

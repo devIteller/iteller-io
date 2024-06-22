@@ -6,12 +6,13 @@ import Header from "../../Components/Header/Header";
 import Hero from "../../Components/Hero/Hero";
 import Insights from "../../Components/Insights/Insights";
 import ReceiveInsights from "../../Components/ReceiveInsights/ReceiveInsights";
-import SliderSec from "../../Components/SliderSec/SliderSec";
 import { useLocation } from "react-router-dom";
+import { LocalFAQ } from "../../Components/LocalFAQ";
+import CryptoJourney from "../../Components/CryptoJourney/Hero";
+import { Earnings } from "../../Components/Earnings";
 
 export default function Landing() {
   const location = useLocation();
-
   useEffect(() => {
     if (location.hash === "#insights") {
       const insightsElement = document.getElementById("insights");
@@ -20,17 +21,19 @@ export default function Landing() {
       }
     }
   }, [location.hash]);
+
   return (
     <>
       <Header />
       <Hero />
       <ContentSec />
       <Feature />
+      <Earnings />
       <Insights />
+      <LocalFAQ />
+      <CryptoJourney />
       <ReceiveInsights />
-      <SliderSec />
       <Footer />
-    
     </>
   );
 }

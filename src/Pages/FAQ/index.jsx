@@ -2,6 +2,7 @@
 import Footer from "../../Components/Footer/Footer";
 import PPC from "./FAQ_Content/FAQ_Content";
 import { useEffect, useState } from "react";
+import PageTitle from "../../Components/PageTitle";
 
 const FAQ = () => {
   const [accordion, setAccordion] = useState("");
@@ -14,6 +15,7 @@ const FAQ = () => {
 
   return (
     <>
+      <PageTitle title="FAQ" />
       <Header />
       <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px]  top-[-20px]">
         <svg

@@ -22,7 +22,9 @@ const AssuredAPY = () => {
               <span className="font-bold">Investment Range:</span> 5,000 to
               25,000 USDT
             </h3>
-            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 10% to 13%</h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">
+              APY: 10% to 13%
+            </h3>
           </div>
           <h1 className=" font-bold text-lg ">Tier 2:</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg ">
@@ -30,7 +32,9 @@ const AssuredAPY = () => {
               <span className="font-bold">Investment Range:</span> 25,000 to
               50,000 USDT
             </h3>
-            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">APY: 13% to 15%</h3>
+            <h3 className="bg-[#141F5C] px-6 py-3 font-bold">
+              APY: 13% to 15%
+            </h3>
           </div>
           <h1 className=" font-bold text-lg ">Tier 3:</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 text-lg ">
@@ -180,7 +184,7 @@ const AssuredAPY = () => {
                   type="button"
                   className="flex items-center justify-between w-full text-lg lg:text-xl font-bold rounded-t-xl  gap-3"
                 >
-                  <span className="self-start text-lg lg:text-xl text-start text-[#CD7B00] ">
+                  <span className="self-start text-lg lg:text-xl text-start text-i_orange ">
                     {pp.title}
                   </span>
                 </div>
@@ -209,7 +213,7 @@ const AssuredAPY = () => {
                   type="button"
                   className="flex items-center justify-between w-full text-lg lg:text-xl font-bold rounded-t-xl  gap-3"
                 >
-                  <span className="self-start text-lg lg:text-xl  text-start text-[#CD7B00] ">
+                  <span className="self-start text-lg lg:text-xl  text-start text-i_orange ">
                     {pp.title}
                   </span>
                 </div>
@@ -231,7 +235,7 @@ const AssuredAPY = () => {
               detailed information about our liquidity investment program,
               including terms and conditions, please
               <Link to="/Assured-APY-Click">
-                <span className="text-[#CD7B00] underline font-bold mx-1">
+                <span className="text-i_orange underline font-bold mx-1">
                   Click Here
                 </span>
               </Link>
@@ -242,7 +246,7 @@ const AssuredAPY = () => {
             </p>
           </div>
           <Link to="/Assured-APY-Form">
-            <button className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 hover:scale-90 border-0 py-3 lg:py-2 w-[191px]  duration-300 rounded font-medium text-sm md:text-base text-center">
+            <button className="bg-i_orange hover:bg-i_orange/80 hover:scale-90 border-0 py-3 lg:py-2 w-[191px]  duration-300 rounded font-medium text-sm md:text-base text-center">
               Submit Form
             </button>
           </Link>
