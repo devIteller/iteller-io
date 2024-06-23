@@ -1,7 +1,6 @@
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import React, { useEffect } from "react";
-import { MiniFAQ } from "../../Components/LocalFAQ/MiniFAQ";
 import { EarnBox } from "../../Components/EarnBox";
 import PageTitle from "../../Components/PageTitle";
 import { Link } from "react-router-dom";
@@ -231,7 +230,7 @@ export const Earn = () => {
               </h3>
             </div>
           </div>
-          <MiniFAQ />
+      
           <div className="grid grid-cols-1 justify-start w-full mt-12 lg:grid-cols-3">
             <h1 className="text-xl md:text-2xl font-medium lg:col-span-2">
               Maximize your returns with <br />
