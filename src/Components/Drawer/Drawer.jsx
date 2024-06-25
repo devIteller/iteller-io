@@ -133,7 +133,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
                 />
               </svg>
             </DrawerItem>
-            <button onClick={setDrawerOpen}>
+            <button onClick={setDrawerOpen} className="w-full">
               <DrawerItem title="Exit">
                 <svg
                   width="37"
