@@ -6,6 +6,7 @@ import { BuySellBox } from "../../Components/BuySellBox";
 import React from "react";
 import { MiniFAQ } from "../../Components/LocalFAQ/MiniFAQ";
 import PageTitle from "../../Components/PageTitle";
+import { Link } from "react-router-dom";
 
 const images = [
   "Bitcoin",
