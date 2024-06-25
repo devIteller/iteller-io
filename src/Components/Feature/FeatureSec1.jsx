@@ -1,4 +1,6 @@
-﻿const FeatureSec1 = () => {
+﻿import { Link } from "react-router-dom";
+
+const FeatureSec1 = () => {
   const images = [
     "Bitcoin",
     "Ethereum",
@@ -53,9 +55,11 @@
           </div>
         </div>
 
-        <button className="bg-i_orange mt-5 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px]  duration-300 rounded font-medium text-sm md:text-base text-center">
-          Buy Crypto
-        </button>
+        <Link to="/services/earn">
+          <button className="bg-i_orange mt-5 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px]  duration-300 rounded font-medium text-sm md:text-base text-center">
+            Buy Crypto
+          </button>
+        </Link>
       </div>
     </section>
   );
