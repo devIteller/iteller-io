@@ -55,7 +55,7 @@ const FeatureSec1 = () => {
           </div>
         </div>
 
-        <Link to="/services/earn">
+        <Link to="https://my.iteller.app/en/auth/sign-up">
           <button className="bg-i_orange mt-5 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px]  duration-300 rounded font-medium text-sm md:text-base text-center">
             Buy Crypto
           </button>
