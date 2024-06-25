@@ -25,7 +25,7 @@ export const NotFound = () => {
               It looks like the page you're searching for doesn't exist.
             </p>
             <p className=" text-center text-gray-500 text-sm  lg:text-base">
-              Try going back to the <Link className="text-blue-500" href="/">Homepage.</Link>
+              Try going back to the <Link className="text-blue-500" to="/">Homepage.</Link>
             </p>
           </div>
           <Link
