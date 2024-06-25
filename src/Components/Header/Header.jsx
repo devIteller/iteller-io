@@ -58,30 +58,19 @@ const Header = () => {
               : "bg-black"
           }`}
         >
-          <nav className=" flex gap-4 justify-between xl:flex-wrap flex-col px-8 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
-            <div className="flex w-full  lg:w-fit  justify-between">
-              <Link
-                to="/"
-                className="flex w-20 md:w-36 justify-start lg:items-center "
-              >
-                <img
-                  loading="lazy"
-                  src="/Logo/Logo.png"
-                  className="md:w-36 object-contain"
-                  alt="Logo"
-                />
-              </Link>
-              <div>
-                <img
-                  loading="lazy"
-                  src="/Hero/menu.png"
-                  className="w-8 h-8 md:hidden z-[9999]"
-                  alt="menu"
-                  onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-                />
-                <span className="sr-only">Close menu</span>
-              </div>
-            </div>
+          <nav className=" flex gap-x-2 gap-y-2 justify-between xl:flex-wrap  px-4 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
+            <Link
+              to="/"
+              className="flex w-20 md:w-36 justify-start lg:items-center "
+            >
+              <img
+                loading="lazy"
+                src="/Logo/Logo.png"
+                className="md:w-36 object-contain"
+                alt="Logo"
+              />
+            </Link>
+
             <div ref={DrawerNode}>
               <Drawer
                 isDrawerOpen={isDrawerOpen}
@@ -117,7 +106,7 @@ const Header = () => {
               </Link>
             </ul>
             <div
-              className={`lg:flex hidden justify-between max-lg:w-full duration-300 gap-3 lg:pr-10 ${
+              className={`flex justify-end gap-x-3 max-lg:w-full duration-300 lg:pr-10 ${
                 isScrolled
                   ? " max-lg:bg-[#050f1f]/60 max-lg:backdrop-blur-lg max-lg:fixed  max-lg:top-0 max-lg:left-0 max-lg:py-4 max-lg:px-5"
                   : "bg-transparent"
@@ -127,20 +116,35 @@ const Header = () => {
                 href="https://my.iteller.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-5 md:px-7 rounded-xl text-xs md:text-base md:mt-0"
+                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-3 py-2 md:px-7 rounded-xl text-xs md:text-base md:mt-0"
               >
                 <img loading="lazy" src="/icons/login.svg" alt="in" />
                 <span>Login</span>
               </a>
               <a
                 href="https://my.iteller.app/en/auth/sign-up"
-                className="inline-flex bg-btn duration-300 hover:scale-90 items-center border-btn py-2.5  rounded-xl md:mt-0"
+                className="inline-flex bg-btn duration-300 hover:scale-90  items-center border-btn   rounded-xl md:mt-0"
               >
-                <button className="inline-flex justify-center gap-1  items-center border-btn border px-5 md:px-7 text-xs md:text-base">
-                  <img loading="lazy" src="/icons/user-add.svg" alt="user" />
+                <button className="inline-flex justify-center gap-1  items-center border-btn border px-2 md:px-7 text-xs md:text-base">
+                  <img
+                    loading="lazy"
+                    src="/icons/user-add.svg"
+                    className=" w-4 md:w-5"
+                    alt="user"
+                  />
                   <span>Sign Up</span>
                 </button>
               </a>
+              <div>
+                <img
+                  loading="lazy"
+                  src="/Hero/menu.png"
+                  className="w-8 h-8 md:hidden z-[9999]"
+                  alt="menu"
+                  onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+                />
+                <span className="sr-only">Close menu</span>
+              </div>
             </div>
             <div className="ml-8 w-20 hidden md:flex lg:hidden">
               <img
