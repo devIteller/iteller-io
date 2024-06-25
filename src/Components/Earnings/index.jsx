@@ -25,7 +25,7 @@ export const Earnings = () => {
                 with top-tier security and transparency.
               </p>
             </div>
-            <Link to="https://my.iteller.app/en/auth/sign-up">
+            <Link to="/services/earn">
               <button
                 data-aos="zoom-in"
                 className="bg-i_orange hover:bg-i_orange/80 text-white hover:scale-90 border-0 py-4 md:py-3 md:w-[224px]  duration-300 rounded-lg font-medium md:text-lg text-center w-full"
