@@ -77,9 +77,15 @@ const Header = () => {
               />
             </div>
             <ul className="gap-14 hidden relative lg:flex ">
+            
+              <Link to="/business">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
+                  <span>Business</span>
+                </li>
+              </Link>
               <Link to="/services/buy-sell-crypto">
                 <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 font-bold">
-                  <span>Buy & Sell Crypto</span>
+                  <span>Buy & Sell</span>
                 </li>
               </Link>
               <Link to="/services/earn">
@@ -94,7 +100,7 @@ const Header = () => {
               </Link> */}
               <Link to="/company/about">
                 <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 ">
-                  <span>Company</span>
+                  <span>About</span>
                 </li>
               </Link>
 
@@ -125,7 +131,7 @@ const Header = () => {
                 />
               </Link>
               <a
-                href="http://localhost:5173/Footer/app_store.png"
+                href="https://apps.apple.com/us/app/iteller/id6477462194"
                 className={` w-20 md:w-36 flex  justify-start lg:items-center ${
                   isScrolled ? "flex" : "hidden"
                 }`}
