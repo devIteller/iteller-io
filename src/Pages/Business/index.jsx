@@ -22,7 +22,7 @@ const images = [
 const Business = () => {
   useEffect(() => {
     setTimeout(() => {
-      // window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
     }, 300);
   }, []);
 
