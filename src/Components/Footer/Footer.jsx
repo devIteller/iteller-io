@@ -135,12 +135,12 @@ const Footer = () => {
                   </div>
                   <div>
                     <h3>UAE</h3>
-                    <h3>Lisence No :1130113</h3>
+                    <h3>License No :1130113</h3>
                     <h5>Al owais Business Tower</h5>
                   </div>
                   <div className="col-span-2">
                     <h3>UK</h3>
-                    <h3>Lisence No : 13756061</h3>
+                    <h3>License No : 13756061</h3>
                     <h5>
                       29 Walker House Phoenix Road, London, England, NW1 1EN
                     </h5>
