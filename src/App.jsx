@@ -17,6 +17,7 @@ import BuySell from "./Pages/BuySell";
 import { Earn } from "./Pages/Earn";
 import { Learn } from "./Pages/Learn";
 import { NotFound } from "./Pages/NotFound";
+import Business from "./Pages/Business";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,12 +64,12 @@ const App = () => {
           <Route path="/services/buy-sell-crypto" element={<BuySell />} />
           <Route path="/services/earn" element={<Earn />} />
           {/* <Route path="/learn" element={<Learn />} /> */}
-          <Route path="/learn/security" element={<SecurityCenter />} />
+          <Route path="/business" element={<Business  />} />
         </Routes>
       </BrowserRouter>
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-4 right-4 z-[999999] lg:hover:scale-90 duration-300 ${
+        className={`fixed bottom-4 left-4 z-[999999] lg:hover:scale-90 duration-300 ${
           isVisible ? "block" : "hidden"
         }`}
       >
@@ -79,9 +80,10 @@ const App = () => {
           imageRendering="optimizeQuality"
           fillRule="evenodd"
           clipRule="evenodd"
+          className="rounded-full p-[1px] bg-white"
           viewBox="0 0 512 512"
-          width="42px"
-          height="42px"
+          width="35px"
+          height="35px"
           fill="#162B9A"
         >
           <path
