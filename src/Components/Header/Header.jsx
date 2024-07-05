@@ -61,7 +61,7 @@ const Header = () => {
           <nav className=" flex gap-x-2 gap-y-2 justify-between xl:flex-wrap  px-4 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
             <Link
               to="/"
-              className="flex w-20 md:w-36 justify-start lg:items-center "
+              className="lg:flex w-20 md:w-36  justify-start lg:items-center hidden "
             >
               <img
                 loading="lazy"
@@ -70,7 +70,6 @@ const Header = () => {
                 alt="Logo"
               />
             </Link>
-
             <div ref={DrawerNode}>
               <Drawer
                 isDrawerOpen={isDrawerOpen}
@@ -106,44 +105,73 @@ const Header = () => {
               </Link>
             </ul>
             <div
-              className={`flex justify-end gap-x-3 max-lg:w-full duration-300 lg:pr-10 ${
+              className={`flex justify-between gap-x-3 max-lg:w-full duration-300 lg:pr-10 ${
                 isScrolled
                   ? " max-lg:bg-[#050f1f]/60 max-lg:backdrop-blur-lg max-lg:fixed  max-lg:top-0 max-lg:left-0 max-lg:py-4 max-lg:px-5"
                   : "bg-transparent"
               }`}
             >
-              <a
-                href="https://my.iteller.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-3 py-2 md:px-7 rounded-xl text-xs md:text-base md:mt-0"
+              <Link
+                to="/"
+                className={` w-20 md:w-36  justify-start lg:hidden ${
+                  isScrolled ? "hidden" : "flex"
+                }`}
               >
-                <img loading="lazy" src="/icons/login.svg" alt="in" />
-                <span>Login</span>
-              </a>
-              <a
-                href="https://my.iteller.app/en/auth/sign-up"
-                className="inline-flex bg-btn duration-300 hover:scale-90  items-center border-btn   rounded-xl md:mt-0"
-              >
-                <button className="inline-flex justify-center gap-1  items-center border-btn border px-2 md:px-7 text-xs md:text-base">
-                  <img
-                    loading="lazy"
-                    src="/icons/user-add.svg"
-                    className=" w-4 md:w-5"
-                    alt="user"
-                  />
-                  <span>Sign Up</span>
-                </button>
-              </a>
-              <div>
                 <img
                   loading="lazy"
-                  src="/Hero/menu.png"
-                  className="w-8 h-8 md:hidden z-[9999]"
-                  alt="menu"
-                  onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+                  src="/Logo/Logo.png"
+                  className="md:w-36 object-contain"
+                  alt="Logo"
                 />
-                <span className="sr-only">Close menu</span>
+              </Link>
+              <a
+                href="http://localhost:5173/Footer/app_store.png"
+                className={` w-20 md:w-36 flex  justify-start lg:items-center ${
+                  isScrolled ? "flex" : "hidden"
+                }`}
+              >
+                <img
+                  loading="lazy"
+                  src="/icons/apple.svg"
+                  className="w-8 object-contain"
+                  alt="Logo"
+                />
+              </a>
+
+              <div className="flex gap-x-3">
+                <a
+                  href="https://my.iteller.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center gap-1 duration-300 hover:scale-90 items-center border-btn border px-3 py-2 md:px-7 rounded-xl text-xs md:text-base md:mt-0"
+                >
+                  <img loading="lazy" src="/icons/login.svg" alt="in" />
+                  <span>Login</span>
+                </a>
+                <a
+                  href="https://my.iteller.app/en/auth/sign-up"
+                  className="inline-flex bg-btn duration-300 hover:scale-90  items-center border-btn   rounded-xl md:mt-0"
+                >
+                  <button className="inline-flex justify-center gap-1  items-center border-btn border px-2 md:px-7 text-xs md:text-base">
+                    <img
+                      loading="lazy"
+                      src="/icons/user-add.svg"
+                      className=" w-4 md:w-5"
+                      alt="user"
+                    />
+                    <span>Sign Up</span>
+                  </button>
+                </a>
+                <div>
+                  <img
+                    loading="lazy"
+                    src="/Hero/menu.png"
+                    className="w-8 h-8 md:hidden z-[9999]"
+                    alt="menu"
+                    onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+                  />
+                  <span className="sr-only">Close menu</span>
+                </div>
               </div>
             </div>
             <div className="ml-8 w-20 hidden md:flex lg:hidden">
