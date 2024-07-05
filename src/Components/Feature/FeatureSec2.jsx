@@ -130,32 +130,32 @@ const FeatureSec2 = () => {
               <div className="text-white space-y-4">
                 <FeatureItem
                   title="AED/USDT"
-                  price={Data.AED.today_price}
-                  changes={Data.AED.changes}
+                  price={Data?.AED?.today_price}
+                  changes={Data.AED?.changes}
                   icon="AED.svg"
                 />
                 <FeatureItem
                   title="AUD/USDT"
-                  price={Data.AUD.today_price}
-                  changes={Data.AUD.changes}
+                  price={Data?.AUD?.today_price}
+                  changes={Data?.AUD?.changes}
                   icon="AUD.svg"
                 />
                 <FeatureItem
                   title="GBP/USDT"
-                  price={Data.GBP.today_price}
-                  changes={Data.GBP.changes}
+                  price={Data?.GBP?.today_price}
+                  changes={Data?.GBP?.changes}
                   icon="GBP.svg"
                 />
                 <FeatureItem
                   title="USD/USDT"
-                  price={Data.USD.today_price}
-                  changes={Data.USD.changes}
+                  price={Data?.USD?.today_price}
+                  changes={Data?.USD?.changes}
                   icon="USD.svg"
                 />
                 <FeatureItem
                   title="BTC/USDT"
-                  price={BTCData.USD.today_price}
-                  changes={BTCData.USD.changes}
+                  price={BTCData?.USD?.today_price}
+                  changes={BTCData?.USD?.changes}
                   icon="BTC.png"
                 />
               </div>
