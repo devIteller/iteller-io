@@ -41,14 +41,14 @@ const Business = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center ">
-        <div className="flex flex-col z-50 gap-y-4 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 lg:py-5 items-center relative mt-28 text-white">
+        <div className="flex flex-col z-50 gap-y-4 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 lg:py-5 items-center relative mt-20 text-white">
           <div className=" flex flex-col lg:flex-row items-center justify-between gap-4 ">
             <div className="flex h-fit gap-3 flex-col justify-between ">
-              <h1 className="text-3xl font-bold float-left w-full">
+              <h1 className="text-2xl lg:text-3xl font-bold float-left w-full">
                 Transform Your Financial Operations <br /> with Our Seamless
                 Crypto Solution
               </h1>
-              <h5 className="text-lg">
+              <h5 className="leading-relaxed text-[#FFF]">
                 iTeller offers comprehensive cryptocurrency solutions designed
                 to enhance business operations. Our services provide faster,
                 secure transactions, diversified investment opportunities, and
