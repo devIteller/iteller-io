@@ -84,9 +84,9 @@ const ContactUs = () => {
         ></svg>
       </span>
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-28 text-white">
+        <div className="flex flex-col gap-y-6 lg:max-w-[1440px] w-[90%] md:px-10 py-10 items-center relative mt-20 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 z-50">
-            <div className="p-10 bg-[#141F5C]">
+            <div className="p-8 bg-[#141F5C]">
               <h1 className="md:text-3xl font-bold mb-7">
                 Let&apos;s Talk With Us
               </h1>
@@ -125,28 +125,35 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </div>
+                <div>
+                  <div>
+                    <h3>☎️ 800 (iTeller)</h3>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="p-10 bg-[#0C1237] space-y-6">
-              <div>
-                <label className="font-bold">Full Name</label>
-                <Input
-                  type="text"
-                  value={fullName}
-                  onChange={(e) => setFullName(e.currentTarget.value)}
-                  placeholder="Input your full name in here"
-                  className="bg-[#1A297A] mt-4 text-white"
-                />
-              </div>
-              <div>
-                <label className="font-bold">Email Address</label>
-                <Input
-                  type="text"
-                  value={emailAddress}
-                  onChange={(e) => setEmailAddress(e.currentTarget.value)}
-                  placeholder="Input your email address in here"
-                  className="bg-[#1A297A] mt-4 text-white"
-                />
+            <div className="p-8 bg-[#0C1237] space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div>
+                  <label className="font-bold">Full Name</label>
+                  <Input
+                    type="text"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.currentTarget.value)}
+                    placeholder="Input your full name in here"
+                    className="bg-[#1A297A] mt-2 text-white"
+                  />
+                </div>
+                <div>
+                  <label className="font-bold">Email Address</label>
+                  <Input
+                    type="text"
+                    value={emailAddress}
+                    onChange={(e) => setEmailAddress(e.currentTarget.value)}
+                    placeholder="Input your email address in here"
+                    className="bg-[#1A297A] mt-2 text-white"
+                  />
+                </div>
               </div>
               <div>
                 <label className="font-bold">Messages</label>
