@@ -179,9 +179,9 @@ const Business = () => {
             <div data-aos="zoom-in" className="text-center flex items-center h-80 flex-col gap-3">
               <div className="bg-white w-32 h-[200px]  rounded-full flex justify-center items-center">
                 <img
-                  src="/Business/sign-in.png"
+                  src="/Business/sign-up.png"
                   className="w-16 mt-4"
-                  alt="sign-in"
+                  alt="sign-up"
                 />
               </div>
               <h1 className="font-bold text-lg">Sign Up</h1>
