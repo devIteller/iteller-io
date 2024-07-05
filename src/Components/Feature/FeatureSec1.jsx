@@ -28,7 +28,11 @@ const FeatureSec1 = () => {
           Over <span className="font-extrabold">562 million people</span>{" "}
           worldwide own cryptocurrency, reflecting the growing global acceptance
           and adoption of digital assets.
-          <span className="text-i_orange font-extrabold ml-1">Join them!</span>
+          <a href="https://my.iteller.app/en/auth/sign-up" target="_blank" rel="noopener noreferrer">
+            <span className="text-i_orange font-extrabold ml-1">
+              Join them!
+            </span>
+          </a>
         </h4>
         <div className="w-full flex items-center  justify-center ">
           <div className="w-[200%] h-[20vh] overflow-hidden relative">

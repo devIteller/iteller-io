@@ -10,6 +10,7 @@ const FeatureSec2 = () => {
   const [Data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
+  const [BTCData, setBTCData] = useState({});
 
   const getCryptoPrices = () => {
     isLoading && setIsLoading(true);
@@ -29,7 +30,8 @@ const FeatureSec2 = () => {
     }
     const yesterdayDate = `${year}-${month}-${day}`;
     try {
-      const url = `https://data.fixer.io/api/timeseries?access_key=c7453b287a3d8a9572dfcb16b0da44c1&symbols=AED,AUD,USD,GBP,BTC&start_date=${yesterdayDate}&end_date=${today}&base=USD`;
+      const url = `https://data.fixer.io/api/timeseries?access_key=c7453b287a3d8a9572dfcb16b0da44c1&symbols=AED,AUD,USD,GBP&start_date=${yesterdayDate}&end_date=${today}&base=USD`;
+      const urlBTC = `https://data.fixer.io/api/timeseries?access_key=c7453b287a3d8a9572dfcb16b0da44c1&symbols=USD&start_date=${yesterdayDate}&end_date=${today}&base=BTC`;
 
       fetch(url)
         .then((response) => response.json())
@@ -51,6 +53,31 @@ const FeatureSec2 = () => {
               };
             }
             setData(reformattedRates);
+          } else {
+            setIsError(true);
+          }
+        });
+
+      fetch(urlBTC)
+        .then((response) => response.json())
+        .then((data) => {
+          const rates = data.rates;
+          if (data.success) {
+            const reformattedRates = {};
+            for (const currency in rates[today]) {
+              const todayPrice = rates[today][currency];
+              const yesterdayPrice = rates[yesterdayDate][currency];
+              const changePercent =
+              ((todayPrice - yesterdayPrice) / yesterdayPrice) * 100;
+              
+              reformattedRates[currency] = {
+                today_price: todayPrice,
+                yesterday_price: yesterdayPrice,
+                changes: changePercent.toFixed(2) + "%",
+              };
+            }
+            console.log(reformattedRates);
+            setBTCData(reformattedRates);
             setIsLoading(false);
           } else {
             setIsError(true);
@@ -127,8 +154,8 @@ const FeatureSec2 = () => {
                 />
                 <FeatureItem
                   title="BTC/USDT"
-                  price={Data.BTC.today_price}
-                  changes={Data.BTC.changes}
+                  price={BTCData.USD.today_price}
+                  changes={BTCData.USD.changes}
                   icon="BTC.png"
                 />
               </div>
