@@ -84,7 +84,7 @@ const Header = () => {
                 </li>
               </Link>
               <Link to="/services/buy-sell-crypto">
-                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 font-bold">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
                   <span>Buy & Sell</span>
                 </li>
               </Link>
