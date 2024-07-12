@@ -31,16 +31,22 @@ const Hero = () => {
                   to start your crypto journey today.
                 </p>
               </div>
+              <h4 className="text-white mb-2 max-lg:mt-5 ">
+                Start Your Journey
+              </h4>
               <div className="flex max-lg:flex-col justify-center text-center lg:items-center md:w-fit gap-4 text-white w-full">
-                <a
-                  href="https://my.iteller.app/en/auth/sign-up"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="bg-i_orange hover:bg-i_orange/80 hover:scale-90 border-0 py-4 md:py-3 md:w-[224px]  duration-300 rounded-lg font-medium md:text-lg text-center w-full">
-                    Sign Up
-                  </button>
-                </a>
+                  <a
+                    href="https://my.iteller.app/en/auth/sign-up"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      className="i text-white bg-[#CD7B00] hover:bg-[#CD7B00]/80 dur3 border-0 py-4 px-8  duration-300
+         rounded-lg md:w-fit text-sm md:text-lg w-full text-center"
+                    >
+                      Create Your Account
+                    </button>
+                  </a>
                 <h3>OR</h3>
                 <a href="https://apps.apple.com/us/app/iteller/id6477462194">
                   <button className="bg-black border py-2 duration-300 hover:scale-90 text-xs rounded-lg flex justify-center items-center gap-2  md:w-[224px] w-full">
