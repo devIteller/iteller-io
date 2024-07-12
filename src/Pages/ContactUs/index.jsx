@@ -110,7 +110,7 @@ const ContactUs = () => {
                     <span className="bg-[#B3D5FF] p-1 rounded-full" />
                     <div>
                       <h3>UK</h3>
-                      <h3>Lisence No : 13756061</h3>
+                      <h3>License No : 13756061</h3>
                       <h5>London, England, NW1 1EN</h5>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ const ContactUs = () => {
                     <span className="bg-[#B3D5FF] p-1 rounded-full" />
                     <div>
                       <h3>UAE</h3>
-                      <h3>Lisence No :1130113</h3>
+                      <h3>License No :1130113</h3>
                       <h5>Al owais Business Tower</h5>
                     </div>
                   </div>
