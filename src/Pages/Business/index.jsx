@@ -127,7 +127,10 @@ const Business = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 mt-10 gap-x-10 gap-y-5 w-full">
+          <h1 className="text-xl mt-8 mb-2 md:text-3xl font-bold text-center md:text-start w-full">
+              Why iTeller?
+            </h1>
+          <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 w-full">
             <BusinessBox
               title="Unmatched Security"
               sub="Robust security protocols ensure your assets and transactions are safeguarded, providing peace of mind."
@@ -226,7 +229,6 @@ const Business = () => {
               Sign Up Now
             </button>
           </a>
-          <MiniFAQ />
         </div>
       </div>
       <Footer />
