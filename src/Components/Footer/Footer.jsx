@@ -230,7 +230,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://twitter.com/iTeller_io?s=35"
+                href="https://x.com/itellerex"
                 className="text-white h-fit ml-3 bg-[#162B9A] p-3 rounded-full duration-300 hover:bg-[#162B9A]/70 hover:scale-90 cursor-pointer"
               >
                 <svg
