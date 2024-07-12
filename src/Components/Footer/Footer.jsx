@@ -35,7 +35,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="pt-10 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div className="grid grid-cols-2 lg:grid-cols-4 justify-center flex-wrap text-left gap-10 lg:gap-5 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-center flex-wrap text-left gap-10 lg:gap-5 w-full">
               <div className="flex flex-col gap-y-1 max-sm:w-full">
                 <h2 className="font-medium uppercase border-b md:w-fit border-white text-lg mb-3">
                   Company
@@ -124,10 +124,7 @@ const Footer = () => {
                   <h3>☎️ 800 (iTeller)</h3>
                 </div>
               </div>
-              <div className="flex col-span-2 lg:col-span-4 flex-col max-sm:w-full gap-y-1">
-                <h2 className="font-medium  uppercase border-b md:w-fit border-white text-lg mb-3">
-                  Contact us:
-                </h2>
+              <div className="flex col-span-2 md:col-span-3 lg:col-span-6 flex-col max-sm:w-full gap-1 mt-5">
                 <div className="grid grid-cols-2 md:grid-cols-4">
                   <div>
                     <h3>Australia</h3>
