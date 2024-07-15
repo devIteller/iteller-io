@@ -273,7 +273,7 @@ const Footer = () => {
           </div>
           <p className="text-gray-300 spa w-full pt-5 border-t border-white/50 text-center text-xs">
             This site is protected by reCAPTCHA and the Google
-            <Link to="/Privacy-Policy" className="border-b mx-1">
+            <Link to="/legal/privacy-policy" className="border-b mx-1">
               Privacy Policy
             </Link>
             and
