@@ -52,10 +52,10 @@ const Header = () => {
     <>
       <header className="text-gray-600 body-font relative ">
         <div
-          className={`flex justify-center z-[70] w-full duration-300 absolute border-[#1A297A] lg:fixed py-5 text-white md:gap-y-5 ${
+          className={`flex justify-center z-[70] w-full duration-200 border-b absolute border-[#1A297A] lg:fixed py-5 text-white md:gap-y-5 ${
             isScrolled
-              ? "lg:bg-[#050f1f]/60 lg:backdrop-blur-md  border-b "
-              : "bg-black"
+              ? "lg:bg-[#050f1f]/60 lg:backdrop-blur-md   "
+              : ""
           }`}
         >
           <nav className=" flex gap-x-2 gap-y-2 justify-between xl:flex-wrap  px-4 md:px-10 md:max-w-[1440px] w-full  md:flex-row items-center">
