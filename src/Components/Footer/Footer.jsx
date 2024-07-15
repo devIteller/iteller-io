@@ -3,22 +3,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="w-full flex justify-center py-10">
-        <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between items-center">
-          <img
-            src="/Footer/logo-footer.png"
-            className="w-[600px] hidden lg:block"
-            alt="logo footer"
-            loading="lazy"
-          />
-          <img
-            src="/Footer/logo-footer_2.png"
-            className="max-w-[250px] block lg:hidden"
-            alt="logo footer"
-            loading="lazy"
-          />
-        </div>
-      </div>
+
       <footer className="text-white bg-black pb-5 pt-10 body-font flex justify-center">
         <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between">
           <div className="flex justify-center lg:justify-between">
@@ -245,9 +230,50 @@ const Footer = () => {
               </a>
             </span>
           </div>
-          <p className="text-gray-300 spa w-full pt-5 border-t border-white/50 text-center text-sm">
+    
+        </div>
+      </footer>
+      <div className="w-full flex justify-center py-6">
+        <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between items-center">
+          <img
+            src="/Footer/logo-footer.png"
+            className="w-[500px] hidden lg:block"
+            alt="logo footer"
+            loading="lazy"
+          />
+          <img
+            src="/Footer/logo-footer_2.png"
+            className="max-w-[300px] block lg:hidden"
+            alt="logo footer"
+            loading="lazy"
+          />
+          <div className="grid grid-cols-1 text-sm justify-center lg:grid-cols-2 gap-8 text-white">
+            <p>
+              iTeller Pty Ltd operates within a regulated framework, maintaining
+              registrations and licenses across multiple jurisdictions to ensure
+              compliance with international financial standards. In Australia,
+              we are registered with AUSTRAC under registration number 100791220
+              and adhere to regulatory standards set by ASIC. Additionally,
+              iTeller Pty Ltd is licensed as a financial broker in the UK and
+              Dubai, reflecting our commitment to providing secure and regulated
+              financial services to our clients globally.
+            </p>
+            <p>
+              All content on this website is provided for illustrative purposes
+              and general information only, and should not be construed as
+              financial advice. iTeller Pty Ltd does not consider your
+              investment objectives, financial situation, or specific needs.
+              Before making any decisions regarding the acquisition or disposal
+              of any digital asset, you should assess the information provided
+              in relation to your personal objectives, financial situation, and
+              needs. Investing in digital assets involves risks, and there is
+              the potential to lose your investment. Past performance of digital
+              assets is not a reliable indicator of their future performance
+            </p>
+          </div>
+          <p className="text-gray-300 spa w-full pt-5 border-t border-white/50 text-center text-xs">
             This site is protected by reCAPTCHA and the Google
-            <Link to="/legal/privacy-policy" className="border-b mx-1">
+            <Link to="/Privacy-Policy" className="border-b mx-1">
               Privacy Policy
             </Link>
             and
@@ -257,7 +283,7 @@ const Footer = () => {
             apply.
           </p>
         </div>
-      </footer>
+      </div>
     </>
   );
 };
