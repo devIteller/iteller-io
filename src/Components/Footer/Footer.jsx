@@ -3,7 +3,6 @@
 const Footer = () => {
   return (
     <>
-
       <footer className="text-white bg-black pb-5 pt-10 body-font flex justify-center">
         <div className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 flex flex-col gap-5 justify-between">
           <div className="flex justify-center lg:justify-between">
@@ -48,6 +47,9 @@ const Footer = () => {
                 {/* <Link to="/Crypto-ATM-Machine">Crypto ATM Machine</Link> */}
                 <Link className="font-light text-sm" to="/services/earn">
                   Earn
+                </Link>
+                <Link to="/business" className="font-light text-sm">
+                  Business
                 </Link>
               </div>
               {/* <div className="flex flex-col max-sm:w-full gap-y-1">
@@ -230,7 +232,6 @@ const Footer = () => {
               </a>
             </span>
           </div>
-    
         </div>
       </footer>
       <div className="w-full flex justify-center py-6">
