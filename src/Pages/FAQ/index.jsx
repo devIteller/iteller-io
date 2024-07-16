@@ -44,7 +44,7 @@ const FAQ = () => {
               >
                 <button
                   type="button"
-                  className="flex items-center justify-between w-full text-xl font-bold rounded-t-xl  gap-3"
+                  className="flex items-center justify-between w-full text-sm lg:text-xl font-bold rounded-t-xl  gap-3"
                   onClick={() =>
                     accordion === pp.title
                       ? setAccordion("")
