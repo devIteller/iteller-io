@@ -29,11 +29,7 @@ const Hero = () => {
             Transactions, Uniting Financial Worlds
           </h1>
           <p className="mb-8 md:w-[60%] leading-relaxed text-[#FFF]">
-            iTeller, a financial services provider, operates under regulatory
-            oversight in both Australia and UK. The company specializes in
-            offering an OTC Exchange platform, along with on-ramp and off-ramp
-            solutions, specifically designed to meet the diverse financial needs
-            and preferences of its extensive client base
+          Experience low fees and lightning-fast transactions on a secure, user-friendly platform with seamless onboarding, regulated in Australia, the UK, and the UAE.
           </p>
           <button
             className=" text-white bg-btn hover:bg-btn/70 border-0 py-5 md:py-3 sm:pl-6 sm:pr-10 duration-300
