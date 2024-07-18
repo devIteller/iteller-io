@@ -24,20 +24,32 @@ const Footer = () => {
                 <h2 className="font-medium uppercase border-b md:w-fit border-white text-lg mb-3">
                   Company
                 </h2>
-                <Link className="font-light text-sm" to="/company/about">
-                  About Us
-                </Link>
                 <Link className="font-light text-sm" to="/legal">
                   Legal
                 </Link>
-                {/* <a className="font-light text-sm" href="#">
-                  Sitemap
-                </a> */}
+                <Link className="font-light text-sm" to="/company/about">
+                  About Us
+                </Link>
+                <Link to="/legal/privacy-policy" className="font-light text-sm">
+                  Privacy Policy
+                </Link>
+                <Link
+                  className="font-light text-sm"
+                  to="/legal/customer-agreement"
+                >
+                  Customer Agreement
+                </Link>
               </div>
               <div className="flex flex-col max-sm:w-full gap-y-1">
                 <h2 className="font-medium uppercase border-b md:w-fit border-white text-lg mb-3">
                   Services
                 </h2>
+                <Link className="font-light text-sm" to="/services/earn">
+                  Earn
+                </Link>
+                <Link to="/business" className="font-light text-sm">
+                  Business
+                </Link>
                 <Link
                   className="font-light text-sm"
                   to="/services/buy-sell-crypto"
@@ -45,12 +57,6 @@ const Footer = () => {
                   Buy & Sell Crypto
                 </Link>
                 {/* <Link to="/Crypto-ATM-Machine">Crypto ATM Machine</Link> */}
-                <Link className="font-light text-sm" to="/services/earn">
-                  Earn
-                </Link>
-                <Link to="/business" className="font-light text-sm">
-                  Business
-                </Link>
               </div>
               {/* <div className="flex flex-col max-sm:w-full gap-y-1">
                 <Link to="/learn">
@@ -68,11 +74,11 @@ const Footer = () => {
                 <h2 className="font-medium uppercase border-b md:w-fit border-white text-lg mb-3">
                   Support
                 </h2>
-                <Link className="font-light text-sm" to="/support/contact-us">
-                  Contact Us
-                </Link>
                 <Link className="font-light text-sm" to="/support/faq">
                   FAQ
+                </Link>
+                <Link className="font-light text-sm" to="/support/contact-us">
+                  Contact Us
                 </Link>
                 <Link className="font-light text-sm" to="/learn/guide">
                   iTeller Guide
@@ -85,14 +91,14 @@ const Footer = () => {
                 <h2 className="font-medium uppercase border-b md:w-fit border-white text-lg mb-3">
                   User Account
                 </h2>
+                <a className="font-light text-sm" href="https://my.iteller.app">
+                  Login
+                </a>
                 <a
                   className="font-light text-sm"
                   href="https://my.iteller.app/en/auth/sign-up"
                 >
                   Sign Up
-                </a>
-                <a className="font-light text-sm" href="https://my.iteller.app">
-                  Login
                 </a>
               </div>
               <div className="flex flex-col max-sm:w-full gap-y-1">
@@ -274,13 +280,23 @@ const Footer = () => {
           </div>
           <p className="text-gray-300 spa w-full pt-5 border-t border-white/50 text-center text-xs">
             This site is protected by reCAPTCHA and the Google
-            <Link to="/legal/privacy-policy" className="border-b mx-1">
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              className="border-b mx-1"
+              rel="noopener noreferrer"
+            >
               Privacy Policy
-            </Link>
+            </a>
             and
-            <Link to="#" className="border-b mx-1">
+            <a
+              href="https://policies.google.com/terms"
+              target="_blank"
+              className="border-b mx-1"
+              rel="noopener noreferrer"
+            >
               Terms of Service
-            </Link>
+            </a>
             apply.
           </p>
         </div>
