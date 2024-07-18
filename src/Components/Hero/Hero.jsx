@@ -24,19 +24,17 @@ const Hero = () => {
       <div className="w-full flex flex-col justify-center py-10 items-center relative mt-32">
         <div className=" z-50 flex px-3 md:px-10 lg:max-w-[1440px] w-[90%]  flex-col ">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-white">
-            Effortless OTC
-            <br />
-            Transactions, Uniting Financial Worlds
+            We make it easy for everyone <br /> to buy, sell, and swap crypto
+            worldwide <br /> with iTeller
           </h1>
-          <p className="mb-8 md:w-[60%] leading-relaxed text-[#FFF]">
-          Experience low fees and lightning-fast transactions on a secure, user-friendly platform with seamless onboarding, regulated in Australia, the UK, and the UAE.
+          <p className="mb-6 md:w-[60%] leading-relaxed text-[#FFF]">
+            Experience low fees and lightning-fast transactions on a secure,
+            user-friendly platform with seamless onboarding, regulated in
+            Australia, the UK, and the UAE.
           </p>
-          <button
-            className=" text-white bg-btn hover:bg-btn/70 border-0 py-5 md:py-3 sm:pl-6 sm:pr-10 duration-300
-            md:w-fit text-sm md:text-lg w-full text-center md:text-start min-h-[55px"
-          >
-            Digital Trade, Ensuring Seamless Liquidity
-          </button>
+          <div className=" text-white md:w-fit font-bold text-sm md:text-lg w-fit border-b-8 pb-[2px] border-b-btn rounded-xl">
+            Buy crypto safely and securely with no hidden fees
+          </div>
           <img
             src="/Hero/Line.svg"
             className="my-12 w-[60%] hidden lg:block"
