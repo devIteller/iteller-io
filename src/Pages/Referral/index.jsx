@@ -319,7 +319,7 @@ const Referral = () => {
           </h1>
           <p className="md:text-lg text-center ">
             Don’t miss out on the chance to earn rewards and help grow the
-            iTeller community. Sign Up today and start
+            iTeller community.
           </p>
           <a
             href="https://my.iteller.app/en/auth/sign-up"
