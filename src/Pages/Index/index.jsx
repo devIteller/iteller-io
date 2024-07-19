@@ -10,6 +10,7 @@ import { useLocation } from "react-router-dom";
 import { LocalFAQ } from "../../Components/LocalFAQ";
 import CryptoJourney from "../../Components/CryptoJourney/Hero";
 import { Earnings } from "../../Components/Earnings";
+import PageTitle from "../../Components/PageTitle";
 
 export default function Landing() {
   const location = useLocation();
@@ -24,6 +25,7 @@ export default function Landing() {
 
   return (
     <>
+      <PageTitle title="iTeller : Global Cryptocurrency Exchange" />
       <Header />
       <Hero />
       <ContentSec />
