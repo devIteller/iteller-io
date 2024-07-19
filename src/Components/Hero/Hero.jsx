@@ -25,15 +25,15 @@ const Hero = () => {
         <div className=" z-50 flex px-3 md:px-10 lg:max-w-[1440px] w-[90%]  flex-col ">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-white">
             We make it easy for everyone <br /> to buy, sell, and swap crypto
-            worldwide <br /> with iTeller
+            worldwide
           </h1>
           <p className="mb-6 md:w-[60%] leading-relaxed text-[#FFF]">
             Experience low fees and lightning-fast transactions on a secure,
             user-friendly platform with seamless onboarding, regulated in
             Australia, the UK, and the UAE.
           </p>
-          <div className=" text-white md:w-fit font-bold text-sm md:text-lg w-fit border-b-8 pb-[2px] capitalize border-b-btn rounded-xl">
-            Buy crypto safely and securely with no hidden fees
+          <div className=" text-white md:w-fit font-bold text-sm md:text-lg w-fit  capitalize bg-btn py-2 px-4">
+            Buy crypto with no hidden fees
           </div>
           <img
             src="/Hero/Line.svg"
