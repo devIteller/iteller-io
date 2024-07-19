@@ -18,6 +18,7 @@ import { Earn } from "./Pages/Earn";
 import { Learn } from "./Pages/Learn";
 import { NotFound } from "./Pages/NotFound";
 import Business from "./Pages/Business";
+import Referral from "./Pages/Referral";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -65,6 +66,7 @@ const App = () => {
           <Route path="/services/earn" element={<Earn />} />
           {/* <Route path="/learn" element={<Learn />} /> */}
           <Route path="/business" element={<Business  />} />
+          <Route path="/referral" element={<Referral  />} />
         </Routes>
       </BrowserRouter>
       <button
