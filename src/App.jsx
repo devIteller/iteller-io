@@ -66,7 +66,7 @@ const App = () => {
           <Route path="/services/earn" element={<Earn />} />
           {/* <Route path="/learn" element={<Learn />} /> */}
           <Route path="/business" element={<Business  />} />
-          <Route path="/referral" element={<Referral  />} />
+          <Route path="/account/dashboard/refferal-program" element={<Referral  />} />
         </Routes>
       </BrowserRouter>
       <button
