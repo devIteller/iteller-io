@@ -19,7 +19,7 @@ const FeatureSec1 = () => {
     <section className="text-white w-full justify-center flex">
       <div
         data-aos="zoom-in"
-        className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 pt-16 flex flex-col justify-center items-center"
+        className="lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-16 flex flex-col justify-center items-center"
       >
         <h1 className="lg:text-4xl text-3xl font-bold mb-2 w-full text-center">
           Build Your Crypto Portfolio

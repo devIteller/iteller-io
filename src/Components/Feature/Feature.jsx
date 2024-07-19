@@ -5,7 +5,7 @@ const Feature = () => {
   return (
     <section className="text-white w-full justify-center  bg-[#0C1237]">
       <FeatureSec1 />
-      <FeatureSec2 />
+      {/* <FeatureSec2 /> */}
     </section>
   );
 };
