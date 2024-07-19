@@ -10,7 +10,13 @@ export default {
       },
       backgroundImage: {
         contentSec: "url('/ContentSec/vector.png')",
+        referral: "url('/Referral/Benefits.png')",
+        referral_sm: "url('/Referral/Benefits_sm.png')",
         CryptoG: "linear-gradient(180deg, rgba(0, 0, 47, 0) 0%, #00002F 100%);",
+        referralG: "linear-gradient(180deg, rgba(44, 44, 44, 0%) 0%, #18181B 100%);",
+        referralLightG: "linear-gradient(180deg, rgba(241, 215, 137, 20%) 0%, rgba(241, 215, 137, 90%) 100%);"
+
+
       },
       boxShadow: {
         whyShadow: "0px 0px 10px 0px #00000066;",
