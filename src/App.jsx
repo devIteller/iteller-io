@@ -6,18 +6,16 @@ import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import CryptoOTCTradingPlatform from "./Pages/CryptoOTCTradingPlatform";
 import AssuredAPYClick from "./Pages/AssuredAPYClick";
-import CryptoATMMachine from "./Pages/CryptoATMMachine";
 import AssuredAPY from "./Pages/AssuredAPY";
 import { useState } from "react";
 import AssuredAPYForm from "./Pages/AssuredAPYForm";
 import FAQ from "./Pages/FAQ";
 import Legal from "./Pages/Legal";
-import SecurityCenter from "./Pages/SecurityCenter";
 import BuySell from "./Pages/BuySell";
 import { Earn } from "./Pages/Earn";
-import { Learn } from "./Pages/Learn";
 import { NotFound } from "./Pages/NotFound";
 import Business from "./Pages/Business";
+import Referral from "./Pages/Referral";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -65,6 +63,7 @@ const App = () => {
           <Route path="/services/earn" element={<Earn />} />
           {/* <Route path="/learn" element={<Learn />} /> */}
           <Route path="/business" element={<Business  />} />
+          <Route path="/account/dashboard/refferal-program" element={<Referral  />} />
         </Routes>
       </BrowserRouter>
       <button
