@@ -88,6 +88,11 @@ const Header = () => {
                   <span>Buy & Sell</span>
                 </li>
               </Link>
+              <Link to="/account/dashboard/refferal-program">
+                <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
+                  <span>Refferal</span>
+                </li>
+              </Link>
               <Link to="/services/earn">
                 <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3 ">
                   <span>Earn</span>
@@ -172,7 +177,7 @@ const Header = () => {
                   <img
                     loading="lazy"
                     src="/Hero/menu.png"
-                    className="w-8 h-8 md:hidden z-[9999]"
+                    className="w-8 h-8 md:mt-2 lg:hidden z-[9999]"
                     alt="menu"
                     onClick={() => setIsDrawerOpen(!isDrawerOpen)}
                   />
@@ -180,16 +185,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="ml-8 w-20 hidden md:flex lg:hidden">
-              <img
-                loading="lazy"
-                src="/Hero/menu.png"
-                className="w-8 h-8 "
-                alt="menu"
-                onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-              />
-              <span className="sr-only">Close menu</span>
-            </div>
+     
           </nav>
         </div>
       </header>
