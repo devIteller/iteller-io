@@ -47,6 +47,9 @@ const Footer = () => {
                 <Link className="font-light text-sm" to="/services/earn">
                   Earn
                 </Link>
+                <Link to="/account/dashboard/refferal-program" className="font-light text-sm">
+                  Refferal
+                </Link>
                 <Link to="/business" className="font-light text-sm">
                   Business
                 </Link>
