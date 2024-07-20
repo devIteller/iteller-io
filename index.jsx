@@ -3,7 +3,7 @@ import Footer from "../../Components/Footer/Footer";
 import { useEffect } from "react";
 import React from "react";
 import PageTitle from "../../Components/PageTitle";
-import { ReferralFAQ } from "../../Components/LocalFAQ/ReferralFAQ";
+import { RefferalFAQ } from "../../Components/LocalFAQ/RefferalFAQ";
 
 const Refferal = () => {
   useEffect(() => {
@@ -313,7 +313,7 @@ const Refferal = () => {
               </div>
             </div>
           </div>
-          <RFAQ />
+          <RefferalFAQ />
           <h1 className="text-xl mt-8 md:mb-2  md:text-4xl font-bold text-center  w-full">
             Join Now and Start Earning!
           </h1>
