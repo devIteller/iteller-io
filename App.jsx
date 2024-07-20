@@ -15,7 +15,7 @@ import BuySell from "./Pages/BuySell";
 import { Earn } from "./Pages/Earn";
 import { NotFound } from "./Pages/NotFound";
 import Business from "./Pages/Business";
-import refferal from "./Pages/Refferal";
+import Refferal from "./Pages/Refferal";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,7 +63,7 @@ const App = () => {
           <Route path="/services/earn" element={<Earn />} />
           {/* <Route path="/learn" element={<Learn />} /> */}
           <Route path="/business" element={<Business  />} />
-          <Route path="/account/dashboard/refferal-program" element={<refferal  />} />
+          <Route path="/account/dashboard/refferal-program" element={<Refferal  />} />
         </Routes>
       </BrowserRouter>
       <button
