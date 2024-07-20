@@ -71,7 +71,7 @@ const Drawer = ({ isDrawerOpen, setDrawerOpen }) => {
             </DrawerItem>
             <DrawerItem
               title="Referral"
-              href="/account/dashboard/referral-program"
+              href="/account/dashboard/refferal-program"
             >
               <svg
                 className="w-5 h-5"
