@@ -5,7 +5,7 @@ import React from "react";
 import PageTitle from "../../Components/PageTitle";
 import { ReferralFAQ } from "../../Components/LocalFAQ/ReferralFAQ";
 
-const Referral = () => {
+const Refferal = () => {
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -336,4 +336,4 @@ const Referral = () => {
   );
 };
 
-export default Referral;
+export default Refferal;
