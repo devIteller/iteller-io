@@ -48,7 +48,7 @@ const Footer = () => {
                   Earn
                 </Link>
                 <Link to="/account/dashboard/refferal-program" className="font-light text-sm">
-                  Refferal
+                  Referral
                 </Link>
                 <Link to="/business" className="font-light text-sm">
                   Business
