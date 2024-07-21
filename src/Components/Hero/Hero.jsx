@@ -45,7 +45,7 @@ const Hero = () => {
           </h4>
 
           <div className="flex max-lg:flex-col justify-center text-center lg:items-center md:w-fit gap-4 text-white w-full">
-            <Link to="https://my.iteller.app/en/register">
+            <Link to="https://my.iteller.app/en/auth/sign-up">
               <button className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 hover:scale-90 border-0 py-4 md:py-3 md:w-[224px]  duration-300 rounded-lg font-medium md:text-lg text-center w-full">
                 Create Your Account
               </button>
