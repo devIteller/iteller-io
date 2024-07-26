@@ -88,7 +88,7 @@ const Header = () => {
                   <span>Buy & Sell</span>
                 </li>
               </Link>
-              <Link to="/account/dashboard/referral-program">
+              <Link to="/account/dashboard/refferal-program">
                 <li className="inline-flex justify-center gap-1 items-center rounded-xl text-base mt-4 md:mt-0 whitespace-nowrap py-3">
                   <span>Referral</span>
                 </li>
