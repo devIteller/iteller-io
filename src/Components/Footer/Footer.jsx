@@ -120,7 +120,7 @@ const Footer = () => {
                   TOLL-FREE
                 </h2>
                 <div>
-                  <h3>☎️ 800 ( ITELLER )</h3>
+                  <h3>☎️800 (ITELLER)</h3>
                 </div>
               </div>
               <div className="flex col-span-2 md:col-span-3 lg:col-span-6 flex-col max-sm:w-full gap-1 mt-5">
