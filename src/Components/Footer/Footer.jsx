@@ -47,8 +47,11 @@ const Footer = () => {
                 <Link className="font-light text-sm" to="/services/earn">
                   Earn
                 </Link>
-                <Link to="/account/dashboard/referral-program" className="font-light text-sm">
-                Referral
+                <Link
+                  to="/account/dashboard/referral-program"
+                  className="font-light text-sm"
+                >
+                  Referral
                 </Link>
                 <Link to="/business" className="font-light text-sm">
                   Business
@@ -114,10 +117,10 @@ const Footer = () => {
               </div>
               <div className="flex flex-col max-sm:w-full gap-y-1">
                 <h2 className="font-medium uppercase border-b md:w-fit border-white text-lg mb-3">
-                  Telephone
+                  TOLL-FREE
                 </h2>
                 <div>
-                  <h3>☎️ 800 (iTeller)</h3>
+                  <h3>☎️ 800 ( ITELLER )</h3>
                 </div>
               </div>
               <div className="flex col-span-2 md:col-span-3 lg:col-span-6 flex-col max-sm:w-full gap-1 mt-5">
