@@ -26,6 +26,29 @@ const Business = () => {
     }, 300);
   }, []);
 
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (showModal) {
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }
+  }, [showModal]);
+
+  const handleButtonClick = () => {
+    setShowModal(true);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
       <PageTitle title="Business" />
@@ -56,11 +79,38 @@ const Business = () => {
                 operational efficiency. Trust iTeller to be your partner in
                 navigating the evolving digital finance landscape.
               </h5>
-              <Link to="https://my.iteller.app/en/auth/sign-up">
-                <button className="bg-i_orange hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[240px]  duration-300 rounded font-medium text-sm md:text-base text-center">
-                  Get Started
+
+              <div className="flex gap-3">
+                <Link to="https://my.iteller.app/en/auth/sign-up">
+                  <button className="bg-i_orange hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[120px] sm:w-[240px] duration-300 rounded font-medium text-sm md:text-base text-center">
+                    Get Started
+                  </button>
+                </Link>
+
+                <button
+                  onClick={handleButtonClick}
+                  className=" bg-blue-500 text-white flex-1 font-semibold rounded mh-[48px] whitespace-nowrap  py-2 px-4 shadow-md hover:bg-blue-700 border-0 w-1/2 focus:outline-none transition duration-300"
+                >
+                  Book an appointment
                 </button>
-              </Link>
+              </div>
+              {showModal && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-75">
+                  <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md top-8 relative">
+                    <button
+                      onClick={handleClose}
+                      className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 focus:outline-none text-xl"
+                    >
+                      &times;
+                    </button>
+                    <div
+                      className="calendly-inline-widget"
+                      data-url="https://calendly.com/navid-iteller/30min"
+                      style={{ minWidth: "300px", height: "500px" }}
+                    ></div>
+                  </div>
+                </div>
+              )}
             </div>
             <img
               src="/Business/hero.png"
@@ -128,8 +178,8 @@ const Business = () => {
             </div>
           </div>
           <h1 className="text-xl mt-8 mb-2 md:text-3xl font-bold text-center md:text-start w-full">
-              Why iTeller?
-            </h1>
+            Why iTeller?
+          </h1>
           <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 w-full">
             <BusinessBox
               title="Unmatched Security"
@@ -175,11 +225,11 @@ const Business = () => {
           <h1 className="text-2xl mb-4 md:text-3xl font-bold text-center md:text-start w-full">
             How to Start Earning
           </h1>
-          <div
-            
-            className="w-full flex items-center justify-center  lg:justify-between flex-wrap lg:mb-14"
-          >
-            <div data-aos="zoom-in" className="text-center flex items-center h-80 flex-col gap-3">
+          <div className="w-full flex items-center justify-center  lg:justify-between flex-wrap lg:mb-14">
+            <div
+              data-aos="zoom-in"
+              className="text-center flex items-center h-80 flex-col gap-3"
+            >
               <div className="bg-white w-32 h-[200px]  rounded-full flex justify-center items-center">
                 <img
                   src="/Business/sign-up.png"
@@ -192,7 +242,10 @@ const Business = () => {
                 Register your business account with iTeller.
               </h5>
             </div>
-            <div data-aos="zoom-in" className="text-center flex items-center h-80 flex-col gap-3">
+            <div
+              data-aos="zoom-in"
+              className="text-center flex items-center h-80 flex-col gap-3"
+            >
               <div className="bg-white w-32 h-[200px] rounded-full flex justify-center items-center">
                 <img
                   src="/Business/upload.png"
@@ -205,7 +258,10 @@ const Business = () => {
                 Provide necessary documentation for verification.
               </h5>
             </div>
-            <div data-aos="zoom-in" className="text-center flex items-center h-80 flex-col gap-3">
+            <div
+              data-aos="zoom-in"
+              className="text-center flex items-center h-80 flex-col gap-3"
+            >
               <div className="bg-white w-32 h-[200px]  rounded-full flex justify-center items-center">
                 <img
                   src="/Business/Operations.png"
