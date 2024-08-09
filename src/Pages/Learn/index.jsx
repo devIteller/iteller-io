@@ -33,22 +33,19 @@ export const Learn = () => {
         <div className="flex flex-col z-50 gap-y-4 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 lg:py-5 items-center relative mt-28 text-white">
           <div className="md:grid flex flex-col lg:flex-col-reverse gap-y-10 grid-cols-1 lg:grid-cols-2 z-50">
             <div className="md:mt-5">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold lg:w-[450px] text-white">
-                Discover Cryptocurrency, Uncover Possibilities
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold lg:w-[700px] text-white">
+                Explore the world of cryptocurrencies with iTeller's Learn hub.
               </h1>
               <div className="mb-2 leading-relaxed text-[#FFF]">
                 <p>
-                  Embark on a comprehensive journey into the fascinating world
-                  of cryptocurrencies with iTeller. Our dedicated Learn hub
-                  offers insights for everyone, from beginners eager to grasp
-                  the fundamentals to seasoned investors exploring advanced
-                  market dynamics. Unveil the potential of crypto with our
-                  curated content on security measures, real-world use cases,
-                  and beyond. Dive deep into complex topics such as market
-                  dynamics and legal landscapes, or explore practical guides to
-                  secure and optimize your digital assets. Start discovering
-                  today, and transform your understanding into profitable
-                  strategies.
+                  Whether you're a beginner or an experienced investor, our
+                  curated content covers everything from basics to advanced
+                  topics like market dynamics and security.
+                </p>
+                <p className="mt-3">
+                  Discover real-world use cases, practical guides, and
+                  strategies to optimize your digital assets. Start your journey
+                  today and turn your knowledge into profitable strategies.
                 </p>
               </div>
               <div className="relative">
@@ -79,8 +76,8 @@ export const Learn = () => {
             </div>
             <div className="flex justify-center lg:justify-end">
               <img
-                src="/Learn/coin.png"
-                className="w-[80%] lg:w-[70%] object-contain"
+                src="/Learn/DigitalCryptoCurrency.png"
+                className="w-full md:w-[70%] lg:w-[75%] object-contain"
                 alt="coin"
               />
             </div>
@@ -91,23 +88,31 @@ export const Learn = () => {
           <div className=" justify-center lg:justify-between w-full gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
             <div className="text-center space-y-5 text-sm flex flex-col justify-center">
               <img src="/Learn/dollar.png" alt="dollar" />
-              <h3>Cryptocurrency Basics</h3>
+              <h3 className="text-[16px] font-medium">Cryptocurrency Basics</h3>
             </div>
             <div className="text-center space-y-5 text-sm flex flex-col justify-center">
               <img src="/Learn/bitcoin.png" alt="bitcoin" />
-              <h3>Blockchain Technology Unpacked</h3>
+              <h3 className="text-[16px] font-medium">
+                Blockchain Technology Unpacked
+              </h3>
             </div>
             <div className="text-center space-y-5 text-sm flex flex-col justify-center">
               <img src="/Learn/laptop.png" alt="" />
-              <h3>Guide to Major Cryptos</h3>
+              <h3 className="text-[16px] font-medium">
+                Guide to Major Cryptos
+              </h3>
             </div>
             <div className="text-center space-y-5 text-sm flex flex-col justify-center">
               <img src="/Learn/lap_top.png" alt="" />
-              <h3>Crypto Market Operations</h3>
+              <h3 className="text-[16px] font-medium">
+                Crypto Market Operations
+              </h3>
             </div>
             <div className="text-center space-y-5 text-sm flex flex-col justify-center">
               <img src="/Learn/trade.png" alt="" />
-              <h3>Advantages of Cryptocurrency</h3>
+              <h3 className="text-[16px] font-medium">
+                Advantages of Cryptocurrency
+              </h3>
             </div>
           </div>
           <button className="bg-[#101949] place-self-end mb-10  hover:bg-i_orange/80 hover:scale-90 border-0 py-3 px-20 w-fit mt-5  duration-300 rounded font-medium text-sm md:text-base text-center mx-auto">
@@ -122,35 +127,43 @@ export const Learn = () => {
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Security.png" alt="Security" />
-              <h3>Crypto Security Essentials</h3>
+              <h3 className="text-[16px] font-medium">
+                Crypto Security Essentials
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/coins.png" alt="coins" />
-              <h3>Crypto Storage Guide</h3>
+              <h3 className="text-[16px] font-medium">Crypto Storage Guide</h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/b-coin.png" alt="b-coin" />
-              <h3>Cyber Threat Protection</h3>
+              <h3 className="text-[16px] font-medium">
+                Cyber Threat Protection
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/coin-trade.png" alt="coin-trade" />
-              <h3>Crypto Security Best Practices</h3>
+              <h3 className="text-[16px] font-medium">
+                Crypto Security Best Practices
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Tips.png" alt="Tips" />
-              <h3>Backup and Recovery Tips</h3>
+              <h3 className="text-[16px] font-medium">
+                Backup and Recovery Tips
+              </h3>
             </div>
           </div>
           <button className="bg-[#101949] place-self-end mb-10  hover:bg-i_orange/80 hover:scale-90 border-0 py-3 px-20 w-fit mt-5  duration-300 rounded font-medium text-sm md:text-base text-center mx-auto">
@@ -189,35 +202,45 @@ export const Learn = () => {
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Crypto.png" alt="Crypto" />
-              <h3>Crypto in Financial Services</h3>
+              <h3 className="text-[16px] font-medium">
+                Crypto in Financial Services
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Blockchain.png" alt="Blockchain" />
-              <h3>Blockchain in Supply Chain</h3>
+              <h3 className="text-[16px] font-medium">
+                Blockchain in Supply Chain
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Tokenization.png" alt="Tokenization" />
-              <h3>Real Estate Tokenization</h3>
+              <h3 className="text-[16px] font-medium">
+                Real Estate Tokenization
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Healthcare.png" alt="Healthcare" />
-              <h3>Blockchain for Healthcare</h3>
+              <h3 className="text-[16px] font-medium">
+                Blockchain for Healthcare
+              </h3>
             </div>
             <div
               data-aos="fade-in"
               className="text-center space-y-5 text-sm flex flex-col justify-center"
             >
               <img src="/Learn/Government.png" alt="Government" />
-              <h3>Blockchain in Government</h3>
+              <h3 className="text-[16px] font-medium">
+                Blockchain in Government
+              </h3>
             </div>
           </div>
           <button className="bg-[#101949] place-self-end mb-10  hover:bg-i_orange/80 hover:scale-90 border-0 py-3 px-20 w-fit mt-5  duration-300 rounded font-medium text-sm md:text-base text-center mx-auto">
