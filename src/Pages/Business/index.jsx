@@ -2,22 +2,9 @@
 import Footer from "../../Components/Footer/Footer";
 import { useEffect, useState } from "react";
 import React from "react";
-import { MiniFAQ } from "../../Components/LocalFAQ/MiniFAQ";
 import PageTitle from "../../Components/PageTitle";
 import { Link } from "react-router-dom";
 import { BusinessBox } from "../../Components/BusinessBox";
-
-const images = [
-  "Bitcoin",
-  "Ethereum",
-  "Tether",
-  "Binance",
-  "Litecoin",
-  "Shiba",
-  "DogeCoin",
-  "Solana",
-  "Tron",
-];
 
 const Business = () => {
   useEffect(() => {
@@ -89,7 +76,7 @@ const Business = () => {
 
                 <button
                   onClick={handleButtonClick}
-                  className=" bg-blue-500 text-white flex-1 font-semibold rounded mh-[48px] whitespace-nowrap  py-2 px-4 shadow-md hover:bg-blue-700 border-0 w-1/2 focus:outline-none transition duration-300"
+                  className="bg-blue-500 text-white flex-1 font-semibold rounded mh-[48px] whitespace-nowrap py-2 px-4 shadow-md hover:bg-blue-700 border-0 w-1/2 focus:outline-none transition duration-300"
                 >
                   Book an appointment
                 </button>
@@ -105,7 +92,7 @@ const Business = () => {
                     </button>
                     <div
                       className="calendly-inline-widget"
-                      data-url="https://calendly.com/navid-iteller/30min"
+                      data-url="https://calendly.com/ziteller/introduction-meeting?hide_event_type_details=1&hide_gdpr_banner=1"
                       style={{ minWidth: "300px", height: "500px" }}
                     ></div>
                   </div>
