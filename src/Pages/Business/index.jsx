@@ -7,24 +7,26 @@ import { Link } from "react-router-dom";
 import { BusinessBox } from "../../Components/BusinessBox";
 
 const Business = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 300);
-  }, []);
-
   const [showModal, setShowModal] = useState(false);
 
+  // Load Calendly script only once
   useEffect(() => {
-    if (showModal) {
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
 
-      return () => {
-        document.body.removeChild(script);
-      };
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (showModal && window.Calendly) {
+      window.Calendly.initInlineWidget({
+        url: "https://calendly.com/ziteller/introduction-meeting?hide_event_type_details=1&hide_gdpr_banner=1",
+        parentElement: document.querySelector(".calendly-inline-widget"),
+      });
     }
   }, [showModal]);
 
@@ -40,7 +42,7 @@ const Business = () => {
     <>
       <PageTitle title="Business" />
       <Header />
-      <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px]  top-[-20px]">
+      <span className="md:w-1/3 w-full blur-[170px] z-10 absolute md:left-[-110px] top-[-20px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="800"
@@ -52,8 +54,8 @@ const Business = () => {
       </span>
       <div className="flex flex-col items-center ">
         <div className="flex flex-col z-50 gap-y-4 lg:max-w-[1440px] w-[90%] px-3 md:px-10 py-10 lg:py-5 items-center relative mt-20 lg:mt-28 text-white">
-          <div className=" flex flex-col lg:flex-row items-center justify-between gap-4 ">
-            <div className="flex h-fit gap-3 flex-col justify-between ">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div className="flex h-fit gap-3 flex-col justify-between">
               <h1 className="text-2xl lg:text-3xl font-bold float-left w-full">
                 Transform Your Financial Operations <br /> with Our Seamless
                 Crypto Solution
@@ -92,7 +94,6 @@ const Business = () => {
                     </button>
                     <div
                       className="calendly-inline-widget"
-                      data-url="https://calendly.com/ziteller/introduction-meeting?hide_event_type_details=1&hide_gdpr_banner=1"
                       style={{ minWidth: "300px", height: "500px" }}
                     ></div>
                   </div>
@@ -167,7 +168,7 @@ const Business = () => {
           <h1 className="text-xl mt-8 mb-2 md:text-3xl font-bold text-center md:text-start w-full">
             Why iTeller?
           </h1>
-          <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 w-full">
             <BusinessBox
               title="Unmatched Security"
               sub="Robust security protocols ensure your assets and transactions are safeguarded, providing peace of mind."
@@ -204,7 +205,7 @@ const Business = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-i_orange self-start mb-10 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px]  duration-300 rounded font-medium text-sm md:text-base text-center">
+            <button className="bg-i_orange self-start mb-10 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px] duration-300 rounded font-medium text-sm md:text-base text-center">
               Join iTeller Today
             </button>
           </a>
@@ -212,12 +213,12 @@ const Business = () => {
           <h1 className="text-2xl mb-4 md:text-3xl font-bold text-center md:text-start w-full">
             How to Start Earning
           </h1>
-          <div className="w-full flex items-center justify-center  lg:justify-between flex-wrap lg:mb-14">
+          <div className="w-full flex items-center justify-center lg:justify-between flex-wrap lg:mb-14">
             <div
               data-aos="zoom-in"
               className="text-center flex items-center h-80 flex-col gap-3"
             >
-              <div className="bg-white w-32 h-[200px]  rounded-full flex justify-center items-center">
+              <div className="bg-white w-32 h-[200px] rounded-full flex justify-center items-center">
                 <img
                   src="/Business/sign-up.png"
                   className="w-16 mt-4"
@@ -249,10 +250,10 @@ const Business = () => {
               data-aos="zoom-in"
               className="text-center flex items-center h-80 flex-col gap-3"
             >
-              <div className="bg-white w-32 h-[200px]  rounded-full flex justify-center items-center">
+              <div className="bg-white w-32 h-[200px] rounded-full flex justify-center items-center">
                 <img
                   src="/Business/Operations.png"
-                  className="w-16  "
+                  className="w-16"
                   alt="Operations"
                 />
               </div>
@@ -268,7 +269,7 @@ const Business = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-i_orange self-start mb-10 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px]  duration-300 rounded font-medium text-sm md:text-base text-center">
+            <button className="bg-i_orange self-start mb-10 hover:bg-i_orange/80 hover:scale-90 border-0 py-3 w-[250px] duration-300 rounded font-medium text-sm md:text-base text-center">
               Sign Up Now
             </button>
           </a>
