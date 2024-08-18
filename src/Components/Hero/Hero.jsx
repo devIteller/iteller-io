@@ -28,12 +28,11 @@ const Hero = () => {
             worldwide
           </h1>
           <p className="mb-6 md:w-[60%] leading-relaxed text-[#FFF]">
-            Experience low fees and lightning-fast transactions on a secure,
-            user-friendly platform with seamless onboarding, regulated in
-            Australia, the UK, and the UAE.
+          Experience lightning-fast transactions and low fees on a secure, user-friendly platform with seamless onboarding, regulated in Australia and licensed in the UK and UAE
+
           </p>
           <div className=" text-white md:w-fit font-bold text-sm md:text-lg w-fit  capitalize bg-btn py-2 px-4">
-            Buy crypto with no hidden fees
+           24/7 OTC Platform to exchange
           </div>
           <img
             src="/Hero/Line.svg"
@@ -45,7 +44,7 @@ const Hero = () => {
           </h4>
 
           <div className="flex max-lg:flex-col justify-center text-center lg:items-center md:w-fit gap-4 text-white w-full">
-            <Link to="https://my.iteller.app/en/auth/sign-up">
+            <Link to="https://my.iteller.app/en/register">
               <button className="bg-[#CD7B00] hover:bg-[#CD7B00]/80 hover:scale-90 border-0 py-4 md:py-3 md:w-[224px]  duration-300 rounded-lg font-medium md:text-lg text-center w-full">
                 Create Your Account
               </button>
