@@ -5,6 +5,7 @@ import React from "react";
 import PageTitle from "../../Components/PageTitle";
 import { Link } from "react-router-dom";
 import { BusinessBox } from "../../Components/BusinessBox";
+import { PopupWidget } from "react-calendly";
 
 const Business = () => {
   const [showModal, setShowModal] = useState(false);
@@ -31,7 +32,15 @@ const Business = () => {
   }, [showModal]);
 
   const handleButtonClick = () => {
-    setShowModal(true);
+    const calendlyUrl = "https://calendly.com/iteller-team/30min";
+    const calendlyOptions = {
+      url: calendlyUrl,
+      parentElement: document.body,
+      prefill: {},
+      utm: {},
+    };
+
+    window.Calendly.initPopupWidget(calendlyOptions);
   };
 
   const handleClose = () => {

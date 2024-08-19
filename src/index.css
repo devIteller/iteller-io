@@ -67,3 +67,7 @@
     bottom: 50px !important;
   }
 }
+
+.calendly-inline-widget {
+  overflow: hidden !important;
+}
