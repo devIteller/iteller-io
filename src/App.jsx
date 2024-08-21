@@ -17,6 +17,7 @@ import { NotFound } from "./Pages/NotFound";
 import Business from "./Pages/Business";
 import Referral from "./Pages/Referral";
 import { Learn } from "./Pages/Learn";
+import { Article_CryptocurrencyBasics } from "./Pages/Learn/Insights/Article_CryptocurrencyBasics";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,10 +51,7 @@ const App = () => {
           <Route path="/Assured-APY-Click" element={<AssuredAPYClick />} />
           <Route path="/Assured-APY" element={<AssuredAPY />} />
           <Route path="/Assured-APY-Form" element={<AssuredAPYForm />} />
-          <Route
-            path="/learn/guide"
-            element={<CryptoOTCTradingPlatform />}
-          />
+          <Route path="/learn/guide" element={<CryptoOTCTradingPlatform />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
           <Route
@@ -63,8 +61,15 @@ const App = () => {
           <Route path="/services/buy-sell-crypto" element={<BuySell />} />
           <Route path="/services/earn" element={<Earn />} />
           <Route path="/learn" element={<Learn />} />
-          <Route path="/business" element={<Business  />} />
-          <Route path="/account/dashboard/referral-program" element={<Referral  />} />
+          <Route
+            path="/learn/insights/Cryptocurrency-Basics"
+            element={<Article_CryptocurrencyBasics />}
+          />
+          <Route path="/business" element={<Business />} />
+          <Route
+            path="/account/dashboard/referral-program"
+            element={<Referral />}
+          />
         </Routes>
       </BrowserRouter>
       <button
