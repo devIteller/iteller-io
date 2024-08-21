@@ -15,7 +15,9 @@ import BuySell from "./Pages/BuySell";
 import { Earn } from "./Pages/Earn";
 import { NotFound } from "./Pages/NotFound";
 import Business from "./Pages/Business";
-import Refferal from "./Pages/Refferal";
+import Referral from "./Pages/Referral";
+import { Learn } from "./Pages/Learn";
+import { Article_CryptocurrencyBasics } from "./Pages/Learn/Insights/Article_CryptocurrencyBasics";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,6 +55,7 @@ const App = () => {
             path="/learn/guide"
             element={<CryptoOTCTradingPlatform />}
           />
+          <Route path="/learn/insights/Cryptocurrency-Basics" element={<Article_CryptocurrencyBasics />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
           <Route
@@ -61,9 +64,10 @@ const App = () => {
           />
           <Route path="/services/buy-sell-crypto" element={<BuySell />} />
           <Route path="/services/earn" element={<Earn />} />
-          {/* <Route path="/learn" element={<Learn />} /> */}
+          <Route path="/learn" element={<Learn />} />
           <Route path="/business" element={<Business  />} />
-          <Route path="/account/dashboard/referral-program" element={<Refferal  />} />
+          
+          <Route path="/account/dashboard/referral-program" element={<Referral  />} />
         </Routes>
       </BrowserRouter>
       <button
